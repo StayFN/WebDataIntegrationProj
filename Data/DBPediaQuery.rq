@@ -1,0 +1,24 @@
+SELECT 
+  ?company ?label 
+  (GROUP_CONCAT(DISTINCT ?industry; SEPARATOR=", ") AS ?industries)
+  (GROUP_CONCAT(DISTINCT ?keyPerson; SEPARATOR=", ") AS ?keyPersons)
+  (GROUP_CONCAT(DISTINCT ?founder; SEPARATOR=", ") AS ?founders)
+  (GROUP_CONCAT(DISTINCT ?locationCity; SEPARATOR=", ") AS ?cities)
+  (GROUP_CONCAT(DISTINCT ?locationCountry; SEPARATOR=", ") AS ?countries)
+  ?revenue ?assets ?netIncome ?foundingYear ?type
+WHERE {
+  ?company a dbo:Company ;
+           rdfs:label ?label .
+  OPTIONAL { ?company dbo:industry ?industry }
+  OPTIONAL { ?company dbo:keyPerson ?keyPerson }
+  OPTIONAL { ?company dbo:foundedBy ?founder }
+  OPTIONAL { ?company dbp:locationCity ?locationCity }
+  OPTIONAL { ?company dbp:locationCountry ?locationCountry }
+  ?company dbo:revenue ?revenue
+  OPTIONAL { ?company dbo:assets ?assets }
+  OPTIONAL { ?company dbo:netIncome ?netIncome }
+  OPTIONAL { ?company dbo:foundingYear ?foundingYear }
+  OPTIONAL { ?company dbo:type ?type}
+  FILTER(langMatches(lang(?label), "EN"))
+}
+GROUP BY ?company ?label ?revenue ?assets ?netIncome ?foundingYear ?type
