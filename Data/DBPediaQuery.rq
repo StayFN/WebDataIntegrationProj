@@ -2,18 +2,22 @@ SELECT
   ?company ?label 
   (GROUP_CONCAT(DISTINCT ?industry; SEPARATOR=", ") AS ?industries)
   (GROUP_CONCAT(DISTINCT ?keyPerson; SEPARATOR=", ") AS ?keyPersons)
+  (GROUP_CONCAT(DISTINCT ?keyPeople; SEPARATOR=", ") AS ?keyPeople)
   (GROUP_CONCAT(DISTINCT ?founder; SEPARATOR=", ") AS ?founders)
   (GROUP_CONCAT(DISTINCT ?locationCity; SEPARATOR=", ") AS ?cities)
   (GROUP_CONCAT(DISTINCT ?locationCountry; SEPARATOR=", ") AS ?countries)
-  ?revenue ?assets ?netIncome ?foundingYear ?type
+  ?hqLocationCity ?hqLocationCountry ?revenue ?assets ?netIncome ?foundingYear ?type
 WHERE {
   ?company a dbo:Company ;
            rdfs:label ?label .
   OPTIONAL { ?company dbo:industry ?industry }
   OPTIONAL { ?company dbo:keyPerson ?keyPerson }
+  OPTIONAL { ?company dbp:keyPeople ?keyPeople}
   OPTIONAL { ?company dbo:foundedBy ?founder }
   OPTIONAL { ?company dbp:locationCity ?locationCity }
   OPTIONAL { ?company dbp:locationCountry ?locationCountry }
+  OPTIONAL { ?company dbp:hqLocationCity ?hqLocationCity }
+  OPTIONAL { ?company dbp:hqLocationCountry ?hqLocationCountry }
   ?company dbo:revenue ?revenue
   OPTIONAL { ?company dbo:assets ?assets }
   OPTIONAL { ?company dbo:netIncome ?netIncome }
@@ -21,7 +25,7 @@ WHERE {
   OPTIONAL { ?company dbo:type ?type}
   FILTER(langMatches(lang(?label), "EN"))
 }
-GROUP BY ?company ?label ?revenue ?assets ?netIncome ?foundingYear ?type
+GROUP BY ?company ?label ?hqLocationCity ?hqLocationCountry ?revenue ?assets ?netIncome ?foundingYear ?type
 
 LIMIT 10000 
 OFFSET 0 #After first Iteration change to 10000, in total only 2 needed 
