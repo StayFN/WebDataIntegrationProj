@@ -1,0 +1,57 @@
+
+<companies>
+	<company>
+		<CompanyName>company1</CompanyName>
+		<ISIN>1234</ISIN>
+		<LEI>1234</LEI>
+		<Forbes2022Rating>1</Forbes2022Rating>
+		<Industries>
+			<Industry>IT</Industry>
+			<Industry>Medicine</Industry>
+		</Industries>
+		<FoundedYear>2019</FoundedYear>
+		<Country>Germany</Country>
+		<Region>Europe</Region>
+		<KeyPersons>
+			<person>
+				<name>person1</name>
+				<founder>True</founder>
+				<ceo>True</ceo>
+				<other/>
+			</person>
+			<person>
+				<name>person2</name>
+				<founder>True</founder>
+				<ceo>False</ceo>
+				<other/>
+			</person>
+			<person>
+				<name>person3</name>
+				<founder>False</founder>
+				<ceo>False</ceo>
+				<other>True</other>
+			</person>
+		</KeyPersons>
+		<Revenue>123</Revenue>
+		<Assets>123</Assets>
+		<Profit>123</Profit>
+		<MarketValue>123</MarketValue>
+		<SizeEmployees>123</SizeEmployees>
+		<SizeCategory>small company</SizeCategory>
+		<LegalType>Public company</LegalType>
+		<SustGoalDescription>target was approved using...</SustGoalDescription>
+		<SustGoalClassification>targets covering... </SustGoalClassification>
+		<SustGoalStatus_NearTerm>Targets Set</SustGoalStatus_NearTerm>
+		<SustGoalStatus_LongTerm>Targets Set</SustGoalStatus_LongTerm>
+		<SustGoalClassification_NearTerm>Well-below 2°C</SustGoalClassification_NearTerm>
+		<SustGoalClassification_LongTerm>Well-below 2°C</SustGoalClassification_LongTerm>
+		<SustGoalYear_NearTerm>2030</SustGoalYear_NearTerm>
+		<SustGoalYear_LongTerm>2050</SustGoalYear_LongTerm>
+		<NetZeroCommitedBool>True</NetZeroCommitedBool>
+		<NetZeroCommitedYear>2050</NetZeroCommitedYear>
+	</company>
+	<company>
+		...
+	</company>
+</companies>
+
