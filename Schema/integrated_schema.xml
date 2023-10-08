@@ -14,13 +14,13 @@
         <KeyPersons>
             <Person>
                 <Name>Ugur Sahin</Name>
-                <founder>True</founder>
+                <Founder>True</Founder>
                 <Ceo>True</Ceo>
                 <other/>
             </Person>
             <Person>
                 <Name>Ozlem Tureci</Name>
-                <founder>True</founder>
+                <Founder>True</Founder>
                 <Ceo>False</Ceo>
                 <other/>
             </Person>
