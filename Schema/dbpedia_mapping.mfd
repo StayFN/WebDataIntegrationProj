@@ -1,0 +1,1345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023r2 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="DBPedia_Companies_Preprocessed" library="text" uid="9" kind="16">
+					<properties/>
+					<view ltx="-29" lty="-787" rbx="279" rby="-532"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Zeilen" outkey="5" expanded="1">
+										<entry name="uuid" outkey="6"/>
+										<entry name="label" outkey="7"/>
+										<entry name="industries" outkey="8"/>
+										<entry name="keyPeople" outkey="9"/>
+										<entry name="founders" outkey="10"/>
+										<entry name="hqLocationCountry" outkey="11"/>
+										<entry name="revenue" outkey="12"/>
+										<entry name="assets" outkey="13"/>
+										<entry name="netIncome" outkey="14"/>
+										<entry name="foundingYear" outkey="15"/>
+										<entry name="type" outkey="16"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="DBPedia_Companies_Preprocessed.csv">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="DBPedia_Companies_Preprocessed" block="Zeilen">
+									<field0 name="uuid" type="string"/>
+									<field1 name="company" type="string"/>
+									<field2 name="label" type="string"/>
+									<field3 name="industries" type="string"/>
+									<field4 name="keyPeople" type="string"/>
+									<field5 name="founders" type="string"/>
+									<field6 name="hqLocationCountry" type="string"/>
+									<field7 name="revenue" type="integer"/>
+									<field8 name="assets" type="integer"/>
+									<field9 name="netIncome" type="integer"/>
+									<field10 name="foundingYear" type="integer"/>
+									<field11 name="type" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="integrated_schema" library="xml" uid="7" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="1090" lty="-951" rbx="1367" rby="-330"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Companies" expanded="1">
+										<entry name="Company" inpkey="17" expanded="1">
+											<entry name="ID" inpkey="18"/>
+											<entry name="CompanyName" inpkey="19"/>
+											<entry name="Industries" expanded="1">
+												<entry name="Industry" inpkey="20"/>
+											</entry>
+											<entry name="FoundedYear" inpkey="21"/>
+											<entry name="Country" inpkey="22"/>
+											<entry name="KeyPersons" expanded="1">
+												<entry name="Person" inpkey="23" expanded="1">
+													<entry name="Name" inpkey="24"/>
+													<entry name="Founder" inpkey="25"/>
+													<entry name="other" inpkey="26"/>
+												</entry>
+											</entry>
+											<entry name="Revenue" inpkey="27"/>
+											<entry name="Assets" inpkey="28"/>
+											<entry name="Profit" inpkey="29"/>
+											<entry name="LegalType" inpkey="30"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="integrated_schema.xsd" instanceroot="{}Companies" inputinstance="integrated_schema.xml" outputinstance="integrated_schema.xml"/>
+					</data>
+				</component>
+				<component name="industries" library="user" uid="24" kind="19" visible="0" blackbox="0">
+					<view ltx="518" lty="-902" rbx="662" rby="-885"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="industries_list" inpkey="1" componentid="22"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="2" componentid="20"/>
+						</root>
+					</data>
+				</component>
+				<component name="UniquePersons" library="user" uid="86" kind="19" visible="0" blackbox="0">
+					<view ltx="570" lty="-478" rbx="715" rby="-427"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="keyPersons" inpkey="31" componentid="76"/>
+							<entry name="founders" inpkey="32" componentid="77"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="name" outkey="33" componentid="75"/>
+							<entry name="founder" outkey="34" componentid="108"/>
+							<entry name="other" outkey="35" componentid="113"/>
+						</root>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="19"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="20"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="21"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="22"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="23"/>
+							<edge vertexkey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="34">
+						<edges>
+							<edge vertexkey="25"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="26"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="28"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="29"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="31"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="32"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="industries" library="user" uid="19" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="industries_list" library="core" uid="22" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="41" lty="55" rbx="169" rby="93"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="industries_list"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="27" kind="2">
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="203" lty="98" rbx="251" rby="115"/>
+					<data>
+						<constant value=", " datatype="string"/>
+					</data>
+				</component>
+				<component name="tokenize" library="core" uid="26" kind="5">
+					<sources>
+						<datapoint pos="0" key="5"/>
+						<datapoint pos="1" key="6"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="304" lty="39" rbx="398" rby="93"/>
+				</component>
+				<component name="result" library="core" uid="20" kind="7">
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="477" lty="55" rbx="534" rby="93"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="unique_persons" library="user" uid="28" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="concat" library="core" uid="54" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="15"/>
+						<datapoint pos="1" key="17"/>
+						<datapoint pos="2" key="16"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="18"/>
+					</targets>
+					<view ltx="320" lty="371" rbx="412" rby="444"/>
+				</component>
+				<component name="empty" library="lang" uid="47" kind="5">
+					<sources>
+						<datapoint pos="0" key="58"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="35"/>
+					</targets>
+					<view ltx="336" lty="134" rbx="412" rby="172"/>
+				</component>
+				<component name="empty" library="lang" uid="42" kind="5">
+					<sources>
+						<datapoint pos="0" key="59"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="29"/>
+					</targets>
+					<view ltx="336" lty="61" rbx="412" rby="99"/>
+				</component>
+				<component name="result" library="core" uid="71" kind="7">
+					<sources>
+						<datapoint pos="0" key="50"/>
+					</sources>
+					<view ltx="1340" lty="189" rbx="1397" rby="227"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="distinct-values" library="core" uid="56" kind="5">
+					<sources>
+						<datapoint pos="0" key="26"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="27"/>
+					</targets>
+					<view ltx="1007" lty="371" rbx="1108" rby="409"/>
+				</component>
+				<component name="tokenize" library="core" uid="55" kind="5">
+					<sources>
+						<datapoint pos="0" key="23"/>
+						<datapoint pos="1" key="22"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="21"/>
+					</targets>
+					<view ltx="763" lty="371" rbx="857" rby="425"/>
+				</component>
+				<component name="logical-not" library="core" uid="63" kind="5">
+					<sources>
+						<datapoint pos="0" key="30"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="60"/>
+					</targets>
+					<view ltx="439" lty="134" rbx="522" rby="172"/>
+				</component>
+				<component name="Founders" library="core" uid="45" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="51"/>
+					</targets>
+					<view ltx="10" lty="257" rbx="116" rby="295"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="Founders"/>
+					</data>
+				</component>
+				<component name="tokenize" library="core" uid="67" kind="5">
+					<sources>
+						<datapoint pos="0" key="45"/>
+						<datapoint pos="1" key="47"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="46"/>
+					</targets>
+					<view ltx="617" lty="291" rbx="711" rby="345"/>
+				</component>
+				<component name="constant" library="core" uid="49" kind="2">
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="222" lty="493" rbx="270" rby="510"/>
+					<data>
+						<constant value=", " datatype="string"/>
+					</data>
+				</component>
+				<component name="distinct-values" library="core" uid="68" kind="5">
+					<sources>
+						<datapoint pos="0" key="49"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="48"/>
+					</targets>
+					<view ltx="984" lty="255" rbx="1085" rby="293"/>
+				</component>
+				<component name="tokenize" library="core" uid="72" kind="5">
+					<sources>
+						<datapoint pos="0" key="54"/>
+						<datapoint pos="1" key="53"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="52"/>
+					</targets>
+					<view ltx="501" lty="241" rbx="595" rby="295"/>
+				</component>
+				<component name="KeyPersons" library="core" uid="44" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="40"/>
+					</targets>
+					<view ltx="10" lty="189" rbx="124" rby="227"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="KeyPersons"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="65" kind="4">
+					<sources>
+						<datapoint pos="0" key="41"/>
+						<datapoint pos="1" key="42"/>
+						<datapoint pos="2" key="61"/>
+						<datapoint pos="3" key="62"/>
+						<datapoint pos="4" key="63"/>
+						<datapoint pos="5" key="55"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="64"/>
+					</targets>
+					<view ltx="1188" lty="168" rbx="1295" rby="309"/>
+				</component>
+				<component name="distinct-values" library="core" uid="73" kind="5">
+					<sources>
+						<datapoint pos="0" key="56"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="57"/>
+					</targets>
+					<view ltx="700" lty="241" rbx="801" rby="279"/>
+				</component>
+				<component name="logical-not" library="core" uid="62" kind="5">
+					<sources>
+						<datapoint pos="0" key="28"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="65"/>
+					</targets>
+					<view ltx="439" lty="61" rbx="522" rby="99"/>
+				</component>
+				<component name="logical-and" library="core" uid="64" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="38"/>
+						<datapoint pos="1" key="37"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="36"/>
+					</targets>
+					<view ltx="686" lty="61" rbx="771" rby="117"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="40">
+						<edges>
+							<edge vertexkey="15"/>
+							<edge vertexkey="54"/>
+							<edge vertexkey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="51">
+						<edges>
+							<edge vertexkey="16"/>
+							<edge vertexkey="45"/>
+							<edge vertexkey="58"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="17"/>
+							<edge vertexkey="22"/>
+							<edge vertexkey="47"/>
+							<edge vertexkey="53"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="23"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="26"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="28"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="60">
+						<edges>
+							<edge vertexkey="37"/>
+							<edge vertexkey="63"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="65">
+						<edges>
+							<edge vertexkey="38"/>
+							<edge vertexkey="61"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="41"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="42"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="46">
+						<edges>
+							<edge vertexkey="49"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="64">
+						<edges>
+							<edge vertexkey="50"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="48">
+						<edges>
+							<edge vertexkey="55"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="52">
+						<edges>
+							<edge vertexkey="56"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="57">
+						<edges>
+							<edge vertexkey="62"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="UniquePersons" library="user" uid="74" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="founder" library="core" uid="108" kind="7">
+					<sources>
+						<datapoint pos="0" key="5"/>
+					</sources>
+					<view ltx="1069" lty="178" rbx="1139" rby="216"/>
+					<data>
+						<output datatype="boolean"/>
+						<parameter usageKind="output" name="founder"/>
+					</data>
+				</component>
+				<component name="name" library="core" uid="75" kind="7">
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="1069" lty="75" rbx="1125" rby="113"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="name"/>
+					</data>
+				</component>
+				<component name="distinct-values" library="core" uid="84" kind="5">
+					<sources>
+						<datapoint pos="0" key="9"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="762" lty="75" rbx="863" rby="113"/>
+				</component>
+				<component name="tokenize" library="core" uid="82" kind="5">
+					<sources>
+						<datapoint pos="0" key="6"/>
+						<datapoint pos="1" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="629" lty="75" rbx="723" rby="129"/>
+				</component>
+				<component name="concat" library="core" uid="79" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="18"/>
+						<datapoint pos="1" key="19"/>
+						<datapoint pos="2" key="20"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="11"/>
+					</targets>
+					<view ltx="308" lty="17" rbx="400" rby="90"/>
+				</component>
+				<component name="constant" library="core" uid="80" kind="2">
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="224" lty="137" rbx="272" rby="154"/>
+					<data>
+						<constant value=", " datatype="string"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="116" kind="4">
+					<sources>
+						<datapoint pos="0" key="24"/>
+						<datapoint pos="1" key="25"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="26"/>
+					</targets>
+					<view ltx="995" lty="258" rbx="1099" rby="331"/>
+				</component>
+				<component name="other" library="core" uid="113" kind="7">
+					<sources>
+						<datapoint pos="0" key="16"/>
+					</sources>
+					<view ltx="1150" lty="278" rbx="1206" rby="316"/>
+					<data>
+						<output datatype="boolean"/>
+						<parameter usageKind="output" name="other"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="120" kind="2">
+					<targets>
+						<datapoint pos="0" key="27"/>
+					</targets>
+					<view ltx="880" lty="299" rbx="946" rby="316"/>
+					<data>
+						<constant value="false" datatype="string"/>
+					</data>
+				</component>
+				<component name="keyPersonsAndFounders" library="user" uid="174" kind="19" visible="0" blackbox="0">
+					<view ltx="212" lty="248" rbx="344" rby="282"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="keyPersons" inpkey="31" componentid="160"/>
+							<entry name="founders" inpkey="32" componentid="161"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="33" componentid="159"/>
+						</root>
+					</data>
+				</component>
+				<component name="founders" library="core" uid="77" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="21"/>
+					</targets>
+					<view lty="75" rbx="104" rby="113"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="founders"/>
+					</data>
+				</component>
+				<component name="onlyFounders" library="user" uid="157" kind="19" visible="0" blackbox="0">
+					<view ltx="212" lty="437" rbx="344" rby="471"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="keyPersons" inpkey="37" componentid="144"/>
+							<entry name="founders" inpkey="38" componentid="145"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="39" componentid="143"/>
+						</root>
+					</data>
+				</component>
+				<component name="onlyKeypersons" library="user" uid="141" kind="19" visible="0" blackbox="0">
+					<view ltx="212" lty="350" rbx="344" rby="384"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="keyPersons" inpkey="34" componentid="131"/>
+							<entry name="founders" inpkey="35" componentid="132"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="36" componentid="130"/>
+						</root>
+					</data>
+				</component>
+				<component name="keyPersons" library="core" uid="76" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="17"/>
+					</targets>
+					<view rbx="114" rby="38"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="keyPersons"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="175" kind="4">
+					<sources>
+						<datapoint pos="0" key="40"/>
+						<datapoint pos="1" key="41"/>
+						<datapoint pos="2" key="42"/>
+						<datapoint pos="3" key="43"/>
+						<datapoint pos="4" key="44"/>
+						<datapoint pos="5" key="45"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="46"/>
+					</targets>
+					<view ltx="486" lty="190" rbx="593" rby="331"/>
+				</component>
+				<component name="contains" library="core" uid="111" kind="5">
+					<sources>
+						<datapoint pos="0" key="22"/>
+						<datapoint pos="1" key="23"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="15"/>
+					</targets>
+					<view ltx="880" lty="178" rbx="978" rby="232"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="1"/>
+							<edge vertexkey="23"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="5"/>
+							<edge vertexkey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="46">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="7"/>
+							<edge vertexkey="19"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="16"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="18"/>
+							<edge vertexkey="31"/>
+							<edge vertexkey="34"/>
+							<edge vertexkey="37"/>
+							<edge vertexkey="43"/>
+							<edge vertexkey="45"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="20"/>
+							<edge vertexkey="22"/>
+							<edge vertexkey="32"/>
+							<edge vertexkey="35"/>
+							<edge vertexkey="38"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="25"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="40"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="41"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="42"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="39">
+						<edges>
+							<edge vertexkey="44"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="uniquePersons3" library="user" uid="87" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="keyPersons" library="core" uid="89" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view rbx="114" rby="38"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="keyPersons"/>
+					</data>
+				</component>
+				<component name="name" library="core" uid="88" kind="7">
+					<sources>
+						<datapoint/>
+					</sources>
+					<view ltx="859" lty="60" rbx="915" rby="98"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="name"/>
+					</data>
+				</component>
+				<component name="founder" library="core" uid="96" kind="7">
+					<sources>
+						<datapoint/>
+					</sources>
+					<view ltx="859" lty="209" rbx="929" rby="247"/>
+					<data>
+						<output datatype="boolean"/>
+						<parameter usageKind="output" name="founder"/>
+					</data>
+				</component>
+				<component name="founders" library="core" uid="90" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="20"/>
+					</targets>
+					<view lty="146" rbx="104" rby="184"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="founders"/>
+					</data>
+				</component>
+				<component name="empty" library="lang" uid="92" kind="5">
+					<sources>
+						<datapoint pos="0" key="4"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="181" rbx="257" rby="38"/>
+				</component>
+				<component name="empty" library="lang" uid="99" kind="5">
+					<sources>
+						<datapoint pos="0" key="9"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="166" lty="146" rbx="242" rby="184"/>
+				</component>
+				<component name="logical-not" library="core" uid="95" kind="5">
+					<sources>
+						<datapoint pos="0" key="6"/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="300" rbx="383" rby="38"/>
+				</component>
+				<component name="logical-not" library="core" uid="100" kind="5">
+					<sources>
+						<datapoint pos="0" key="13"/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="300" lty="146" rbx="383" rby="184"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="onlyKeypersons" library="user" uid="129" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="keyPersons" library="core" uid="131" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view rbx="114" rby="38"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="keyPersons"/>
+					</data>
+				</component>
+				<component name="founders" library="core" uid="132" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view lty="68" rbx="104" rby="106"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="founders"/>
+					</data>
+				</component>
+				<component name="empty" library="lang" uid="134" kind="5">
+					<sources>
+						<datapoint pos="0" key="3"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="169" rbx="245" rby="38"/>
+				</component>
+				<component name="result" library="core" uid="130" kind="7">
+					<sources>
+						<datapoint pos="0" key="5"/>
+					</sources>
+					<view ltx="530" lty="50" rbx="587" rby="88"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="empty" library="lang" uid="135" kind="5">
+					<sources>
+						<datapoint pos="0" key="6"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="169" lty="68" rbx="245" rby="106"/>
+				</component>
+				<component name="logical-not" library="core" uid="137" kind="5">
+					<sources>
+						<datapoint pos="0" key="8"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="284" rbx="367" rby="38"/>
+				</component>
+				<component name="logical-and" library="core" uid="139" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="10"/>
+						<datapoint pos="1" key="11"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view ltx="401" lty="32" rbx="486" rby="88"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="11"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="onlyFounders" library="user" uid="142" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="result" library="core" uid="143" kind="7">
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="800" rbx="857" rby="38"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="keyPersons" library="core" uid="144" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view rbx="114" rby="38"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="keyPersons"/>
+					</data>
+				</component>
+				<component name="founders" library="core" uid="145" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view lty="68" rbx="104" rby="106"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="founders"/>
+					</data>
+				</component>
+				<component name="empty" library="lang" uid="149" kind="5">
+					<sources>
+						<datapoint pos="0" key="4"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="206" lty="68" rbx="282" rby="106"/>
+				</component>
+				<component name="empty" library="lang" uid="147" kind="5">
+					<sources>
+						<datapoint pos="0" key="6"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="206" rbx="282" rby="38"/>
+				</component>
+				<component name="logical-not" library="core" uid="152" kind="5">
+					<sources>
+						<datapoint pos="0" key="8"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="344" lty="68" rbx="427" rby="106"/>
+				</component>
+				<component name="logical-and" library="core" uid="155" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="10"/>
+						<datapoint pos="1" key="11"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view ltx="478" lty="18" rbx="563" rby="74"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="11"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="keyPersonsAndFounders" library="user" uid="158" inline="1" editable="1" blackbox="0">
+		<description/>
+		<structure>
+			<children>
+				<component name="keyPersons" library="core" uid="160" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view rbx="114" rby="38"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="keyPersons"/>
+					</data>
+				</component>
+				<component name="empty" library="lang" uid="163" kind="5">
+					<sources>
+						<datapoint pos="0" key="3"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="198" rbx="274" rby="38"/>
+				</component>
+				<component name="empty" library="lang" uid="165" kind="5">
+					<sources>
+						<datapoint pos="0" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="198" lty="68" rbx="274" rby="106"/>
+				</component>
+				<component name="logical-not" library="core" uid="167" kind="5">
+					<sources>
+						<datapoint pos="0" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="323" rbx="406" rby="38"/>
+				</component>
+				<component name="logical-not" library="core" uid="169" kind="5">
+					<sources>
+						<datapoint pos="0" key="9"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="323" lty="68" rbx="406" rby="106"/>
+				</component>
+				<component name="logical-and" library="core" uid="172" kind="5" growable="1" growablebasename="value">
+					<sources>
+						<datapoint pos="0" key="11"/>
+						<datapoint pos="1" key="12"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="13"/>
+					</targets>
+					<view ltx="455" lty="27" rbx="540" rby="83"/>
+				</component>
+				<component name="result" library="core" uid="159" kind="7">
+					<sources>
+						<datapoint pos="0" key="14"/>
+					</sources>
+					<view ltx="593" lty="27" rbx="650" rby="65"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="founders" library="core" uid="161" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="10" lty="68" rbx="114" rby="106"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="founders"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="14"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>
