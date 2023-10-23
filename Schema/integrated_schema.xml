@@ -1,5 +1,6 @@
 <Companies>
     <Company>
+	<ID>Forbes_1</ID>
         <CompanyName>BioNTech</CompanyName>
         <ISIN>US0378331005</ISIN>
         <LEI>549300VJTTGNEANFBN84</LEI>
