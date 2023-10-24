@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Companies">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Company" maxOccurs="unbounded">
+					<xs:complexType mixed="true">
+						<xs:sequence minOccurs="0">
+							<xs:element name="ID" type="xs:string"/>
+							<xs:element name="CompanyName" type="xs:string"/>
+							<xs:element name="ISIN" type="xs:string"/>
+							<xs:element name="LEI" type="xs:string"/>
+							<xs:element name="Forbes2022Rating" type="xs:byte"/>
+							<xs:element name="Industries">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Industry" maxOccurs="unbounded" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="FoundedYear" type="xs:short"/>
+							<xs:element name="Country" type="xs:string"/>
+							<xs:element name="Region" type="xs:string"/>
+							<xs:element name="KeyPersons">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Person" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Name" type="xs:string"/>
+													<xs:element name="Founder" type="xs:string"/>
+													<xs:element name="Ceo" type="xs:string"/>
+													<xs:element name="other">
+														<xs:complexType>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Revenue" type="xs:long"/>
+							<xs:element name="Assets" type="xs:long"/>
+							<xs:element name="Profit" type="xs:decimal"/>
+							<xs:element name="MarketValue" type="xs:long"/>
+							<xs:element name="SizeEmployees" type="xs:short"/>
+							<xs:element name="SizeCategory" type="xs:string"/>
+							<xs:element name="LegalType" type="xs:string"/>
+							<xs:element name="SustGoalDescription" type="xs:string"/>
+							<xs:element name="SustGoalStatus_NearTerm" type="xs:string"/>
+							<xs:element name="SustGoalStatus_LongTerm" type="xs:string"/>
+							<xs:element name="SustGoalClassification_NearTerm" type="xs:string"/>
+							<xs:element name="SustGoalClassification_LongTerm" type="xs:string"/>
+							<xs:element name="SustGoalYear_NearTerm" type="xs:short"/>
+							<xs:element name="SustGoalYear_LongTerm" type="xs:short"/>
+							<xs:element name="NetZeroCommitted" type="xs:string"/>
+							<xs:element name="NetZeroCommittedYear" type="xs:short"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
