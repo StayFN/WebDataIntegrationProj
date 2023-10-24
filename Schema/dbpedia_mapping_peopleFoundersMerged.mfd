@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2023r2 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="integrated_schema" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="964" lty="-795" rbx="1226" rby="-146"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Companies" expanded="1">
+										<entry name="Company" inpkey="3" expanded="1">
+											<entry name="ID" inpkey="4"/>
+											<entry name="CompanyName" inpkey="5"/>
+											<entry name="Industries" expanded="1">
+												<entry name="Industry" inpkey="6"/>
+											</entry>
+											<entry name="FoundedYear" inpkey="7"/>
+											<entry name="Country" inpkey="30"/>
+											<entry name="KeyPersons" expanded="1">
+												<entry name="Person" inpkey="8" expanded="1">
+													<entry name="Name" inpkey="9"/>
+													<entry name="Founder" inpkey="10"/>
+												</entry>
+											</entry>
+											<entry name="Revenue" inpkey="11"/>
+											<entry name="Assets" inpkey="12"/>
+											<entry name="Profit" inpkey="13"/>
+											<entry name="LegalType" inpkey="14"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="integrated_schema.xsd" instanceroot="{}Companies" inputinstance="integrated_schema.xml" outputinstance="integrated_schema.xml"/>
+					</data>
+				</component>
+				<component name="DBPedia_Companies_Preprocessed" library="text" uid="24" kind="16">
+					<properties/>
+					<view ltx="31" lty="-606" rbx="299" rby="-338"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Zeilen" outkey="31" expanded="1">
+										<entry name="UID" outkey="32"/>
+										<entry name="label" outkey="33"/>
+										<entry name="industries" outkey="34"/>
+										<entry name="founders" outkey="35"/>
+										<entry name="hqLocationCountry" outkey="36"/>
+										<entry name="revenue" outkey="37"/>
+										<entry name="assets" outkey="38"/>
+										<entry name="netIncome" outkey="39"/>
+										<entry name="foundingYear" outkey="40"/>
+										<entry name="type" outkey="41"/>
+										<entry name="keyPeopleFoundersCombined" outkey="42"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="DBPedia_Companies_Preprocessed.csv">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="DBPedia_Companies_Preprocessed" block="Zeilen">
+									<field0 name="UID" type="string"/>
+									<field1 name="company" type="string"/>
+									<field2 name="label" type="string"/>
+									<field3 name="industries" type="string"/>
+									<field4 name="keyPeople" type="string"/>
+									<field5 name="founders" type="string"/>
+									<field6 name="hqLocationCountry" type="string"/>
+									<field7 name="revenue" type="integer"/>
+									<field8 name="assets" type="decimal"/>
+									<field9 name="netIncome" type="decimal"/>
+									<field10 name="foundingYear" type="decimal"/>
+									<field11 name="type" type="string"/>
+									<field12 name="keyPeopleFoundersCombined" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="splitPeople" library="user" uid="19" kind="19" visible="0" blackbox="0">
+					<view ltx="654" lty="-497" rbx="831" rby="-463"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="people_list" inpkey="26" componentid="14"/>
+							<entry name="founders_list" inpkey="27" componentid="20"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="name" outkey="28" componentid="13"/>
+							<entry name="founderBool" outkey="29" componentid="21"/>
+						</root>
+					</data>
+				</component>
+				<component name="splitIndustries" library="user" uid="11" kind="19" visible="0" blackbox="0">
+					<view ltx="548" lty="-566" rbx="692" rby="-549"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="industries_list" inpkey="1" componentid="6"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="2" componentid="5"/>
+						</root>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="34">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="40">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="8"/>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37">
+						<edges>
+							<edge vertexkey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="39">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="41">
+						<edges>
+							<edge vertexkey="14"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="42">
+						<edges>
+							<edge vertexkey="26"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="30"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="splitIndustries" library="user" uid="4" inline="1" editable="1" blackbox="0">
+		<structure>
+			<children>
+				<component name="tokenize" library="core" uid="9" kind="5">
+					<sources>
+						<datapoint pos="0" key="1"/>
+						<datapoint pos="1" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="382" lty="-16" rbx="476" rby="38"/>
+				</component>
+				<component name="industries_list" library="core" uid="6" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="205" lty="-30" rbx="333" rby="8"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="industries_list"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="7" kind="2">
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="285" lty="31" rbx="333" rby="48"/>
+					<data>
+						<constant value=", " datatype="string"/>
+					</data>
+				</component>
+				<component name="result" library="core" uid="5" kind="7">
+					<sources>
+						<datapoint pos="0" key="6"/>
+					</sources>
+					<view ltx="519" lty="-16" rbx="576" rby="22"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="splitPeople" library="user" uid="12" inline="1" editable="1" blackbox="0">
+		<structure>
+			<children>
+				<component name="people_list" library="core" uid="14" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view rbx="113" rby="38"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="people_list"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="17" kind="2">
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="142" lty="51" rbx="190" rby="68"/>
+					<data>
+						<constant value=", " datatype="string"/>
+					</data>
+				</component>
+				<component name="name" library="core" uid="13" kind="7">
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="410" lty="-16" rbx="466" rby="22"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="name"/>
+					</data>
+				</component>
+				<component name="founderBool" library="core" uid="21" kind="7">
+					<sources>
+						<datapoint pos="0" key="3"/>
+					</sources>
+					<view ltx="620" lty="64" rbx="713" rby="102"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="founderBool"/>
+					</data>
+				</component>
+				<component name="contains" library="core" uid="23" kind="5">
+					<sources>
+						<datapoint pos="0" key="6"/>
+						<datapoint pos="1" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="431" lty="64" rbx="529" rby="118"/>
+				</component>
+				<component name="tokenize" library="core" uid="16" kind="5">
+					<sources>
+						<datapoint pos="0" key="9"/>
+						<datapoint pos="1" key="10"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="219" lty="-16" rbx="313" rby="38"/>
+				</component>
+				<component name="founders_list" library="core" uid="20" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="11"/>
+					</targets>
+					<view lty="100" rbx="124" rby="138"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="founders_list"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="1"/>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>
