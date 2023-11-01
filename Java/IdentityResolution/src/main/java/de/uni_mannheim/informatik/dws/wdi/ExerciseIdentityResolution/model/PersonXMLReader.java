@@ -44,7 +44,7 @@ public class PersonXMLReader extends XMLMatchableReader<Person, Attribute> {
 		if (other.equalsIgnoreCase("other")) {
 			person.setOther(true);
 		}
-		
+
 		else if (other.equalsIgnoreCase("false")){
 			person.setOther(false);
 		}

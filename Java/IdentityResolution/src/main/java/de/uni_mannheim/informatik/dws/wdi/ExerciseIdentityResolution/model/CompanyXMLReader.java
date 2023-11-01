@@ -58,6 +58,15 @@ public class CompanyXMLReader extends XMLMatchableReader<Company, Attribute>  {
 		company.setCountry(getValueFromChildElement(node, "Country"));
 		company.setRegion(getValueFromChildElement(node, "Region"));
 // Set KeyPersons
+		// load the list of actors
+		//List<Actor> actors = getObjectListFromChildElement(node, "actors",
+		//		"actor", new ActorXMLReader(), provenanceInfo);
+		//movie.setActors(actors);
+
+		List<Person> persons = getObjectListFromChildElement(node, "KeyPersons", "Person",
+				new PersonXMLReader(), provenanceInfo);
+
+		company.setKeyPersons(persons);
 
 		company.setRevenue(Long.parseLong(getValueFromChildElement(node, "Revenue")));
 		company.setAssets(Long.parseLong(getValueFromChildElement(node, "Assets")));
