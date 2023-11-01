@@ -24,28 +24,28 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * A {@link XMLMatchableReader} for {@link Movie}s.
+ * A {@link XMLMatchableReader} for {@link Commpany}s.
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class CompanyXMLReader extends XMLMatchableReader<Movie, Attribute>  {
+public class CompanyXMLReader extends XMLMatchableReader<Company, Attribute>  {
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.model.io.XMLMatchableReader#initialiseDataset(de.uni_mannheim.informatik.wdi.model.DataSet)
 	 */
 	@Override
-	protected void initialiseDataset(DataSet<Movie, Attribute> dataset) {
+	protected void initialiseDataset(DataSet<Company, Attribute> dataset) {
 		super.initialiseDataset(dataset);
 		
 	}
 	
 	@Override
-	public Movie createModelFromElement(Node node, String provenanceInfo) {
-		String id = getValueFromChildElement(node, "id");
+	public Company createModelFromElement(Node node, String provenanceInfo) {
+		String id = getValueFromChildElement(node, "ID");
 
 		// create the object with id and provenance information
-		Movie movie = new Movie(id, provenanceInfo);
+		Company company = new Company(id, provenanceInfo);
 
 		// fill the attributes
 		movie.setTitle(getValueFromChildElement(node, "title"));
