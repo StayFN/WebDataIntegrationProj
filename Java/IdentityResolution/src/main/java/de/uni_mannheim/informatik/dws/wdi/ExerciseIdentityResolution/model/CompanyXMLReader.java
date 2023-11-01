@@ -42,38 +42,47 @@ public class CompanyXMLReader extends XMLMatchableReader<Company, Attribute>  {
 	
 	@Override
 	public Company createModelFromElement(Node node, String provenanceInfo) {
+
 		String id = getValueFromChildElement(node, "ID");
 
 		// create the object with id and provenance information
 		Company company = new Company(id, provenanceInfo);
 
 		// fill the attributes
-		movie.setTitle(getValueFromChildElement(node, "title"));
-		movie.setDirector(getValueFromChildElement(node, "director"));
+		company.setCompanyName(getValueFromChildElement(node, "CompanyName"));
+		company.setISIN(getValueFromChildElement(node, "ISIN"));
+		company.setLEI(getValueFromChildElement(node, "LEI"));
+		company.setForbes2022Rating(Integer.parseInt(getValueFromChildElement(node, "Forbes2022Rating")));
+		company.setIndustries(getListFromChildElement(node, "Industries" ));
+		company.setFoundedYear(Integer.parseInt(getValueFromChildElement(node, "FoundedYear")));
+		company.setCountry(getValueFromChildElement(node, "Country"));
+		company.setRegion(getValueFromChildElement(node, "Region"));
+// Set KeyPersons
 
-		// convert the date string into a DateTime object
-		try {
-			String date = getValueFromChildElement(node, "date");
-			if (date != null && !date.isEmpty()) {
-				DateTimeFormatter formatter = new DateTimeFormatterBuilder()
-				        .appendPattern("yyyy-MM-dd")
-				        .parseDefaulting(ChronoField.CLOCK_HOUR_OF_DAY, 0)
-				        .parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0)
-				        .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
-				        .toFormatter(Locale.ENGLISH);
-				LocalDateTime dt = LocalDateTime.parse(date, formatter);
-				movie.setDate(dt);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		company.setRevenue(Long.parseLong(getValueFromChildElement(node, "Revenue")));
+		company.setAssets(Long.parseLong(getValueFromChildElement(node, "Assets")));
+		company.setProfit(Long.parseLong(getValueFromChildElement(node, "Profit")));
+		company.setMarketValue(Long.parseLong(getValueFromChildElement(node, "MarketValue")));
+		company.setSizeEmployees(Integer.parseInt(getValueFromChildElement(node, "SizeEmployees")));
+		company.setSizeCategory(getValueFromChildElement(node, "SizeCategory"));
+		company.setLegalType(getValueFromChildElement(node, "LegalType"));
+		company.setSustGoalDescription(getValueFromChildElement(node, "SustGoalDescription"));
+		company.setSustGoalStatus_NearTerm(getValueFromChildElement(node, "SustGoalStatus_NearTerm"));
+		company.setSustGoalStatus_LongTerm(getValueFromChildElement(node, "SustGoalStatus_LongTerm"));
+		company.setSustGoalClassification_NearTerm(getValueFromChildElement(node, "SustGoalClassification_NearTerm"));
+		company.setSustGoalClassification_LongTerm(getValueFromChildElement(node, "SustGoalClassification_LongTerm"));
+		company.setSustGoalYear_NearTerm(Integer.parseInt(getValueFromChildElement(node, "SustGoalYear_NearTerm")));
+		company.setSustGoalYear_LongTerm(Integer.parseInt(getValueFromChildElement(node, "SustGoalYear_LongTerm")));
+		company.setNetZeroCommitted(Boolean.parseBoolean(getValueFromChildElement(node, "NetZeroCommitted")));
+		company.setNetZeroCommittedYear(Integer.parseInt(getValueFromChildElement(node, "NetZeroCommittedYear")));
+
 
 		// load the list of actors
-		List<Actor> actors = getObjectListFromChildElement(node, "actors",
-				"actor", new ActorXMLReader(), provenanceInfo);
-		movie.setActors(actors);
+		//List<Actor> actors = getObjectListFromChildElement(node, "actors",
+		//		"actor", new ActorXMLReader(), provenanceInfo);
+		//movie.setActors(actors);
 
-		return movie;
+		return company;
 	}
 
 }
