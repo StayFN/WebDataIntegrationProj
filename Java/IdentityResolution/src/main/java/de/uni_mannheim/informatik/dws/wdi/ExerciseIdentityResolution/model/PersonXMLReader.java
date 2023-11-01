@@ -24,27 +24,28 @@ public class PersonXMLReader extends XMLMatchableReader<Person, Attribute> {
 		person.setName(getValueFromChildElement(node, "name"));
 		
 		String founder = getValueFromChildElement(node, "founder");
-		if (founder.toLowerCase()=="true") {
+		if (founder.equalsIgnoreCase("true")) {
 			person.setFounder(true);
 		}
-		else if (founder.toLowerCase()=="false"){
+		else if (founder.equalsIgnoreCase("false")){
 			person.setFounder(false);
 		}
 		//person.setFounder((getValueFromChildElement(node, "founder")));
 
 		String ceo = getValueFromChildElement(node, "ceo");
-		if (ceo.toLowerCase()=="true") {
+		if (ceo.equalsIgnoreCase("true")) {
 			person.setCEO(true);
 		}
-		else if (ceo.toLowerCase()=="false"){
+		else if (ceo.equalsIgnoreCase("false")) {
 			person.setCEO(false);
 		}
 		
 		String other = getValueFromChildElement(node, "other");
-		if (other.toLowerCase()=="true") {
+		if (other.equalsIgnoreCase("other")) {
 			person.setOther(true);
 		}
-		else if (other.toLowerCase()=="false"){
+		
+		else if (other.equalsIgnoreCase("false")){
 			person.setOther(false);
 		}
 		
