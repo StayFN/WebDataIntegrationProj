@@ -2,6 +2,8 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import java.io.File;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Company;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.CompanyXMLReader;
 import org.slf4j.Logger;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
@@ -25,6 +27,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+import org.w3c.dom.Attr;
 
 public class IR_using_linear_combination 
 {
@@ -47,17 +50,39 @@ public class IR_using_linear_combination
     {
 		// loading data
 		logger.info("*\tLoading datasets\t*");
-		HashedDataSet<Movie, Attribute> dataAcademyAwards = new HashedDataSet<>();
-		new MovieXMLReader().loadFromXML(new File("data/input/academy_awards.xml"), "/movies/movie", dataAcademyAwards);
-		HashedDataSet<Movie, Attribute> dataActors = new HashedDataSet<>();
-		new MovieXMLReader().loadFromXML(new File("data/input/actors.xml"), "/movies/movie", dataActors);
 
-		// load the gold standard (test set)
+
+		//HashedDataSet<Movie, Attribute> dataAcademyAwards = new HashedDataSet<>();
+		//new MovieXMLReader().loadFromXML(new File("data/input/academy_awards.xml"), "/movies/movie", dataAcademyAwards);
+
+
+		//HashedDataSet<Movie, Attribute> dataActors = new HashedDataSet<>();
+		//new MovieXMLReader().loadFromXML(new File("data/input/actors.xml"), "/movies/movie", dataActors);
+
+		HashedDataSet<Company, Attribute> dataForbes = new HashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("data/input/forbes_integrated.xml"), "/Companies/Company", dataForbes);
+
+		HashedDataSet<Company, Attribute>  dataSbti = new HashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("data/input/sbti_integrated.xml"), "/Companies/Company", dataSbti);
+
+		HashedDataSet<Company, Attribute>  dataDbPedia = new HashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("data/input/dbpedia_integrated.xml"), "/Companies/Company", dataDbPedia);
+
+		//load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
-		MatchingGoldStandard gsTest = new MatchingGoldStandard();
-		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_academy_awards_2_actors_test.csv"));
+		MatchingGoldStandard gsDbpedia_Forbes = new MatchingGoldStandard();
+		gsDbpedia_Forbes.loadFromCSVFile(new File(
+				"data/goldstandard/dbpedia_forbes_goldstandard.csv"));
 
+		MatchingGoldStandard gsDbpedia_Sbti = new MatchingGoldStandard();
+		gsDbpedia_Sbti.loadFromCSVFile(new File(
+				"data/goldstandard/dbpedia_sbti_goldstandard.csv"));
+
+		MatchingGoldStandard gsSbti_Forbes = new MatchingGoldStandard();
+		gsSbti_Forbes.loadFromCSVFile(new File(
+				"data/goldstandard/sbti_forbes_goldstandard.csv"));
+
+		/*
 		// create a matching rule
 		LinearCombinationMatchingRule<Movie, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
 				0.7);
@@ -109,6 +134,6 @@ public class IR_using_linear_combination
 		logger.info(String.format(
 				"Recall: %.4f",	perfTest.getRecall()));
 		logger.info(String.format(
-				"F1: %.4f",perfTest.getF1()));
+				"F1: %.4f",perfTest.getF1()));*/
     }
 }

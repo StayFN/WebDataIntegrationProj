@@ -16,15 +16,11 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader;
 import org.w3c.dom.Node;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
-import java.time.temporal.ChronoField;
+import java.lang.reflect.Method;
 import java.util.List;
-import java.util.Locale;
 
 /**
- * A {@link XMLMatchableReader} for {@link Commpany}s.
+ * A {@link XMLMatchableReader} for {@link Company}s.
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
@@ -42,56 +38,110 @@ public class CompanyXMLReader extends XMLMatchableReader<Company, Attribute>  {
 	
 	@Override
 	public Company createModelFromElement(Node node, String provenanceInfo) {
-
 		String id = getValueFromChildElement(node, "ID");
 
 		// create the object with id and provenance information
 		Company company = new Company(id, provenanceInfo);
 
 		// fill the attributes
-		company.setCompanyName(getValueFromChildElement(node, "CompanyName"));
-		company.setISIN(getValueFromChildElement(node, "ISIN"));
-		company.setLEI(getValueFromChildElement(node, "LEI"));
-		company.setForbes2022Rating(Integer.parseInt(getValueFromChildElement(node, "Forbes2022Rating")));
-		company.setIndustries(getListFromChildElement(node, "Industries" ));
-		company.setFoundedYear(Integer.parseInt(getValueFromChildElement(node, "FoundedYear")));
-		company.setCountry(getValueFromChildElement(node, "Country"));
-		company.setRegion(getValueFromChildElement(node, "Region"));
-// Set KeyPersons
-		// load the list of actors
-		//List<Actor> actors = getObjectListFromChildElement(node, "actors",
-		//		"actor", new ActorXMLReader(), provenanceInfo);
-		//movie.setActors(actors);
+		setAttributeIfPresent(company, "CompanyName", node, "setCompanyName");
+		setAttributeIfPresent(company, "ISIN", node, "setISIN");
+		setAttributeIfPresent(company, "LEI", node, "setLEI");
+		setIntegerAttributeIfPresent(company, "Forbes2022Rating", node, "setForbes2022Rating");
+		setListAttributeIfPresent(company, "Industries", node, "setIndustries");
+		setIntegerAttributeIfPresent(company, "FoundedYear", node, "setFoundedYear");
+		setAttributeIfPresent(company, "Country", node, "setCountry");
+		setAttributeIfPresent(company, "Region", node, "setRegion");
+
 
 		List<Person> persons = getObjectListFromChildElement(node, "KeyPersons", "Person",
 				new PersonXMLReader(), provenanceInfo);
 
-		company.setKeyPersons(persons);
+		if (persons != null && !persons.isEmpty()) {
+			company.setKeyPersons(persons);
+		}
 
-		company.setRevenue(Long.parseLong(getValueFromChildElement(node, "Revenue")));
-		company.setAssets(Long.parseLong(getValueFromChildElement(node, "Assets")));
-		company.setProfit(Long.parseLong(getValueFromChildElement(node, "Profit")));
-		company.setMarketValue(Long.parseLong(getValueFromChildElement(node, "MarketValue")));
-		company.setSizeEmployees(Integer.parseInt(getValueFromChildElement(node, "SizeEmployees")));
-		company.setSizeCategory(getValueFromChildElement(node, "SizeCategory"));
-		company.setLegalType(getValueFromChildElement(node, "LegalType"));
-		company.setSustGoalDescription(getValueFromChildElement(node, "SustGoalDescription"));
-		company.setSustGoalStatus_NearTerm(getValueFromChildElement(node, "SustGoalStatus_NearTerm"));
-		company.setSustGoalStatus_LongTerm(getValueFromChildElement(node, "SustGoalStatus_LongTerm"));
-		company.setSustGoalClassification_NearTerm(getValueFromChildElement(node, "SustGoalClassification_NearTerm"));
-		company.setSustGoalClassification_LongTerm(getValueFromChildElement(node, "SustGoalClassification_LongTerm"));
-		company.setSustGoalYear_NearTerm(Integer.parseInt(getValueFromChildElement(node, "SustGoalYear_NearTerm")));
-		company.setSustGoalYear_LongTerm(Integer.parseInt(getValueFromChildElement(node, "SustGoalYear_LongTerm")));
-		company.setNetZeroCommitted(Boolean.parseBoolean(getValueFromChildElement(node, "NetZeroCommitted")));
-		company.setNetZeroCommittedYear(Integer.parseInt(getValueFromChildElement(node, "NetZeroCommittedYear")));
-
-
-		// load the list of actors
-		//List<Actor> actors = getObjectListFromChildElement(node, "actors",
-		//		"actor", new ActorXMLReader(), provenanceInfo);
-		//movie.setActors(actors);
+		setLongAttributeIfPresent(company, "Revenue", node, "setRevenue");
+		setLongAttributeIfPresent(company, "Assets", node, "setAssets");
+		setLongAttributeIfPresent(company, "Profit", node, "setProfit");
+		setLongAttributeIfPresent(company, "MarketValue", node, "setMarketValue");
+		setIntegerAttributeIfPresent(company, "SizeEmployees", node, "setSizeEmployees");
+		setAttributeIfPresent(company, "SizeCategory", node, "setSizeCategory");
+		setAttributeIfPresent(company, "LegalType", node, "setLegalType");
+		setAttributeIfPresent(company, "SustGoalDescription", node, "setSustGoalDescription");
+		setAttributeIfPresent(company, "SustGoalStatus_NearTerm", node, "setSustGoalStatus_NearTerm");
+		setAttributeIfPresent(company, "SustGoalStatus_LongTerm", node, "setSustGoalStatus_LongTerm");
+		setAttributeIfPresent(company, "SustGoalClassification_NearTerm", node, "setSustGoalClassification_NearTerm");
+		setAttributeIfPresent(company, "SustGoalClassification_LongTerm", node, "setSustGoalClassification_LongTerm");
+		setIntegerAttributeIfPresent(company, "SustGoalYear_NearTerm", node, "setSustGoalYear_NearTerm");
+		setIntegerAttributeIfPresent(company, "SustGoalYear_LongTerm", node, "setSustGoalYear_LongTerm");
+		setBooleanAttributeIfPresent(company, "NetZeroCommitted", node, "setNetZeroCommitted");
+		setIntegerAttributeIfPresent(company, "NetZeroCommittedYear", node, "setNetZeroCommittedYear");
 
 		return company;
 	}
+	private void setAttributeIfPresent(Company company, String elementName, Node node, String setterName) {
+		String value = getValueFromChildElement(node, elementName);
+		if (value != null && !value.isEmpty()) {
+			try {
+				Method setter = Company.class.getMethod(setterName, String.class);
+				setter.invoke(company, value);
+			} catch (Exception e) {
+				e.printStackTrace(); // Handle or log the exception as needed
+			}
+		}
+	}
+
+	private void setIntegerAttributeIfPresent(Company company, String elementName, Node node, String setterName) {
+		String value = getValueFromChildElement(node, elementName);
+		if (value != null && !value.isEmpty()) {
+			try {
+				int intValue = Integer.parseInt(value);
+				Method setter = Company.class.getMethod(setterName, int.class);
+				setter.invoke(company, intValue);
+			} catch (Exception e) {
+				e.printStackTrace(); // Handle or log the exception as needed
+			}
+		}
+	}
+
+	private void setLongAttributeIfPresent(Company company, String elementName, Node node, String setterName) {
+		String value = getValueFromChildElement(node, elementName);
+		if (value != null && !value.isEmpty()) {
+			try {
+				long longValue = Long.parseLong(value);
+				Method setter = Company.class.getMethod(setterName, long.class);
+				setter.invoke(company, longValue);
+			} catch (Exception e) {
+				e.printStackTrace(); // Handle or log the exception as needed
+			}
+		}
+	}
+
+	private void setListAttributeIfPresent(Company company, String elementName, Node node, String setterName) {
+		List<String> values = getListFromChildElement(node, elementName);
+		if (values != null && !values.isEmpty()) {
+			try {
+				Method setter = Company.class.getMethod(setterName, List.class);
+				setter.invoke(company, values);
+			} catch (Exception e) {
+				e.printStackTrace(); // Handle or log the exception as needed
+			}
+		}
+	}
+
+	private void setBooleanAttributeIfPresent(Company company, String elementName, Node node, String setterName) {
+		String value = getValueFromChildElement(node, elementName);
+		if (value != null && !value.isEmpty()) {
+			try {
+				boolean booleanValue = Boolean.parseBoolean(value);
+				Method setter = Company.class.getMethod(setterName, boolean.class);
+				setter.invoke(company, booleanValue);
+			} catch (Exception e) {
+				e.printStackTrace(); // Handle or log the exception as needed
+			}
+		}
+	}
+
 
 }

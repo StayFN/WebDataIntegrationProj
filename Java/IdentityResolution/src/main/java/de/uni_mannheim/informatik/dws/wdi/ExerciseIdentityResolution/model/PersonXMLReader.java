@@ -22,35 +22,36 @@ public class PersonXMLReader extends XMLMatchableReader<Person, Attribute> {
 
 		// fill the attributes
 		person.setName(getValueFromChildElement(node, "name"));
-		
+
 		String founder = getValueFromChildElement(node, "founder");
-		if (founder.equalsIgnoreCase("true")) {
-			person.setFounder(true);
+		if (founder != null) {
+			if (founder.equalsIgnoreCase("true")) {
+				person.setFounder(true);
+			} else if (founder.equalsIgnoreCase("false")) {
+				person.setFounder(false);
+			}
 		}
-		else if (founder.equalsIgnoreCase("false")){
-			person.setFounder(false);
-		}
-		//person.setFounder((getValueFromChildElement(node, "founder")));
 
 		String ceo = getValueFromChildElement(node, "ceo");
-		if (ceo.equalsIgnoreCase("true")) {
-			person.setCEO(true);
-		}
-		else if (ceo.equalsIgnoreCase("false")) {
-			person.setCEO(false);
-		}
-		
-		String other = getValueFromChildElement(node, "other");
-		if (other.equalsIgnoreCase("other")) {
-			person.setOther(true);
+		if (ceo != null) {
+			if (ceo.equalsIgnoreCase("true")) {
+				person.setCEO(true);
+			} else if (ceo.equalsIgnoreCase("false")) {
+				person.setCEO(false);
+			}
 		}
 
-		else if (other.equalsIgnoreCase("false")){
-			person.setOther(false);
+		String other = getValueFromChildElement(node, "other");
+		if (other != null) {
+			if (other.equalsIgnoreCase("other")) {
+				person.setOther(true);
+			} else if (other.equalsIgnoreCase("false")) {
+				person.setOther(false);
+			}
 		}
-		
 
 		return person;
 	}
+
 
 }

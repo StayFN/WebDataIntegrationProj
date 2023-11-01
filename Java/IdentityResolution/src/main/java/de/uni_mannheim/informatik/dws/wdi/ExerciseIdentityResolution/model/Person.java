@@ -1,7 +1,7 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model;
 
 import java.io.Serializable;
-
+import java.util.UUID;
 import de.uni_mannheim.informatik.dws.winter.model.AbstractRecord;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
@@ -23,7 +23,7 @@ public class Person extends AbstractRecord<Attribute> implements Serializable {
 	private Boolean other;
 	
 	public Person(String identifier, String provenance) {
-		super(identifier, provenance);
+		super(UUID.randomUUID().toString(), provenance);
 	}
 
 	public String getName() {
