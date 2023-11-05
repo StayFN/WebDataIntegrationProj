@@ -12,42 +12,152 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model;
 
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
+
+import java.util.List;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 /**
- * {@link XMLFormatter} for {@link Movie}s.
+ * {@link XMLFormatter} for {@link Company}s.
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class CompanyXMLFormatter extends XMLFormatter<Movie> {
+public class CompanyXMLFormatter extends XMLFormatter<Company> {
 
-	ActorXMLFormatter actorFormatter = new ActorXMLFormatter();
+	PersonXMLFormatter personFormatter = new PersonXMLFormatter();
 
 	@Override
 	public Element createRootElement(Document doc) {
-		return doc.createElement("movies");
+		return doc.createElement("Companys");
 	}
 
+	/*
+	 * 	private String ISIN;
+	private String LEI;
+	private Integer forbes2022Rating;
+	private List<String> Industries;
+	private Integer foundedYear;
+	private String country;
+	private String region;
+	private List<Person> keyPersons;
+	private Long revenue;
+	private Long assets;
+	private Long profit;
+	private Long marketValue;
+	private Integer sizeEmployees;
+	private String sizeCategory;
+	private String legalType;
+	private String SustGoalDescription;
+	private String SustGoalStatus_NearTerm;
+	private String SustGoalStatus_LongTerm;
+	private String SustGoalClassification_NearTerm;
+	private String SustGoalClassification_LongTerm;
+	private Integer SustGoalYear_NearTerm;
+	private Integer SustGoalYear_LongTerm;
+	private Boolean NetZeroCommitted;
+	private Integer NetZeroCommittedYear;
+	 * 
+	 * 
+	 */
+	
+	
 	@Override
-	public Element createElementFromRecord(Movie record, Document doc) {
-		Element movie = doc.createElement("movie");
+	public Element createElementFromRecord(Company record, Document doc) {
+		Element Company = doc.createElement("Company");
 
-		movie.appendChild(createTextElement("id", record.getIdentifier(), doc));
+		Company.appendChild(createTextElement("ID", record.getIdentifier(), doc));
 
-		movie.appendChild(createTextElement("title",
-				record.getTitle(),
+		Company.appendChild(createTextElement("ISIN",
+				record.getISIN(),
 				doc));
-		movie.appendChild(createTextElement("director",
-				record.getDirector(),
+		Company.appendChild(createTextElement("LEI",
+				record.getLEI(),
 				doc));
-		movie.appendChild(createTextElement("date", record
-				.getDate().toString(), doc));
+		Company.appendChild(createTextElement("forbes2022Rating", String.valueOf(record
+				.getForbes2022Rating()), doc));
+		
+		List<String> industries = record.getIndustries(); // Assuming 'record' is an object that has a method 'getIndustries' that returns a list of industries.
 
-		movie.appendChild(createActorsElement(record, doc));
+		// Create the "Industries" parent element
+		Element industriesElement = doc.createElement("Industries");
+		for (String industry : industries) {
+		    // Create a text element for each industry and append it to the "Industries" element
+		    Element industryElement = doc.createElement("Industry");
+		    industryElement.appendChild(doc.createTextNode(industry));
+		    industriesElement.appendChild(industryElement);
+		}
+		Company.appendChild(industriesElement);
+		
+		
+		Company.appendChild(createTextElement("Country",
+				record.getCountry(),
+				doc));
+		Company.appendChild(createTextElement("Region",
+				record.getRegion(),
+				doc));
+		Company.appendChild(createTextElement("keyPersons",
+				String.valueOf(record.getKeyPersons()),
+				doc));
+		Company.appendChild(createTextElement("Revenue",
+				String.valueOf(record.getRevenue()),
+				doc));
+		Company.appendChild(createTextElement("Asset",
+				record.getRegion(),
+				doc));
+		Company.appendChild(createTextElement("Profit",
+				String.valueOf(record.getProfit()),
+				doc));
+		Company.appendChild(createTextElement("Revenue",
+				String.valueOf(record.getRevenue()),
+				doc));
+		Company.appendChild(createTextElement("Market Value",
+				String.valueOf(record.getMarketValue()),
+				doc));
+		Company.appendChild(createTextElement("Size Employees",
+				String.valueOf(record.getSizeEmployees()),
+				doc));
+		Company.appendChild(createTextElement("Size Category",
+				String.valueOf(record.getSizeEmployees()),
+				doc));
+		Company.appendChild(createTextElement("Legal Type",
+				record.getLegalType(),
+				doc));
+		Company.appendChild(createTextElement("SustGoalDescription",
+				record.getSustGoalDescription(),
+				doc));
+		Company.appendChild(createTextElement("SustGoalStatus_NearTerm",
+				record.getSustGoalStatus_NearTerm(),
+				doc));
+		Company.appendChild(createTextElement("SustGoalStatus_LongTerm",
+				record.getSustGoalStatus_LongTerm(),
+				doc));
+		Company.appendChild(createTextElement("SustGoalStatus_NearTerm",
+				record.getRegion(),
+				doc));
+		Company.appendChild(createTextElement("SustGoalClassification_NearTerm",
+				record.getSustGoalClassification_NearTerm(),
+				doc));
+		Company.appendChild(createTextElement("SustGoalClassification_LongTerm",
+				record.getSustGoalClassification_LongTerm(),
+				doc));
+		Company.appendChild(createTextElement("SustGoalYear_NearTerm",
+				String.valueOf(record.getSustGoalYear_NearTerm()),
+				doc));
+		Company.appendChild(createTextElement("SustGoalYear_LongTerm",
+				String.valueOf(record.getSustGoalYear_NearTerm()),
+				doc));
+		Company.appendChild(createTextElement("NetZeroCommitted",
+				String.valueOf(record.isNetZeroCommitted()),
+				doc));
+		Company.appendChild(createTextElement("NetZeroCommittedYear",
+				String.valueOf(record.getNetZeroCommittedYear()),
+				doc));
+		
+		Company.appendChild(createKeyPersonsElement(record, doc));
 
-		return movie;
+		return Company;
 	}
 
 	protected Element createTextElementWithProvenance(String name,
@@ -57,15 +167,14 @@ public class CompanyXMLFormatter extends XMLFormatter<Movie> {
 		return elem;
 	}
 
-	protected Element createActorsElement(Movie record, Document doc) {
-		Element actorRoot = actorFormatter.createRootElement(doc);
+	protected Element createKeyPersonsElement(Company record, Document doc) {
+		Element personRoot = personFormatter.createRootElement(doc);
 
-		for (Actor a : record.getActors()) {
-			actorRoot.appendChild(actorFormatter
-					.createElementFromRecord(a, doc));
+		for (Person a : record.getKeyPersons()) {
+			personRoot.appendChild(personFormatter.createElementFromRecord(a, doc));
 		}
 
-		return actorRoot;
+		return personRoot;
 	}
 
 }
