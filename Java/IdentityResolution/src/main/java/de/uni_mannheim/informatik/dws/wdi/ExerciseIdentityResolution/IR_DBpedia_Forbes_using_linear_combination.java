@@ -3,18 +3,14 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import java.io.File;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.CompanyXMLReader;
 import org.slf4j.Logger;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AssetsComparatorPercentage;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.ProfitComparatorPercentage;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RevenueComparatorPercentage;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.CompanyBlockingKeyByNameGenerator;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.MovieXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -76,18 +72,22 @@ public class IR_DBpedia_Forbes_using_linear_combination
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsDbpedia_Forbes);
 		
 		// add comparators
-		matchingRule.addComparator(new ProfitComparatorPercentage(), 0.3);
-		matchingRule.addComparator(new RevenueComparatorPercentage(), 0.4);
-		matchingRule.addComparator(new AssetsComparatorPercentage(), 0.3);
-		
-		
+		//matchingRule.addComparator(new ProfitComparatorPercentage(), 0.3);
+		//matchingRule.addComparator(new RevenueComparatorPercentage(), 0.4);
+		//matchingRule.addComparator(new AssetsComparatorPercentage(), 0.3);
+		//matchingRule.addComparator(new IndustryComparator(), 1.0);
+		matchingRule.addComparator(new CompanyNameComparatorJaro(), 1.0);
+
+
+
+
 		// create a blocker (blocking strategy)
 //		StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingByTitleGenerator());
-//		NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
-		SortedNeighbourhoodBlocker<Company, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new CompanyBlockingKeyByNameGenerator(), 1);
-		blocker.setMeasureBlockSizes(true);
+	NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
+		//SortedNeighbourhoodBlocker<Company, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new CompanyBlockingKeyByNameGenerator(), 1);
+		//blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
-		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		//blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
 		MatchingEngine<Company, Attribute> engine = new MatchingEngine<>();

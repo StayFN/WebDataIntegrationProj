@@ -74,6 +74,10 @@ public class IndustryComparator implements Comparator<Company, Attribute> {
 		List<String> industries1 = record1.getIndustries();
 		List<String> industries2 = record2.getIndustries();
 
+		if (industries1 == null || industries2 == null) {
+			return 0.0;
+		}
+
 		// Preprocess and transform lists into sets for comparison.
 		Set<String> set1 = new HashSet<>();
 		Set<String> set2 = new HashSet<>();
