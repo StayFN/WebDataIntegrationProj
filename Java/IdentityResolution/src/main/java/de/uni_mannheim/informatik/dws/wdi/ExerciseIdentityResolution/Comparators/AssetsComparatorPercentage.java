@@ -40,4 +40,14 @@ public class AssetsComparatorPercentage implements Comparator<Company, Attribute
 		return similarity;
 
 	}
+
+	@Override
+	public ComparatorLogger getComparisonLog() {
+		return this.comparisonLog;
+	}
+
+	@Override
+	public void setComparisonLog(ComparatorLogger comparatorLog) {
+		this.comparisonLog = comparatorLog;
+	}
 }

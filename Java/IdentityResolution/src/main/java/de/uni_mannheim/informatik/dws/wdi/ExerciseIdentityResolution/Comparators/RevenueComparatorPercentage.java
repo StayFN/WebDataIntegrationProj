@@ -18,7 +18,9 @@ public class RevenueComparatorPercentage implements Comparator<Company, Attribut
 	private PercentageSimilarity sim = new PercentageSimilarity(0.1);
 	
 	private ComparatorLogger comparisonLog;
-	
+
+
+
 	@Override
 	public double compare(
 			Company record1,
@@ -27,6 +29,7 @@ public class RevenueComparatorPercentage implements Comparator<Company, Attribut
     	
 		double record1_double = record1.getRevenue(); // calculate function only takes double
 		double record2_double = record2.getRevenue(); // calculate function only takes double
+
     	double similarity = sim.calculate(record1_double, record2_double);
     	
 		if(this.comparisonLog != null){
@@ -39,6 +42,16 @@ public class RevenueComparatorPercentage implements Comparator<Company, Attribut
 		}
 		return similarity;
 
+	}
+
+	@Override
+	public ComparatorLogger getComparisonLog() {
+		return this.comparisonLog;
+	}
+
+	@Override
+	public void setComparisonLog(ComparatorLogger comparatorLog) {
+		this.comparisonLog = comparatorLog;
 	}
 	
 }

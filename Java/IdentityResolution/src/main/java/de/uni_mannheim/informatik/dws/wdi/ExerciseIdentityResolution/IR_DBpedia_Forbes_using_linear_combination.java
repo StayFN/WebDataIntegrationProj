@@ -77,6 +77,8 @@ public class IR_DBpedia_Forbes_using_linear_combination
 		//matchingRule.addComparator(new AssetsComparatorPercentage(), 0.3);
 		//matchingRule.addComparator(new IndustryComparator(), 1.0);
 		matchingRule.addComparator(new CompanyNameComparatorJaro(), 1.0);
+		//matchingRule.addComparator(new RevenueComparatorPercentage(), 1.0);
+
 
 
 
