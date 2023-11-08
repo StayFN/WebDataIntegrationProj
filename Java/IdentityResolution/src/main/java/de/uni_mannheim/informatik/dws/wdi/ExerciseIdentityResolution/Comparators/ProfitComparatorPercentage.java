@@ -16,7 +16,7 @@ import de.uni_mannheim.informatik.dws.winter.similarity.numeric.PercentageSimila
 public class ProfitComparatorPercentage implements Comparator<Company, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private PercentageSimilarity sim = new PercentageSimilarity(0.1);
+	private PercentageSimilarity sim = new PercentageSimilarity(0.99);
 	
 	private ComparatorLogger comparisonLog;
 	
@@ -26,6 +26,10 @@ public class ProfitComparatorPercentage implements Comparator<Company, Attribute
 			Company record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
     	
+		if(record1.getProfit() == null || record2.getProfit() == null) {
+			return 0.0;
+		}
+		
 		double record1_double = record1.getProfit();
 		double record2_double = record2.getProfit();
     	double similarity = sim.calculate(record1_double, record2_double);

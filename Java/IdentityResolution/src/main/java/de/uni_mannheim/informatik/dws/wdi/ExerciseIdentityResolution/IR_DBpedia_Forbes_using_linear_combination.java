@@ -72,24 +72,23 @@ public class IR_DBpedia_Forbes_using_linear_combination
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsDbpedia_Forbes);
 		
 		// add comparators
-		//matchingRule.addComparator(new ProfitComparatorPercentage(), 0.3);
-		//matchingRule.addComparator(new RevenueComparatorPercentage(), 0.4);
-		//matchingRule.addComparator(new AssetsComparatorPercentage(), 0.3);
-		//matchingRule.addComparator(new IndustryComparator(), 1.0);
-		matchingRule.addComparator(new CompanyNameComparatorJaro(), 1.0);
+		matchingRule.addComparator(new ProfitComparatorPercentage(), 1.0);
 		//matchingRule.addComparator(new RevenueComparatorPercentage(), 1.0);
+		//matchingRule.addComparator(new AssetsComparatorPercentage(), 1.0);
+		//matchingRule.addComparator(new IndustryComparator(), 1.0);
+		//matchingRule.addComparator(new CompanyNameComparatorJaro(), 1.0);
 
 
 
 
 
 		// create a blocker (blocking strategy)
-//		StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingByTitleGenerator());
-	NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
+		StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
+	//NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
 		//SortedNeighbourhoodBlocker<Company, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new CompanyBlockingKeyByNameGenerator(), 1);
-		//blocker.setMeasureBlockSizes(true);
+		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
-		//blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
 		MatchingEngine<Company, Attribute> engine = new MatchingEngine<>();

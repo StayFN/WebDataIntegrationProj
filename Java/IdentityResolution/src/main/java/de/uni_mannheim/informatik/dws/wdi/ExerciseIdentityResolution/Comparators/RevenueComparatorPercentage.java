@@ -15,7 +15,7 @@ public class RevenueComparatorPercentage implements Comparator<Company, Attribut
 
 
 	private static final long serialVersionUID = 1L;
-	private PercentageSimilarity sim = new PercentageSimilarity(0.1);
+	private PercentageSimilarity sim = new PercentageSimilarity(0.90);
 	
 	private ComparatorLogger comparisonLog;
 

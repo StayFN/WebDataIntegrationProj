@@ -170,7 +170,7 @@ public class Company implements Matchable{
 		this.revenue = revenue;
 	}
 
-	public long getAssets() {
+	public Long getAssets() {
 		return assets;
 	}
 
@@ -178,7 +178,7 @@ public class Company implements Matchable{
 		this.assets = assets;
 	}
 
-	public long getProfit() {
+	public Long getProfit() {
 		return profit;
 	}
 
