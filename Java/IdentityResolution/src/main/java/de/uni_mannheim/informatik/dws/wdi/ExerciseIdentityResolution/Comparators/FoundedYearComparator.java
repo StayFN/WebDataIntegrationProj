@@ -23,10 +23,14 @@ public class FoundedYearComparator implements Comparator<Company, Attribute> {
 			Company record1,
 			Company record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
+		
+		if(record1.getFoundedYear() == null || record2.getFoundedYear() == null) {
+			return 0.0;
+		}
     	
-		double record1_double = record1.getFoundedYear();
-		double record2_double = record2.getFoundedYear();   
-		double similarity = sim.calculate(record1_double, record2_double);
+		double record1_int = record1.getFoundedYear();
+		double record2_int = record2.getFoundedYear();   
+		double similarity = sim.calculate(record1_int, record2_int);
 		
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());

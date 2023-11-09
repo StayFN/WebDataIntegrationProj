@@ -72,11 +72,12 @@ public class IR_DBpedia_Forbes_using_linear_combination
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsDbpedia_Forbes);
 		
 		// add comparators
-		matchingRule.addComparator(new ProfitComparatorPercentage(), 1.0);
+		//matchingRule.addComparator(new ProfitComparatorPercentage(), 1.0);
 		//matchingRule.addComparator(new RevenueComparatorPercentage(), 1.0);
 		//matchingRule.addComparator(new AssetsComparatorPercentage(), 1.0);
 		//matchingRule.addComparator(new IndustryComparator(), 1.0);
 		//matchingRule.addComparator(new CompanyNameComparatorJaro(), 1.0);
+		matchingRule.addComparator(new FoundedYearComparator(), 1.0);
 
 
 

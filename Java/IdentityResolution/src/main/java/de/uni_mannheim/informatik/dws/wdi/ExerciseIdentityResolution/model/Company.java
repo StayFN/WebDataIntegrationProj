@@ -130,7 +130,7 @@ public class Company implements Matchable{
 		Industries = industries;
 	}
 
-	public int getFoundedYear() {
+	public Integer getFoundedYear() {
 		return foundedYear;
 	}
 
