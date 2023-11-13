@@ -73,19 +73,19 @@ public class IR_DBpedia_Forbes_using_linear_combination
 		
 		// add comparators
 		//matchingRule.addComparator(new ProfitComparatorPercentage(), 0.01);
-		//matchingRule.addComparator(new RevenueComparatorPercentage(), 0.1);
+		matchingRule.addComparator(new RevenueComparatorPercentage(), 0.1);
 		//matchingRule.addComparator(new AssetsComparatorPercentage(), 0.03);
-		//matchingRule.addComparator(new IndustryComparator(), 0.1);
+		matchingRule.addComparator(new IndustryComparator(), 0.1);
 		//matchingRule.addComparator(new CompanyNameComparatorJaro(), 1);
-		matchingRule.addComparator(new CompanyNameComparatorJaroWrinkler(), 1);
+		matchingRule.addComparator(new CompanyNameComparatorJaroWrinkler(), 0.7);
 		//matchingRule.addComparator(new CompanyNameComparatorLevenshtein(), 0.8);
-		//matchingRule.addComparator(new FoundedYearComparator(), 0.1);
+		matchingRule.addComparator(new FoundedYearComparator(), 0.1);
 
 
 
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
-	//NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
+		//NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
 		//SortedNeighbourhoodBlocker<Company, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new CompanyBlockingKeyByNameGenerator(), 1);
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:

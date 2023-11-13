@@ -77,14 +77,14 @@ public class IR_SBTI_Forbes_using_linear_combination
 		//matchingRule.addComparator(new AssetsComparatorPercentage(), 0.03);
 		matchingRule.addComparator(new IndustryComparator(), 0.1);
 		//matchingRule.addComparator(new CompanyNameComparatorJaro(), 1);
-		matchingRule.addComparator(new CompanyNameComparatorLevenshtein(), 0.7);
+		matchingRule.addComparator(new CompanyNameComparatorJaroWrinkler(), 0.7);
 		matchingRule.addComparator(new FoundedYearComparator(), 0.1);
 
 
 
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
-	     //NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
+		//StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
+	     NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
 		//SortedNeighbourhoodBlocker<Company, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new CompanyBlockingKeyByNameGenerator(), 1);
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:

@@ -19,6 +19,11 @@ public class CompanyBlockingKeyByNameGenerator extends RecordBlockingKeyGenerato
 	public void generateBlockingKeys(Company record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Company>> resultCollector) {
 
+		if (record == null || record.getCompanyName() == null || resultCollector == null) {
+			int i = 0;
+			return;
+		}
+
 		String[] tokens  = record.getCompanyName().split(" ");
 
 		String blockingKeyValue = "";

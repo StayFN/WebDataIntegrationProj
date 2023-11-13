@@ -26,7 +26,12 @@ public class RevenueComparatorPercentage implements Comparator<Company, Attribut
 			Company record1,
 			Company record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
-    	
+
+
+		if(record1.getRevenue() == null || record2.getRevenue() == null) {
+			return 0.0;
+		}
+
 		double record1_double = record1.getRevenue(); // calculate function only takes double
 		double record2_double = record2.getRevenue(); // calculate function only takes double
 

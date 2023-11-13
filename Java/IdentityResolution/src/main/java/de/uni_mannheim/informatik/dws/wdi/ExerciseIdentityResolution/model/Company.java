@@ -114,7 +114,7 @@ public class Company implements Matchable{
 		LEI = lEI;
 	}
 
-	public int getForbes2022Rating() {
+	public Integer getForbes2022Rating() {
 		return forbes2022Rating;
 	}
 
@@ -162,7 +162,7 @@ public class Company implements Matchable{
 		this.keyPersons = keyPersons;
 	}
 
-	public long getRevenue() {
+	public Long getRevenue() {
 		return revenue;
 	}
 
@@ -186,7 +186,7 @@ public class Company implements Matchable{
 		this.profit = profit;
 	}
 
-	public long getMarketValue() {
+	public Long getMarketValue() {
 		return marketValue;
 	}
 
@@ -194,7 +194,7 @@ public class Company implements Matchable{
 		this.marketValue = marketValue;
 	}
 
-	public int getSizeEmployees() {
+	public Integer getSizeEmployees() {
 		return sizeEmployees;
 	}
 
