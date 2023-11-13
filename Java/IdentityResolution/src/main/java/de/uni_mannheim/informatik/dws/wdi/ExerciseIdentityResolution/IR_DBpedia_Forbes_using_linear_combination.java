@@ -72,14 +72,14 @@ public class IR_DBpedia_Forbes_using_linear_combination
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsDbpedia_Forbes);
 		
 		// add comparators
-		//matchingRule.addComparator(new ProfitComparatorPercentage(), 1.0);
-		//matchingRule.addComparator(new RevenueComparatorPercentage(), 1.0);
-		//matchingRule.addComparator(new AssetsComparatorPercentage(), 1.0);
-		//matchingRule.addComparator(new IndustryComparator(), 1.0);
-		//matchingRule.addComparator(new CompanyNameComparatorJaro(), 1.0);
-		matchingRule.addComparator(new FoundedYearComparator(), 1.0);
-
-
+		//matchingRule.addComparator(new ProfitComparatorPercentage(), 0.01);
+		//matchingRule.addComparator(new RevenueComparatorPercentage(), 0.1);
+		//matchingRule.addComparator(new AssetsComparatorPercentage(), 0.03);
+		//matchingRule.addComparator(new IndustryComparator(), 0.1);
+		//matchingRule.addComparator(new CompanyNameComparatorJaro(), 1);
+		matchingRule.addComparator(new CompanyNameComparatorJaroWrinkler(), 1);
+		//matchingRule.addComparator(new CompanyNameComparatorLevenshtein(), 0.8);
+		//matchingRule.addComparator(new FoundedYearComparator(), 0.1);
 
 
 
@@ -103,7 +103,7 @@ public class IR_DBpedia_Forbes_using_linear_combination
 		// Create a top-1 global matching
 		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
 /*
-//		 Alternative: Create a maximum-weight, bipartite matching
+		 Alternative: Create a maximum-weight, bipartite matching
 //		 MaximumBipartiteMatchingAlgorithm<Movie,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
 //		 maxWeight.run();
 //		 correspondences = maxWeight.getResult();
