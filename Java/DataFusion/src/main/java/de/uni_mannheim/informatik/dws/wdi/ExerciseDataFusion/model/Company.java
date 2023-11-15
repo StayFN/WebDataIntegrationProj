@@ -341,7 +341,7 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 	public static final Attribute KEYPERSONS = new Attribute("Key Persons");
 	public static final Attribute REVENUE = new Attribute("Revenue");
 	public static final Attribute ASSETS = new Attribute("Assets");
-	
+	public static final Attribute PROFIT = new Attribute("Profit");
 	@Override
 	public boolean hasValue(Attribute attribute) {
 		if(attribute==COMPANYNAME)
@@ -356,16 +356,18 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 			return getKeyPersons() != null && getKeyPersons().size() > 0;
 		else if(attribute==REVENUE)
 			return getRevenue() != null;
+		else if(attribute==PROFIT)
+			return getProfit() != null;
 		else if(attribute==ASSETS)
-			return getRevenue() != null;
+			return getAssets() != null;
 		else
 			return false;
 	}
 
 	@Override
 	public String toString() {
-		return String.format("[Company %s: %s / %s / %s / %s / %s / %s / %s]", getIdentifier(), getCompanyName(),
-				getCountry(), getIndustries(), getFoundedYear().toString(), getKeyPersons(), getRevenue().toString(), getAssets().toString());
+		return String.format("[Company %s: %s / %s / %s / %s / %s / %s / %s / %s]", getIdentifier(), getCompanyName(),
+				getCountry(), getIndustries(), getFoundedYear().toString(), getKeyPersons(), getRevenue().toString(), getAssets().toString(), getProfit().toString()) ;
 	}
 
 	@Override

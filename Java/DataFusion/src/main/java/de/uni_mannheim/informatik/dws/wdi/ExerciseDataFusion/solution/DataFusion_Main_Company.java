@@ -6,7 +6,8 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
 import java.time.temporal.ChronoField;
 import java.util.Locale;
-
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.CompanyNameFuserShortestString;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ActorsEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DirectorEvaluationRule;
@@ -16,7 +17,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserFav
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserVoting;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DirectorFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.TitleFuserShortestString;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.FusibleCompanyFactory;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.FusibleCompanyFactory;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.TitleFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.CompanyXMLFormatter;
@@ -112,11 +113,12 @@ public class DataFusion_Main_Company
 		// add attribute fusers
 		strategy.addAttributeFuser(Company.COMPANYNAME, new CompanyNameFuserShortestString(),new CompanyNameEvaluationRule());
 		strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new DirectorEvaluationRule());
-		strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserIntersection(),new DateEvaluationRule());
-		strategy.addAttributeFuser(Company.KEYPERSONS,new KeyPersonsFuserUnion(),new ActorsEvaluationRule());
+		strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new DateEvaluationRule());
+		//strategy.addAttributeFuser(Company.KEYPERSONS,new KeyPersonsFuserUnion(),new ActorsEvaluationRule());
 		strategy.addAttributeFuser(Company.ASSETS,new AssetFuserMean(),new ActorsEvaluationRule());
 		strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new ActorsEvaluationRule());
-		strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFuserMostRecent(),new ActorsEvaluationRule());
+		strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ActorsEvaluationRule());
+		strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFavourSource(),new ActorsEvaluationRule());
 		// create the fusion engine
 		DataFusionEngine<Company, Attribute> engine = new DataFusionEngine<Company, Attribute>(strategy);
 

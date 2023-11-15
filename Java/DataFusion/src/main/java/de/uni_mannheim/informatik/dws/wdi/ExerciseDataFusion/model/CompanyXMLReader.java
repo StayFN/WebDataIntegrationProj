@@ -11,6 +11,7 @@
  */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model;
 
+import java.lang.reflect.Method;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
@@ -56,52 +57,111 @@ dataset.addAttribute(Company.ASSETS);
 
 }
 
-@Override
-public Company createModelFromElement(Node node, String provenanceInfo) {
-String id = getValueFromChildElement(node, "id");
-
-	// create the object with id and provenance information
-	Company Company = new Company(id, provenanceInfo);
+	@Override
+	public Company createModelFromElement(Node node, String provenanceInfo) {
+		String id = getValueFromChildElement(node, "ID");
 	
-	// fill the attributes
-	Company.setCompanyName(getValueFromChildElement(node, "Company name"));
-	Company.setCountry(getValueFromChildElement(node, "Country"));
-	//this is a list
-	Company.setIndustries(getValueFromChildElement(node, "Industry"));
-	Company.setFoundedYear(getValueFromChildElement(node, "Year Founded"));
-	Company.setKeyPersons(getValueFromChildElement(node, "Key Persons"));
-	Company.setRevenue(getValueFromChildElement(node, "Revenue"));
-	Company.setAssets(getValueFromChildElement(node, "Assets"));
-	// convert the date string into a DateTime object
-	try {
-		String date = getValueFromChildElement(node, "date");
-		if (date != null && !date.isEmpty()) {
-			DateTimeFormatter formatter = new DateTimeFormatterBuilder()
-			        .appendPattern("yyyy-MM-dd['T'HH:mm:ss.SSS]")
-			        .parseDefaulting(ChronoField.CLOCK_HOUR_OF_DAY, 0)
-			        .parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0)
-					.parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
-					.optionalStart().appendOffset("+HH:MM", "+00:00").optionalEnd()
-			        .toFormatter(Locale.ENGLISH);
-			LocalDateTime dt = LocalDateTime.parse(date, formatter);
-			Company.setDate(dt);
+		// create the object with id and provenance information
+		Company company = new Company(id, provenanceInfo);
+	
+		// fill the attributes
+		setAttributeIfPresent(company, "CompanyName", node, "setCompanyName");
+		setAttributeIfPresent(company, "ISIN", node, "setISIN");
+		setAttributeIfPresent(company, "LEI", node, "setLEI");
+		setIntegerAttributeIfPresent(company, "Forbes2022Rating", node, "setForbes2022Rating");
+		setListAttributeIfPresent(company, "Industries", node, "setIndustries");
+		setIntegerAttributeIfPresent(company, "FoundedYear", node, "setFoundedYear");
+		setAttributeIfPresent(company, "Country", node, "setCountry");
+		setAttributeIfPresent(company, "Region", node, "setRegion");
+	
+	
+		List<Person> persons = getObjectListFromChildElement(node, "KeyPersons", "Person",
+				new PersonXMLReader(), provenanceInfo);
+	
+		if (persons != null && !persons.isEmpty()) {
+			company.setKeyPersons(persons);
 		}
-	} catch (Exception e) {
-		e.printStackTrace();
+	
+		setLongAttributeIfPresent(company, "Revenue", node, "setRevenue");
+		setLongAttributeIfPresent(company, "Assets", node, "setAssets");
+		setLongAttributeIfPresent(company, "Profit", node, "setProfit");
+		setLongAttributeIfPresent(company, "MarketValue", node, "setMarketValue");
+		setIntegerAttributeIfPresent(company, "SizeEmployees", node, "setSizeEmployees");
+		setAttributeIfPresent(company, "SizeCategory", node, "setSizeCategory");
+		setAttributeIfPresent(company, "LegalType", node, "setLegalType");
+		setAttributeIfPresent(company, "SustGoalDescription", node, "setSustGoalDescription");
+		setAttributeIfPresent(company, "SustGoalStatus_NearTerm", node, "setSustGoalStatus_NearTerm");
+		setAttributeIfPresent(company, "SustGoalStatus_LongTerm", node, "setSustGoalStatus_LongTerm");
+		setAttributeIfPresent(company, "SustGoalClassification_NearTerm", node, "setSustGoalClassification_NearTerm");
+		setAttributeIfPresent(company, "SustGoalClassification_LongTerm", node, "setSustGoalClassification_LongTerm");
+		setIntegerAttributeIfPresent(company, "SustGoalYear_NearTerm", node, "setSustGoalYear_NearTerm");
+		setIntegerAttributeIfPresent(company, "SustGoalYear_LongTerm", node, "setSustGoalYear_LongTerm");
+		setBooleanAttributeIfPresent(company, "NetZeroCommitted", node, "setNetZeroCommitted");
+		setIntegerAttributeIfPresent(company, "NetZeroCommittedYear", node, "setNetZeroCommittedYear");
+	
+		return company;
+	}
+	private void setAttributeIfPresent(Company company, String elementName, Node node, String setterName) {
+		String value = getValueFromChildElement(node, elementName);
+		if (value != null && !value.isEmpty()) {
+			try {
+				Method setter = Company.class.getMethod(setterName, String.class);
+				setter.invoke(company, value);
+			} catch (Exception e) {
+				e.printStackTrace(); // Handle or log the exception as needed
+			}
+		}
 	}
 	
-	// load the list of actors
-	/*List<Actor> actors = getObjectListFromChildElement(node, "actors",
-			"actor", new ActorXMLReader(), provenanceInfo);
-	Company.setActors(actors);
+	private void setIntegerAttributeIfPresent(Company company, String elementName, Node node, String setterName) {
+		String value = getValueFromChildElement(node, elementName);
+		if (value != null && !value.isEmpty()) {
+			try {
+				int intValue = Integer.parseInt(value);
+				Method setter = Company.class.getMethod(setterName, int.class);
+				setter.invoke(company, intValue);
+			} catch (Exception e) {
+				e.printStackTrace(); // Handle or log the exception as needed
+			}
+		}
+	}
 	
-	return Company;*/
+	private void setLongAttributeIfPresent(Company company, String elementName, Node node, String setterName) {
+		String value = getValueFromChildElement(node, elementName);
+		if (value != null && !value.isEmpty()) {
+			try {
+				long longValue = Long.parseLong(value);
+				Method setter = Company.class.getMethod(setterName, long.class);
+				setter.invoke(company, longValue);
+			} catch (Exception e) {
+				e.printStackTrace(); // Handle or log the exception as needed
+			}
+		}
+	}
 	
-	List<Actor> actors = getObjectListFromChildElement(node, "actors",
-			"actor", new ActorXMLReader(), provenanceInfo);
-	Company.setActors(actors);
+	private void setListAttributeIfPresent(Company company, String elementName, Node node, String setterName) {
+		List<String> values = getListFromChildElement(node, elementName);
+		if (values != null && !values.isEmpty()) {
+			try {
+				Method setter = Company.class.getMethod(setterName, List.class);
+				setter.invoke(company, values);
+			} catch (Exception e) {
+				e.printStackTrace(); // Handle or log the exception as needed
+			}
+		}
+	}
 	
-	return Company;
+	private void setBooleanAttributeIfPresent(Company company, String elementName, Node node, String setterName) {
+		String value = getValueFromChildElement(node, elementName);
+		if (value != null && !value.isEmpty()) {
+			try {
+				boolean booleanValue = Boolean.parseBoolean(value);
+				Method setter = Company.class.getMethod(setterName, boolean.class);
+				setter.invoke(company, booleanValue);
+			} catch (Exception e) {
+				e.printStackTrace(); // Handle or log the exception as needed
+			}
+		}
 	}
 	
 	@Override
