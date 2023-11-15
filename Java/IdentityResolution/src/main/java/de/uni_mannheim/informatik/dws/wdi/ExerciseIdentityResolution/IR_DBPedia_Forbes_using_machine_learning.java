@@ -62,7 +62,7 @@ public class IR_DBPedia_Forbes_using_machine_learning {
 		// create a matching rule
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.4, modelType, options);
+		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.30, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsDbpedia_Forbes);
 		
 		// add comparators
