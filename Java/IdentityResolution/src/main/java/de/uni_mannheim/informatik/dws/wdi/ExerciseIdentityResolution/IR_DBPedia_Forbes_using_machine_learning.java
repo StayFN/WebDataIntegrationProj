@@ -56,13 +56,13 @@ public class IR_DBPedia_Forbes_using_machine_learning {
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsDbpedia_Forbes = new MatchingGoldStandard();
 		gsDbpedia_Forbes.loadFromCSVFile(new File(
-				"data/goldstandard/dbpedia_forbes_goldstandard.csv"));
+				"data/goldstandard/dbpedia_forbes_goldstandard_train.csv"));
 
 
 		// create a matching rule
 		String options[] = new String[] { "-S" };
 		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.4, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsDbpedia_Forbes);
 		
 		// add comparators
@@ -102,7 +102,7 @@ public class IR_DBPedia_Forbes_using_machine_learning {
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_academy_awards_2_actors_test.csv"));
+				"data/goldstandard/dbpedia_forbes_goldstandard_test.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");
@@ -111,7 +111,7 @@ public class IR_DBPedia_Forbes_using_machine_learning {
 				gsTest);
 		
 		// print the evaluation result
-		logger.info("Academy Awards <-> Actors");
+		logger.info("DBPedia <-> Forbes");
 		logger.info(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		logger.info(String.format(
