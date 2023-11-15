@@ -1,11 +1,14 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 
+import de.uni_mannheim.informatik.dws.winter.model.AbstractRecord;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
+import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
-public class Company implements Matchable{
+public class Company extends AbstractRecord<Attribute> implements Serializable{
 	/*
 	  example entry <Company> <ID>Forbes_1</ID> <CompanyName>BioNTech</CompanyName>
 	  <ISIN>US0378331005</ISIN> <LEI>549300VJTTGNEANFBN84</LEI>
@@ -288,6 +291,12 @@ public class Company implements Matchable{
 
 	public void setNetZeroCommittedYear(int netZeroCommittedYear) {
 		NetZeroCommittedYear = netZeroCommittedYear;
+	}
+
+	@Override
+	public boolean hasValue(Attribute attribute) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 	
 	
