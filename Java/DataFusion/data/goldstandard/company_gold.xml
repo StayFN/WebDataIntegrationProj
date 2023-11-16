@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Companies xsi:noNamespaceSchemaLocation="file:///C:/Users/maria/Downloads/HWS23/Web%20Data%20Integration/project/integrated_schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Company>
+		<ID>Forbes_1</ID>
+		<CompanyName>Telstra</CompanyName>
+		<Country>Australia</Country>
+		<Industries>
+			<Industry>Telecommunication</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Andy Penn</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>16168500000</Revenue>
+		<Assets>31893750000</Assets>
+		<Profit>1426500000</Profit>
+		<FoundedYear>1975</FoundedYear>
+	</Company>
+	<Company>
+		<ID>Forbes_2</ID>
+		<CompanyName>AstraZeneca</CompanyName>
+		<Country>United Kingdom</Country>
+		<Industries>
+			<Industry>Pharmaceuticals</Industry>
+			<Industry>Biotechnology</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Pascal Soriot</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>37417000000</Revenue>
+		<Assets>965400000000</Assets>
+		<Profit>112000000</Profit>
+		<FoundedYear>1999</FoundedYear>
+	</Company>
+	<Company>
+		<ID>Forbes_1</ID>
+		<CompanyName>Danone</CompanyName>
+		<Country>France</Country>
+		<Industries>
+			<Industry>Food and Beverage Processing</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Antoine Bernard de Saint-Affrique</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>27490000000</Revenue>
+		<Assets>53736000000</Assets>
+		<Profit>13631000000</Profit>
+		<FoundedYear>1919</FoundedYear>
+	</Company>
+	<Company>
+		<ID>Forbes_3</ID>
+		<CompanyName>Intidex</CompanyName>
+		<Country>Spain</Country>
+		<Industries>
+			<Industry>Retailing</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Óscar García Maceiras</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>27720000000</Revenue>
+		<Assets>17640000000 </Assets>
+		<Profit>17150994630</Profit>
+		<FoundedYear>1985</FoundedYear>
+	</Company>
+	<Company>
+		<ID>Forbes_4</ID>
+		<CompanyName>Bath & Body Works</CompanyName>
+		<Country>United States</Country>
+		<Industries>
+			<Industry>Retailing</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Gina Boswell</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>12840000000</Revenue>
+		<Assets>11571000000</Assets>
+		<Profit>844000000</Profit>
+		<FoundedYear>1990</FoundedYear>
+	</Company>
+	<Company>
+		<ID>Forbes_4</ID>
+		<CompanyName>Netflix</CompanyName>
+		<Country>United States</Country>
+		<Industries>
+			<Industry>Entertaining</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Ted Sarandos</Name>
+				<Name>Reed Hastings</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>29698000000</Revenue>
+		<Assets>4458000000</Assets>
+		<Profit>1236000000</Profit>
+		<FoundedYear>1997</FoundedYear>
+	</Company>
+	<Company>
+		<ID>Forbes_</ID>
+		<CompanyName>Valeo</CompanyName>
+		<Country>France</Country>
+		<Industries>
+			<Industry>Automotive industry</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Gilles Michel</Name>
+				<Name>Christophe Périllat</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>19540000000</Revenue>
+		<Assets>22284000000</Assets>
+		<Profit>245000000</Profit>
+		<FoundedYear>1924</FoundedYear>
+	</Company>
+	<Company>
+		<ID>Forbes_</ID>
+		<CompanyName>Tesco</CompanyName>
+		<Country>United Kingdom</Country>
+		<Industries>
+			<Industry>Retailing</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Ken Murphy</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>74800000000</Revenue>
+		<Assets>64000000000</Assets>
+		<Profit>1100000000</Profit>
+		<FoundedYear>1919</FoundedYear>
+	</Company>
+	<Company>
+		<ID>Forbes_</ID>
+		<CompanyName>Schneider Electric</CompanyName>
+		<Country>France</Country>
+		<Industries>
+			<Industry>Electrical equipment</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Peter Herweck</Name>
+				<Name>Jean-Pascal Tricoire</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>34198000000</Revenue>
+		<Assets>64535000000</Assets>
+		<Profit>3791000000</Profit>
+		<FoundedYear>1836</FoundedYear>
+	</Company>
+	<Company>
+		<ID>Forbes_</ID>
+		<CompanyName>L'Oréal</CompanyName>
+		<Country>France</Country>
+		<Industries>
+			<Industry>Packaged Goods</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Nicolas Hieronimus</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>38187240000</Revenue>
+		<Assets>53400000000</Assets>
+		<Profit>7287280000</Profit>
+		<FoundedYear>1909</FoundedYear>
+	</Company>
+	<Company>
+		<ID>Forbes_</ID>
+		<CompanyName>Experian</CompanyName>
+		<Country>Ireland</Country>
+		<Industries>
+			<Industry>Business Services</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Mike Rogers</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>5372000000</Revenue>
+		<Assets>10071000000</Assets>
+		<Profit>803000000</Profit>
+		<FoundedYear>1996</FoundedYear>
+	</Company>
+	<Company>
+		<ID>Forbes_</ID>
+		<CompanyName>Ecolab</CompanyName>
+		<Country>United States</Country>
+		<Industries>
+			<Industry>Chemicals</Industry>
+			<Industry>Service</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Christophe Beck</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>12733000000</Revenue>
+		<Assets>21206000000</Assets>
+		<Profit>5117000000</Profit>
+		<FoundedYear>1923</FoundedYear>
+	</Company>
+		<Company>
+		<ID>Forbes_</ID>
+		<CompanyName>Danske Bank</CompanyName>
+		<Country>Denmark</Country>
+		<Industries>
+			<Industry> Banking and Financial Services</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Carsten Egeriis</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>7410000000</Revenue>
+		<Assets>630000000000</Assets>
+		<Profit>1984000000</Profit>
+		<FoundedYear>1871</FoundedYear>
+	</Company>
+		<Company>
+		<ID>Forbes_</ID>
+		<CompanyName>BNP Paribas</CompanyName>
+		<Country>France</Country>
+		<Industries>
+			<Industry>Financial Services</Industry>
+		</Industries>
+		<KeyPersons>
+			<Person>
+				<Name>Jean-Laurent Bonnafé</Name>
+			</Person>
+		</KeyPersons>
+		<Revenue>102700000000</Revenue>
+		<Assets>3116811000000</Assets>
+		<Profit>7600000000</Profit>
+		<FoundedYear>1848</FoundedYear>
+	</Company>
+	
+</Companies>
