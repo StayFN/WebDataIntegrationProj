@@ -32,10 +32,10 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * 
  */
 public class IndustryFuserIntersection extends
-		AttributeValueFuser<List<Industry>, Company, Attribute> {
+		AttributeValueFuser<List<String>, Company, Attribute> {
 
 	public IndustryFuserIntersection() {
-		super(new Intersection<Industry, Company, Attribute>());
+		super(new Intersection<String, Company, Attribute>());
 	}
 
 	@Override
@@ -44,14 +44,14 @@ public class IndustryFuserIntersection extends
 	}
 
 	@Override
-	public List<Industry> getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getIndustry();
+	public List<String> getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
+		return record.getIndustries();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Company, Attribute> group, Company fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
-		FusedValue<List<Industry>, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setIndustry(fused.getValue());
+		FusedValue<List<String>, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		fusedRecord.setIndustries(fused.getValue());
 		fusedRecord
 				.setAttributeProvenance(Company.INDUSTRY, fused.getOriginalIds());
 	}

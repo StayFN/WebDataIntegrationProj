@@ -17,6 +17,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.Voting;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.numeric.Median;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.FusedValue;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
