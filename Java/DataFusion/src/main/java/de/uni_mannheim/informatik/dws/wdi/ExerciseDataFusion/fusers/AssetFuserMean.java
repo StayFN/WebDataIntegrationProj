@@ -40,10 +40,17 @@ public class AssetFuserMean extends AttributeValueFuser<Integer, Company, Attrib
 		return record.hasValue(Company.ASSETS);
 	}
 	
-	@Override
+	/*@Override
 	public Integer getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
 		return record.getAssets();
+	}*/
+	
+	@Override
+	public Integer getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
+	    Long assets = record.getAssets();
+	    return assets != null ? assets.intValue() : null;
 	}
+
 
 	@Override
 	public void fuse(RecordGroup<Company, Attribute> group, Company fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {

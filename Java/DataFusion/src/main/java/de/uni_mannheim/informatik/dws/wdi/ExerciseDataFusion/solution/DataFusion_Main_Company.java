@@ -22,6 +22,8 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.TitleFuserLon
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.CompanyXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.CompanyXMLReader;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.MovieXMLReader;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeFusionLogger;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
@@ -101,9 +103,8 @@ public class DataFusion_Main_Company
 
 		// load the gold standard 
 		DataSet<Company, Attribute> gs = new FusibleHashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("data/goldstandard/dbpedia_forbes_goldstandard.csv"), "/Companys/Company", gs);
-	
-		
+		new CompanyXMLReader().loadFromXML(new File("data/goldstandard/gold.xml"), "/Companys/Company", gs);
+			
 		// define the fusion strategy
 		DataFusionStrategy<Company, Attribute> strategy = new DataFusionStrategy<>(new CompanyXMLReader());
 		
@@ -112,12 +113,12 @@ public class DataFusion_Main_Company
 		
 		// add attribute fusers
 		strategy.addAttributeFuser(Company.COMPANYNAME, new CompanyNameFuserShortestString(),new CompanyNameEvaluationRule());
-		strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new DirectorEvaluationRule());
-		strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new DateEvaluationRule());
+		strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new CountryEvaluationRule());
+		strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new IndustryEvaluationRule());
 		//strategy.addAttributeFuser(Company.KEYPERSONS,new KeyPersonsFuserUnion(),new ActorsEvaluationRule());
-		strategy.addAttributeFuser(Company.ASSETS,new AssetFuserMean(),new ActorsEvaluationRule());
-		strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new ActorsEvaluationRule());
-		strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ActorsEvaluationRule());
+		strategy.addAttributeFuser(Company.ASSETS,new AssetFuserMean(),new AssetEvaluationRule());
+		strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
+		strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
 		strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFavourSource(),new ActorsEvaluationRule());
 		// create the fusion engine
 		DataFusionEngine<Company, Attribute> engine = new DataFusionEngine<Company, Attribute>(strategy);
