@@ -31,7 +31,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class CompanyNameFuserIntersection extends AttributeValueFuser<CompanyName, Company, Attribute> {
+/*public class CompanyNameFuserIntersection extends AttributeValueFuser<CompanyName, Company, Attribute> {
 
 	public CompanyNameFuserIntersection() {
 		super(new Intersection<CompanyName, Company, Attribute>());
@@ -56,3 +56,4 @@ public class CompanyNameFuserIntersection extends AttributeValueFuser<CompanyNam
 	}
 
 }
+*/

@@ -32,7 +32,9 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import org.slf4j.Logger;
 
-public class DataFusion_Main 
+
+
+/*public class DataFusion_Main
 {
 	/*
 	 * Logging Options:
@@ -46,7 +48,7 @@ public class DataFusion_Main
 	 *     private static final Logger logger = WinterLogManager.activateLogger("traceFile");
 	 *
 	 */
-
+/*
 	private static final Logger logger = WinterLogManager.activateLogger("default");
 	
 	public static void main( String[] args ) throws Exception
@@ -136,3 +138,4 @@ public class DataFusion_Main
 		logger.info(String.format("*\tAccuracy: %.2f", accuracy));
     }
 }
+*/

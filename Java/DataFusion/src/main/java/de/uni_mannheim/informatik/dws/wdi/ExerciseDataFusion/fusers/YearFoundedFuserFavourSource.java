@@ -27,7 +27,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class YearFoundedFuserFavourSource extends AttributeValueFuser<String, Company, Attribute> {
+/*public class YearFoundedFuserFavourSource extends AttributeValueFuser<String, Company, Attribute> {
 
 	public YearFoundedFuserFavourSource() {
 		super(new FavourSources<String, Company, Attribute>());
@@ -52,3 +52,4 @@ public class YearFoundedFuserFavourSource extends AttributeValueFuser<String, Co
 	}
 
 }
+*/

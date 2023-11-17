@@ -14,7 +14,6 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation;
 import java.util.HashSet;
 import java.util.Set;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Industries;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
 import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -29,13 +28,13 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class IndustryEvaluationRule extends EvaluationRule<Movie, Attribute> {
+/*public class IndustryEvaluationRule extends EvaluationRule<Company, Attribute> {
 
 	@Override
 	public boolean isEqual(Movie record1, Movie record2, Attribute schemaElement) {
 		Set<String> actors1 = new HashSet<>();
 
-		for (Industry a : record1.getIndustries()) {
+		for (String a : record1.getIndustries()) {
 			// note: evaluating using the actor's name only suffices for simple
 			// lists
 			// in your project, you should have actor ids which you use here
@@ -53,7 +52,6 @@ public class IndustryEvaluationRule extends EvaluationRule<Movie, Attribute> {
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.datafusion.EvaluationRule#isEqual(java.lang.Object, java.lang.Object, de.uni_mannheim.informatik.wdi.model.Correspondence)
-	 */
 	@Override
 	public boolean isEqual(Company record1, Company record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondence) {
@@ -61,3 +59,6 @@ public class IndustryEvaluationRule extends EvaluationRule<Movie, Attribute> {
 	}
 
 }
+
+
+ */

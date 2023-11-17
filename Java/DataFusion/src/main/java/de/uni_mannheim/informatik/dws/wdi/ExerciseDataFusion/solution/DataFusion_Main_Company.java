@@ -63,15 +63,15 @@ public class DataFusion_Main_Company
 		// Load the Data into FusibleDataSet
 		logger.info("*\tLoading datasets\n*");
 		FusibleDataSet<Company, Attribute> dataForbes = new FusibleHashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("data/input/forbes_integrated.xml"), "/Companys/Company", dataForbes);
+		new CompanyXMLReader().loadFromXML(new File("data/input/forbes_integrated.xml"), "/Companies/Company", dataForbes);
 		dataForbes.printDataSetDensityReport();
 
 		FusibleDataSet<Company, Attribute> dataSBTI = new FusibleHashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("data/input/sbti_integrated.xml"), "/Companys/Company", dataSBTI);
+		new CompanyXMLReader().loadFromXML(new File("data/input/sbti_integrated.xml"), "/Companies/Company", dataSBTI);
 		dataSBTI.printDataSetDensityReport();
 
 		FusibleDataSet<Company, Attribute> dataDbPedia = new FusibleHashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("data/input/dbpedia_integrated.xml"), "/Companys/Company", dataDbPedia);
+		new CompanyXMLReader().loadFromXML(new File("data/input/dbpedia_integrated.xml"), "/Companies/Company", dataDbPedia);
 		dataDbPedia.printDataSetDensityReport();
 
 		// Maintain Provenance
@@ -99,9 +99,7 @@ public class DataFusion_Main_Company
 
 		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_sbti_correspondences.csv"),dataSBTI, dataForbes);
 
-	
-
-		//correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_sbti_correspondences.csv"),dataDbPedia, dataSBTI);
+		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_sbti_correspondences.csv"),dataDbPedia, dataSBTI);
 
 		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_dbpedia_correspondences.csv"),dataDbPedia, dataForbes);
 
@@ -109,11 +107,10 @@ public class DataFusion_Main_Company
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
 
-		/*
-		
+
 		// load the gold standard 
 		DataSet<Company, Attribute> gs = new FusibleHashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("data/goldstandard/gold.xml"), "/Companys/Company", gs);
+		new CompanyXMLReader().loadFromXML(new File("data/goldstandard/gold.xml"), "/Companies/Company", gs);
 			
 		// define the fusion strategy
 		DataFusionStrategy<Company, Attribute> strategy = new DataFusionStrategy<>(new CompanyXMLReader());
@@ -123,14 +120,16 @@ public class DataFusion_Main_Company
 		
 		// add attribute fusers
 		strategy.addAttributeFuser(Company.COMPANYNAME, new CompanyNameFuserShortestString(),new CompanyNameEvaluationRule());
-		strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new CountryEvaluationRule());
-		//strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new IndustryEvaluationRule());
-		//strategy.addAttributeFuser(Company.KEYPERSONS,new KeyPersonsFuserUnion(),new ActorsEvaluationRule());
 		strategy.addAttributeFuser(Company.ASSETS,new AssetFuserMean(),new AssetEvaluationRule());
+		//strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new CountryEvaluationRule());
+
+		/*//strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new IndustryEvaluationRule());
+		//strategy.addAttributeFuser(Company.KEYPERSONS,new KeyPersonsFuserUnion(),new ActorsEvaluationRule());
 		strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
 		strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
 		//strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFavourSource(),new FoundedYearEvaluationRule());
-		
+		*/
+
 		// create the fusion engine
 		DataFusionEngine<Company, Attribute> engine = new DataFusionEngine<Company, Attribute>(strategy);
 
@@ -151,7 +150,6 @@ public class DataFusion_Main_Company
 		double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
 
 		logger.info(String.format("Accuracy: %.2f", accuracy));
-     */
     }
     
    
