@@ -31,7 +31,7 @@
 			</Person>
 		</KeyPersons>
 		<Revenue>37417000000</Revenue>
-		<Assets>965400000000</Assets>
+		<Assets>105363000000</Assets>
 		<Profit>112000000</Profit>
 		<FoundedYear>1999</FoundedYear>
 	</Company>
@@ -64,7 +64,7 @@
 				<Name>Óscar García Maceiras</Name>
 			</Person>
 		</KeyPersons>
-		<Revenue>27720000000</Revenue>
+		<Revenue>28767220650</Revenue>
 		<Assets>17640000000 </Assets>
 		<Profit>17150994630</Profit>
 		<FoundedYear>1985</FoundedYear>
@@ -101,7 +101,7 @@
 		</KeyPersons>
 		<Revenue>29698000000</Revenue>
 		<Assets>4458000000</Assets>
-		<Profit>1236000000</Profit>
+		<Profit>5116228000</Profit>
 		<FoundedYear>1997</FoundedYear>
 	</Company>
 	<Company>
@@ -136,7 +136,7 @@
 		</KeyPersons>
 		<Revenue>74800000000</Revenue>
 		<Assets>64000000000</Assets>
-		<Profit>1100000000</Profit>
+		<Profit>2158611840</Profit>
 		<FoundedYear>1919</FoundedYear>
 	</Company>
 	<Company>
@@ -171,7 +171,7 @@
 		</KeyPersons>
 		<Revenue>38187240000</Revenue>
 		<Assets>53400000000</Assets>
-		<Profit>7287280000</Profit>
+		<Profit>6160000000</Profit>
 		<FoundedYear>1909</FoundedYear>
 	</Company>
 	<Company>
@@ -206,24 +206,24 @@
 		</KeyPersons>
 		<Revenue>12733000000</Revenue>
 		<Assets>21206000000</Assets>
-		<Profit>5117000000</Profit>
+		<Profit>1129900000</Profit>
 		<FoundedYear>1923</FoundedYear>
 	</Company>
 		<Company>
 		<ID>Forbes_</ID>
-		<CompanyName>Danske Bank</CompanyName>
-		<Country>Denmark</Country>
+		<CompanyName>Trane Technologies</CompanyName>
+		<Country>Ireland</Country>
 		<Industries>
-			<Industry> Banking and Financial Services</Industry>
+			<Industry>Electrical Equipment and Machinery</Industry>
 		</Industries>
 		<KeyPersons>
 			<Person>
-				<Name>Carsten Egeriis</Name>
+				<Name>Dave Regnery</Name>
 			</Person>
 		</KeyPersons>
-		<Revenue>7410000000</Revenue>
-		<Assets>630000000000</Assets>
-		<Profit>1984000000</Profit>
+		<Revenue>14136400000</Revenue>
+		<Assets>18059800000</Assets>
+		<Profit>1436600000</Profit>
 		<FoundedYear>1871</FoundedYear>
 	</Company>
 		<Company>
