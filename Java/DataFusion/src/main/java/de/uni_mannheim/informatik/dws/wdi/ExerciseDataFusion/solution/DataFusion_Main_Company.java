@@ -8,6 +8,7 @@ import java.time.temporal.ChronoField;
 import java.util.Locale;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.CompanyNameFuserShortestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.*;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ActorsEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DateEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DirectorEvaluationRule;
@@ -61,23 +62,23 @@ public class DataFusion_Main_Company
     {
 		// Load the Data into FusibleDataSet
 		logger.info("*\tLoading datasets\n*");
-		FusibleDataSet<Company, Attribute> ds1 = new FusibleHashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("data/input/forbes_integrated.xml"), "/Companys/Company", ds1);
-		ds1.printDataSetDensityReport();
+		FusibleDataSet<Company, Attribute> dataForbes = new FusibleHashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("data/input/forbes_integrated.xml"), "/Companys/Company", dataForbes);
+		dataForbes.printDataSetDensityReport();
 
-		FusibleDataSet<Company, Attribute> ds2 = new FusibleHashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("data/input/sbti_integrated.xml"), "/Companys/Company", ds2);
-		ds2.printDataSetDensityReport();
+		FusibleDataSet<Company, Attribute> dataSBTI = new FusibleHashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("data/input/sbti_integrated.xml"), "/Companys/Company", dataSBTI);
+		dataSBTI.printDataSetDensityReport();
 
-		FusibleDataSet<Company, Attribute> ds3 = new FusibleHashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("data/input/dbpedia_integrated.xml"), "/Companys/Company", ds3);
-		ds3.printDataSetDensityReport();
+		FusibleDataSet<Company, Attribute> dataDbPedia = new FusibleHashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("data/input/dbpedia_integrated.xml"), "/Companys/Company", dataDbPedia);
+		dataDbPedia.printDataSetDensityReport();
 
 		// Maintain Provenance
 		// Scores (e.g. from rating)
-		ds1.setScore(2.0);
-		ds2.setScore(3.0);
-		ds3.setScore(1.0);
+		dataForbes.setScore(2.0);
+		dataSBTI.setScore(3.0);
+		dataDbPedia.setScore(1.0);
 		
 		// Date (e.g. last update)
 /*		DateTimeFormatter formatter = new DateTimeFormatterBuilder()
@@ -94,9 +95,9 @@ public class DataFusion_Main_Company
 		// load correspondences
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Company, Attribute> correspondences = new CorrespondenceSet<>();
-		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_sbti_correspondences.csv"),ds2, ds1);
-		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_dbpedia_correspondences.csv"),ds3, ds1);
-		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_forbes_correspondences.csv"),ds3, ds2);
+		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_sbti_correspondences.csv"),dataSBTI, dataForbes);
+		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_dbpedia_correspondences.csv"),dataDbPedia, dataForbes);
+		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_forbes_correspondences.csv"),dataDbPedia, dataSBTI);
 
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
@@ -114,12 +115,12 @@ public class DataFusion_Main_Company
 		// add attribute fusers
 		strategy.addAttributeFuser(Company.COMPANYNAME, new CompanyNameFuserShortestString(),new CompanyNameEvaluationRule());
 		strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new CountryEvaluationRule());
-		strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new IndustryEvaluationRule());
+		//strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new IndustryEvaluationRule());
 		//strategy.addAttributeFuser(Company.KEYPERSONS,new KeyPersonsFuserUnion(),new ActorsEvaluationRule());
 		strategy.addAttributeFuser(Company.ASSETS,new AssetFuserMean(),new AssetEvaluationRule());
 		strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
 		strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
-		strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFavourSource(),new ActorsEvaluationRule());
+		//strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFavourSource(),new FoundedYearEvaluationRule());
 		// create the fusion engine
 		DataFusionEngine<Company, Attribute> engine = new DataFusionEngine<Company, Attribute>(strategy);
 
