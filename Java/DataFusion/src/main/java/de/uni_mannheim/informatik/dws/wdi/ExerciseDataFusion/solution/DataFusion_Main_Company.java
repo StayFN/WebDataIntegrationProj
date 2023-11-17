@@ -88,20 +88,29 @@ public class DataFusion_Main_Company
 		        .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
 		        .toFormatter(Locale.ENGLISH);
 		
-		ds1.setDate(LocalDateTime.parse("2012-01-01", formatter));
-		ds2.setDate(LocalDateTime.parse("2010-01-01", formatter));
-		ds3.setDate(LocalDateTime.parse("2008-01-01", formatter));
+		dataForbes.setDate(LocalDateTime.parse("2012-01-01", formatter));
+		dataSBTI.setDate(LocalDateTime.parse("2010-01-01", formatter));
+		dataDbPedia.setDate(LocalDateTime.parse("2008-01-01", formatter));
 */
 		// load correspondences
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Company, Attribute> correspondences = new CorrespondenceSet<>();
+		
+
 		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_sbti_correspondences.csv"),dataSBTI, dataForbes);
+
+	
+
+		//correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_sbti_correspondences.csv"),dataDbPedia, dataSBTI);
+
 		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_dbpedia_correspondences.csv"),dataDbPedia, dataForbes);
-		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_forbes_correspondences.csv"),dataDbPedia, dataSBTI);
+
 
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
 
+		/*
+		
 		// load the gold standard 
 		DataSet<Company, Attribute> gs = new FusibleHashedDataSet<>();
 		new CompanyXMLReader().loadFromXML(new File("data/goldstandard/gold.xml"), "/Companys/Company", gs);
@@ -121,6 +130,7 @@ public class DataFusion_Main_Company
 		strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
 		strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
 		//strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFavourSource(),new FoundedYearEvaluationRule());
+		
 		// create the fusion engine
 		DataFusionEngine<Company, Attribute> engine = new DataFusionEngine<Company, Attribute>(strategy);
 
@@ -141,7 +151,8 @@ public class DataFusion_Main_Company
 		double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
 
 		logger.info(String.format("Accuracy: %.2f", accuracy));
+     */
     }
     
-    
+   
 }

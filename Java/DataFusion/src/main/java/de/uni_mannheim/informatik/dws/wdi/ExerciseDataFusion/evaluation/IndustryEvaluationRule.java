@@ -13,7 +13,7 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation;
 
 import java.util.HashSet;
 import java.util.Set;
-
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Industries;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
 import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
