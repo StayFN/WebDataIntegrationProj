@@ -17,6 +17,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.Voting;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.numeric.Average;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.numeric.Median;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.FusedValue;
@@ -24,18 +25,20 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
+import org.w3c.dom.Attr;
+
 /**
  * {@link AttributeValueFuser} for the date of {@link Movie}s. 
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class AssetFuserMean extends AttributeValueFuser<Integer, Company, Attribute> {
+public class AssetFuserMean extends AttributeValueFuser<Double, Company, Attribute> {
 
-	public AssetFuserMean() {
-		super(new Voting<Integer, Company, Attribute>());
+	public AssetFuserMean()  {
+		super(new Average<Company, Attribute>());
 	}
-	
+
 	@Override
 	public boolean hasValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
 		return record.hasValue(Company.ASSETS);
@@ -47,16 +50,19 @@ public class AssetFuserMean extends AttributeValueFuser<Integer, Company, Attrib
 	}*/
 	
 	@Override
-	public Integer getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
-	    Long assets = record.getAssets();
-	    return assets != null ? assets.intValue() : null;
+	public Double getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
+
+	    Double assets = (double) record.getAssets() / 1000000000;
+	    return assets;
 	}
 
 
 	@Override
 	public void fuse(RecordGroup<Company, Attribute> group, Company fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
-		FusedValue<Integer, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setAssets(fused.getValue());
+		FusedValue<Double, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		Double value = fused.getValue();
+		Long convertedValue = (long) (value * 1000000000);
+		fusedRecord.setAssets(convertedValue);
 		fusedRecord.setAttributeProvenance(Company.ASSETS, fused.getOriginalIds());
 	}
 
