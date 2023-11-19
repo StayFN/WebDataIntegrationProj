@@ -61,9 +61,18 @@ public class AssetFuserMean extends AttributeValueFuser<Double, Company, Attribu
 	public void fuse(RecordGroup<Company, Attribute> group, Company fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<Double, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
 		Double value = fused.getValue();
-		Long convertedValue = (long) (value * 1000000000);
-		fusedRecord.setAssets(convertedValue);
+
+		// Check if the value is not null before using it
+		if (value != null) {
+			Long convertedValue = (long) (value * 1000000000);
+			fusedRecord.setAssets(convertedValue);
+		} else {
+			// Handle the case where value is null. This might mean setting assets to null or a default value.
+			fusedRecord.setAssets(null); // or some default value
+		}
+
 		fusedRecord.setAttributeProvenance(Company.ASSETS, fused.getOriginalIds());
 	}
+
 
 }

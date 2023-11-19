@@ -110,7 +110,7 @@ public class DataFusion_Main_Company
 
 		// load the gold standard 
 		DataSet<Company, Attribute> gs = new FusibleHashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("data/goldstandard/gold.xml"), "/Companies/Company", gs);
+		new CompanyXMLReader().loadFromXML(new File("data/goldstandard/company_gold.xml"), "/Companies/Company", gs);
 			
 		// define the fusion strategy
 		DataFusionStrategy<Company, Attribute> strategy = new DataFusionStrategy<>(new CompanyXMLReader());
@@ -141,7 +141,7 @@ public class DataFusion_Main_Company
 		FusibleDataSet<Company, Attribute> fusedDataSet = engine.run(correspondences, null);
 		fusedDataSet.printDataSetDensityReport();
 		// write the result
-		new CompanyXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
+		//new CompanyXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
 
 		// evaluate
 		logger.info("*\tEvaluating results\t*");

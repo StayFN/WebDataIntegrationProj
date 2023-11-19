@@ -56,7 +56,7 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 		keyPersons = new LinkedList<>();
 	}*/
 	
-	protected String id;
+	//protected String id;
 	//protected String provenance;
 	private String companyName;
 	private String ISIN;
@@ -85,7 +85,7 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 	private Integer NetZeroCommittedYear;
 
 
-	@Override
+/*	@Override
 	public String getIdentifier() {
 		return id;
 	}
@@ -131,7 +131,7 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 		return forbes2022Rating;
 	}
 
-	public void setForbes2022Rating(int forbes2022Rating) {
+	public void setForbes2022Rating(Integer forbes2022Rating) {
 		this.forbes2022Rating = forbes2022Rating;
 	}
 
@@ -147,7 +147,7 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 		return foundedYear;
 	}
 
-	public void setFoundedYear(int foundedYear) {
+	public void setFoundedYear(Integer foundedYear) {
 		this.foundedYear = foundedYear;
 	}
 
@@ -179,7 +179,7 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 		return revenue;
 	}
 
-	public void setRevenue(long revenue) {
+	public void setRevenue(Long revenue) {
 		this.revenue = revenue;
 	}
 
@@ -187,7 +187,7 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 		return assets;
 	}
 
-	public void setAssets(long assets) {
+	public void setAssets(Long assets) {
 		this.assets = assets;
 	}
 
@@ -195,7 +195,7 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 		return profit;
 	}
 
-	public void setProfit(long profit) {
+	public void setProfit(Long profit) {
 		this.profit = profit;
 	}
 
@@ -203,7 +203,7 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 		return marketValue;
 	}
 
-	public void setMarketValue(long marketValue) {
+	public void setMarketValue(Long marketValue) {
 		this.marketValue = marketValue;
 	}
 
@@ -211,7 +211,7 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 		return sizeEmployees;
 	}
 
-	public void setSizeEmployees(int sizeEmployees) {
+	public void setSizeEmployees(Integer sizeEmployees) {
 		this.sizeEmployees = sizeEmployees;
 	}
 
@@ -271,35 +271,35 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 		SustGoalClassification_LongTerm = sustGoalClassification_LongTerm;
 	}
 
-	public int getSustGoalYear_NearTerm() {
+	public Integer getSustGoalYear_NearTerm() {
 		return SustGoalYear_NearTerm;
 	}
 
-	public void setSustGoalYear_NearTerm(int sustGoalYear_NearTerm) {
+	public void setSustGoalYear_NearTerm(Integer sustGoalYear_NearTerm) {
 		SustGoalYear_NearTerm = sustGoalYear_NearTerm;
 	}
 
-	public int getSustGoalYear_LongTerm() {
+	public Integer getSustGoalYear_LongTerm() {
 		return SustGoalYear_LongTerm;
 	}
 
-	public void setSustGoalYear_LongTerm(int sustGoalYear_LongTerm) {
+	public void setSustGoalYear_LongTerm(Integer sustGoalYear_LongTerm) {
 		SustGoalYear_LongTerm = sustGoalYear_LongTerm;
 	}
 
-	public boolean isNetZeroCommitted() {
+	public Boolean isNetZeroCommitted() {
 		return NetZeroCommitted;
 	}
 
-	public void setNetZeroCommitted(boolean netZeroCommitted) {
+	public void setNetZeroCommitted(Boolean netZeroCommitted) {
 		NetZeroCommitted = netZeroCommitted;
 	}
 
-	public int getNetZeroCommittedYear() {
+	public Integer getNetZeroCommittedYear() {
 		return NetZeroCommittedYear;
 	}
 
-	public void setNetZeroCommittedYear(int netZeroCommittedYear) {
+	public void setNetZeroCommittedYear(Integer netZeroCommittedYear) {
 		NetZeroCommittedYear = netZeroCommittedYear;
 	}
 	
@@ -366,9 +366,21 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 
 	@Override
 	public String toString() {
-		return String.format("[Company %s: %s / %s / %s / %s / %s / %s / %s / %s]", getIdentifier(), getCompanyName(),
-				getCountry(), getIndustries(), getFoundedYear().toString(), getKeyPersons(), getRevenue().toString(), getAssets().toString(), getProfit().toString()) ;
+		return String.format("[Company %s: %s / %s / %s / %s / %s / %s / %s / %s]",
+				getIdentifier() != null ? getIdentifier() : "null",
+				getCompanyName() != null ? getCompanyName() : "null",
+				getCountry() != null ? getCountry() : "null",
+				getIndustries() != null ? getIndustries().toString() : "null",
+				getFoundedYear() != null ? getFoundedYear().toString() : "null",
+				getKeyPersons() != null ? getKeyPersons().toString() : "null",
+				getRevenue() != null ? getRevenue().toString() : "null",
+				getAssets() != null ? getAssets().toString() : "null",
+				getProfit() != null ? getProfit().toString() : "null"
+		);
 	}
+
+
+
 
 	@Override
 	public int hashCode() {

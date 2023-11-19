@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Locale;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.xpath.operations.Bool;
 import org.w3c.dom.Node;
 
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
@@ -118,7 +119,7 @@ dataset.addAttribute(Company.ASSETS);
 		if (value != null && !value.isEmpty()) {
 			try {
 				int intValue = Integer.parseInt(value);
-				Method setter = Company.class.getMethod(setterName, int.class);
+				Method setter = Company.class.getMethod(setterName, Integer.class);
 				setter.invoke(company, intValue);
 			} catch (Exception e) {
 				e.printStackTrace(); // Handle or log the exception as needed
@@ -131,7 +132,7 @@ dataset.addAttribute(Company.ASSETS);
 		if (value != null && !value.isEmpty()) {
 			try {
 				long longValue = Long.parseLong(value);
-				Method setter = Company.class.getMethod(setterName, long.class);
+				Method setter = Company.class.getMethod(setterName, Long.class);
 				setter.invoke(company, longValue);
 			} catch (Exception e) {
 				e.printStackTrace(); // Handle or log the exception as needed
@@ -156,7 +157,7 @@ dataset.addAttribute(Company.ASSETS);
 		if (value != null && !value.isEmpty()) {
 			try {
 				boolean booleanValue = Boolean.parseBoolean(value);
-				Method setter = Company.class.getMethod(setterName, boolean.class);
+				Method setter = Company.class.getMethod(setterName, Boolean.class);
 				setter.invoke(company, booleanValue);
 			} catch (Exception e) {
 				e.printStackTrace(); // Handle or log the exception as needed

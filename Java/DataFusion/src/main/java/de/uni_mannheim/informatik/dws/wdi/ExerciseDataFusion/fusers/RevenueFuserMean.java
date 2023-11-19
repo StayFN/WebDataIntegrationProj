@@ -19,10 +19,10 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * 
  */
 
-public class RevenueFuserMean extends AttributeValueFuser<Integer, Company, Attribute> {
+public class RevenueFuserMean extends AttributeValueFuser<Long, Company, Attribute> {
 
 	public RevenueFuserMean() {
-		super(new Voting<Integer, Company, Attribute>());
+		super(new Voting<Long, Company, Attribute>());
 	}
 	
 	@Override
@@ -36,15 +36,15 @@ public class RevenueFuserMean extends AttributeValueFuser<Integer, Company, Attr
 	}*/
 	
 	@Override
-	public Integer getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
+	public Long getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
 	    Long revenue = record.getRevenue();
-	    return revenue != null ? revenue.intValue() : null;
+	    return revenue;
 	}
 
 
 	@Override
 	public void fuse(RecordGroup<Company, Attribute> group, Company fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
-		FusedValue<Integer, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		FusedValue<Long, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
 		fusedRecord.setRevenue(fused.getValue());
 		fusedRecord.setAttributeProvenance(Company.REVENUE, fused.getOriginalIds());
 	}
