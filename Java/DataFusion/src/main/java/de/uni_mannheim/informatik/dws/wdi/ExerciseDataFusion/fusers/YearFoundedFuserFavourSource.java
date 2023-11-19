@@ -27,10 +27,10 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-/*public class YearFoundedFuserFavourSource extends AttributeValueFuser<String, Company, Attribute> {
+public class YearFoundedFuserFavourSource extends AttributeValueFuser<Integer, Company, Attribute> {
 
 	public YearFoundedFuserFavourSource() {
-		super(new FavourSources<String, Company, Attribute>());
+		super(new FavourSources<Integer, Company, Attribute>());
 	}
 
 	@Override
@@ -39,17 +39,16 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 	}
 
 	@Override
-	public String getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
-		return String.valueOf(record.getFoundedYear());
+	public Integer getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
+		return record.getFoundedYear();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Company, Attribute> group, Company fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
-		FusedValue<String, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		FusedValue<Integer, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
 		fusedRecord.setFoundedYear(fused.getValue());
 		fusedRecord.setAttributeProvenance(Company.YEARFOUNDED,
 				fused.getOriginalIds());
 	}
 
 }
-*/

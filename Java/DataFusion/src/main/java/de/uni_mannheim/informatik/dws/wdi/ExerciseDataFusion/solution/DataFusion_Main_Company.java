@@ -7,6 +7,8 @@ import java.time.format.DateTimeFormatterBuilder;
 import java.time.temporal.ChronoField;
 import java.util.Locale;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.CompanyNameFuserShortestString;
+
+
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ActorsEvaluationRule;
@@ -121,6 +123,10 @@ public class DataFusion_Main_Company
 		// add attribute fusers
 		strategy.addAttributeFuser(Company.COMPANYNAME, new CompanyNameFuserShortestString(),new CompanyNameEvaluationRule());
 		strategy.addAttributeFuser(Company.ASSETS,new AssetFuserMean(),new AssetEvaluationRule());
+		strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
+		strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFuserFavourSource(),new FoundedYearEvaluationRule());
+		strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
+
 		//strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new CountryEvaluationRule());
 
 		/*//strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new IndustryEvaluationRule());
