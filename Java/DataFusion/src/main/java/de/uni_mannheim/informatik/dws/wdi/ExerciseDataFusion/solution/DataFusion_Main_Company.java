@@ -97,11 +97,11 @@ public class DataFusion_Main_Company
 		CorrespondenceSet<Company, Attribute> correspondences = new CorrespondenceSet<>();
 		
 
-		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_sbti_correspondences.csv"),dataSBTI, dataForbes);
+		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_sbti_correspondences_cleaned.csv"),dataSBTI, dataForbes);
 
-		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_sbti_correspondences.csv"),dataDbPedia, dataSBTI);
+		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_sbti_correspondences_cleaned.csv"),dataDbPedia, dataSBTI);
 
-		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_dbpedia_correspondences.csv"),dataDbPedia, dataForbes);
+		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_dbpedia_correspondences_cleaned.csv"),dataDbPedia, dataForbes);
 
 
 		// write group size distribution

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Companies xsi:noNamespaceSchemaLocation="file:///C:/Users/maria/Downloads/HWS23/Web%20Data%20Integration/project/integrated_schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Company>
-		<ID>Forbes_1</ID>
+		<ID>Forbes_597</ID>
 		<CompanyName>Telstra</CompanyName>
 		<Country>Australia</Country>
 		<Industries>
@@ -18,7 +18,7 @@
 		<FoundedYear>1975</FoundedYear>
 	</Company>
 	<Company>
-		<ID>Forbes_2</ID>
+		<ID>Forbes_462</ID>
 		<CompanyName>AstraZeneca</CompanyName>
 		<Country>United Kingdom</Country>
 		<Industries>
@@ -36,7 +36,7 @@
 		<FoundedYear>1999</FoundedYear>
 	</Company>
 	<Company>
-		<ID>Forbes_1</ID>
+		<ID>Forbes_331</ID>
 		<CompanyName>Danone</CompanyName>
 		<Country>France</Country>
 		<Industries>
@@ -53,8 +53,8 @@
 		<FoundedYear>1919</FoundedYear>
 	</Company>
 	<Company>
-		<ID>Forbes_3</ID>
-		<CompanyName>Intidex</CompanyName>
+		<ID>Forbes_302</ID>
+		<CompanyName>Inditex</CompanyName>
 		<Country>Spain</Country>
 		<Industries>
 			<Industry>Retailing</Industry>
@@ -70,8 +70,8 @@
 		<FoundedYear>1985</FoundedYear>
 	</Company>
 	<Company>
-		<ID>Forbes_4</ID>
-		<CompanyName>Bath & Body Works</CompanyName>
+		<ID>Forbes_1128</ID>
+		<CompanyName>Bath &amp; Body Works</CompanyName>
 		<Country>United States</Country>
 		<Industries>
 			<Industry>Retailing</Industry>
@@ -87,7 +87,7 @@
 		<FoundedYear>1990</FoundedYear>
 	</Company>
 	<Company>
-		<ID>Forbes_4</ID>
+		<ID>Forbes_241</ID>
 		<CompanyName>Netflix</CompanyName>
 		<Country>United States</Country>
 		<Industries>
@@ -105,7 +105,7 @@
 		<FoundedYear>1997</FoundedYear>
 	</Company>
 	<Company>
-		<ID>Forbes_</ID>
+		<ID>Forbes_1460</ID>
 		<CompanyName>Valeo</CompanyName>
 		<Country>France</Country>
 		<Industries>
@@ -123,7 +123,7 @@
 		<FoundedYear>1924</FoundedYear>
 	</Company>
 	<Company>
-		<ID>Forbes_</ID>
+		<ID>Forbes_308</ID>
 		<CompanyName>Tesco</CompanyName>
 		<Country>United Kingdom</Country>
 		<Industries>
@@ -140,7 +140,7 @@
 		<FoundedYear>1919</FoundedYear>
 	</Company>
 	<Company>
-		<ID>Forbes_</ID>
+		<ID>Forbes_226</ID>
 		<CompanyName>Schneider Electric</CompanyName>
 		<Country>France</Country>
 		<Industries>
@@ -158,7 +158,7 @@
 		<FoundedYear>1836</FoundedYear>
 	</Company>
 	<Company>
-		<ID>Forbes_</ID>
+		<ID>Forbes_202</ID>
 		<CompanyName>L'Oréal</CompanyName>
 		<Country>France</Country>
 		<Industries>
@@ -175,7 +175,7 @@
 		<FoundedYear>1909</FoundedYear>
 	</Company>
 	<Company>
-		<ID>Forbes_</ID>
+		<ID>Forbes_1212</ID>
 		<CompanyName>Experian</CompanyName>
 		<Country>Ireland</Country>
 		<Industries>
@@ -192,7 +192,7 @@
 		<FoundedYear>1996</FoundedYear>
 	</Company>
 	<Company>
-		<ID>Forbes_</ID>
+		<ID>Forbes_691</ID>
 		<CompanyName>Ecolab</CompanyName>
 		<Country>United States</Country>
 		<Industries>
@@ -209,8 +209,8 @@
 		<Profit>1129900000</Profit>
 		<FoundedYear>1923</FoundedYear>
 	</Company>
-		<Company>
-		<ID>Forbes_</ID>
+	<Company>
+		<ID>Forbes_703</ID>
 		<CompanyName>Trane Technologies</CompanyName>
 		<Country>Ireland</Country>
 		<Industries>
@@ -227,7 +227,7 @@
 		<FoundedYear>1871</FoundedYear>
 	</Company>
 		<Company>
-		<ID>Forbes_</ID>
+		<ID>Forbes_39</ID>
 		<CompanyName>BNP Paribas</CompanyName>
 		<Country>France</Country>
 		<Industries>
