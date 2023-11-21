@@ -8,8 +8,7 @@ import de.uni_mannheim.informatik.dws.winter.model.AbstractRecord;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
-public class Company extends AbstractRecord<Attribute> implements Serializable{
-	/*
+public class Company implements Matchable {	/*
 	  example entry <Company> <ID>Forbes_1</ID> <CompanyName>BioNTech</CompanyName>
 	  <ISIN>US0378331005</ISIN> <LEI>549300VJTTGNEANFBN84</LEI>
 	  <Forbes2022Rating>1</Forbes2022Rating>
@@ -293,11 +292,6 @@ public class Company extends AbstractRecord<Attribute> implements Serializable{
 		NetZeroCommittedYear = netZeroCommittedYear;
 	}
 
-	@Override
-	public boolean hasValue(Attribute attribute) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 	
 	
 
