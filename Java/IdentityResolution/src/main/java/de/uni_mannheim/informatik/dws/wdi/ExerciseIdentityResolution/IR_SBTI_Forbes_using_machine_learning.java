@@ -1,7 +1,9 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.CompanyBlockingKeyByNameGenerator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.*;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.CompanyNameComparatorJaroWrinkler;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.CountryComparatorJaroWrinkler;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.IndustryComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.CompanyXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -21,7 +23,7 @@ import org.slf4j.Logger;
 
 import java.io.File;
 
-public class IR_DBPedia_Sbti_using_machine_learning {
+public class IR_SBTI_Forbes_using_machine_learning {
 	
 	/*
 	 * Logging Options:
@@ -45,23 +47,23 @@ public class IR_DBPedia_Sbti_using_machine_learning {
 		HashedDataSet<Company, Attribute> dataSbti = new HashedDataSet<>();
 		new CompanyXMLReader().loadFromXML(new File("data/input/sbti_integrated.xml"), "/Companies/Company", dataSbti);
 
-		HashedDataSet<Company, Attribute>  dataDbPedia = new HashedDataSet<>();
-		new CompanyXMLReader().loadFromXML(new File("data/input/dbpedia_integrated.xml"), "/Companies/Company", dataDbPedia);
+		HashedDataSet<Company, Attribute>  dataForbes = new HashedDataSet<>();
+		new CompanyXMLReader().loadFromXML(new File("data/input/forbes_integrated.xml"), "/Companies/Company", dataForbes);
 
 		// load the training set
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsDbpedia_sbti = new MatchingGoldStandard();
 		gsDbpedia_sbti.loadFromCSVFile(new File(
-				"data/goldstandard/dbpedia_sbti_goldstandard_train.csv"));
+				"data/goldstandard/sbti_forbes_goldstandard_train.csv"));
 
 
 		// create a matching rule
 		String options[] = new String[] { "" };
 		//String modelType = "SimpleLogistic"; // use a logistic regression
-		//String modelType = "AdaBoostM1"; // u
-		String modelType = "SimpleLogistic";
+		String modelType = "Bayes"; // u
+		//String modelType = "SimpleLogistic";
 
-		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
+		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsDbpedia_sbti);
 		
 		// add comparators
@@ -73,7 +75,7 @@ public class IR_DBPedia_Sbti_using_machine_learning {
 		// train the matching rule's model
 		logger.info("*\tLearning matching rule\t*");
 		RuleLearner<Company, Attribute> learner = new RuleLearner<>();
-		learner.learnMatchingRule(dataDbPedia, dataSbti, null, matchingRule, gsDbpedia_sbti);
+		learner.learnMatchingRule(dataForbes, dataSbti, null, matchingRule, gsDbpedia_sbti);
 		logger.info(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
@@ -87,17 +89,17 @@ public class IR_DBPedia_Sbti_using_machine_learning {
 		// Execute the matching
 		logger.info("*\tRunning identity resolution\t*");
 		Processable<Correspondence<Company, Attribute>> correspondences = engine.runIdentityResolution(
-				dataDbPedia, dataSbti, null, matchingRule,
+				dataSbti, dataForbes, null, matchingRule,
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ML_DBPedia_2_Sbti_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ML_Sbti_2_Forbes_correspondences.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/dbpedia_sbti_goldstandard_test.csv"));
+				"data/goldstandard/sbti_forbes_goldstandard_test.csv"));
 		
 		// evaluate your result
 		logger.info("*\tEvaluating result\t*");
@@ -106,7 +108,7 @@ public class IR_DBPedia_Sbti_using_machine_learning {
 				gsTest);
 		
 		// print the evaluation result
-		logger.info("DBPedia <-> Sbti");
+		logger.info("SBTI <-> Forbes");
 		logger.info(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		logger.info(String.format(
