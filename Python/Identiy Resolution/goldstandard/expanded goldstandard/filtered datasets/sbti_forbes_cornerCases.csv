@@ -1,0 +1,168 @@
+Match ID,sbti_uid,forbes_uid,sbti_company,forbes_company,Similarity Score,sbti_fobes_uids
+sbti_forbes_1922,SBTI_1922,Forbes_1711,FMC Corporation,Sumec Corporation,88,SBTI_1922Forbes_1711
+sbti_forbes_2708,SBTI_2708,Forbes_860,International Flavors & Fragrances Inc.,International Flavors & Fragrances,94,SBTI_2708Forbes_860
+sbti_forbes_4763,SBTI_4763,Forbes_758,"Sekisui House, LTD",Sekisui House,87,SBTI_4763Forbes_758
+sbti_forbes_5133,SBTI_5133,Forbes_1711,SUMIDA CORPORATION,Sumec Corporation,86,SBTI_5133Forbes_1711
+sbti_forbes_1338,SBTI_1338,Forbes_467,"Daiwa House Industry Co., Ltd.",Daiwa House Industry,85,SBTI_1338Forbes_467
+sbti_forbes_4625,SBTI_4625,Forbes_263,"Salesforce.com, Inc.",Salesforce.com,88,SBTI_4625Forbes_263
+sbti_forbes_1920,SBTI_1920,Forbes_1316,Flutter Entertainment plc,Flutter Entertainment,91,SBTI_1920Forbes_1316
+sbti_forbes_2875,SBTI_2875,Forbes_1748,Johnson Matthey Plc,Johnson Matthey,88,SBTI_2875Forbes_1748
+sbti_forbes_2244,SBTI_2244,Forbes_1342,Group One,StoneX Group,86,SBTI_2244Forbes_1342
+sbti_forbes_4124,SBTI_4124,Forbes_625,Pal International,International Paper,89,SBTI_4124Forbes_625
+sbti_forbes_5466,SBTI_5466,Forbes_1082,thyssenkrupp AG,ThyssenKrupp Group,85,SBTI_5466Forbes_1082
+sbti_forbes_760,SBTI_760,Forbes_659,Booking Holdings Inc.,Booking Holdings,89,SBTI_760Forbes_659
+sbti_forbes_906,SBTI_906,Forbes_543,Canadian Pacific Railway Company,Canadian Pacific Railway,86,SBTI_906Forbes_543
+sbti_forbes_3853,SBTI_3853,Forbes_1553,"NIPPON EXPRESS HOLDINGS,INC.",NIPPON EXPRESS HOLDINGS,92,SBTI_3853Forbes_1553
+sbti_forbes_972,SBTI_972,Forbes_1654,Castellum AB,Castellum,86,SBTI_972Forbes_1654
+sbti_forbes_3323,SBTI_3323,Forbes_297,LyondellBasell Industries N.V.,LyondellBasell Industries,93,SBTI_3323Forbes_297
+sbti_forbes_3312,SBTI_3312,Forbes_576,"Lumen Technologies, Inc.",Lumen Technologies,90,SBTI_3312Forbes_576
+sbti_forbes_5656,SBTI_5656,Forbes_1711,UBE Corporation,Sumec Corporation,88,SBTI_5656Forbes_1711
+sbti_forbes_5268,SBTI_5268,Forbes_386,Tata Consultancy Services Limited,Tata Consultancy Services,86,SBTI_5268Forbes_386
+sbti_forbes_3753,SBTI_3753,Forbes_277,National Grid PLC,National Grid,87,SBTI_3753Forbes_277
+sbti_forbes_5975,SBTI_5975,Forbes_1438,"Williams-Sonoma, Inc.",Williams-Sonoma,88,SBTI_5975Forbes_1438
+sbti_forbes_2784,SBTI_2784,Forbes_1695,Iveco Group N.V.,Iveco Group,85,SBTI_2784Forbes_1695
+sbti_forbes_4390,SBTI_4390,Forbes_716,Quanta Computer Inc.,Quanta Computer,88,SBTI_4390Forbes_716
+sbti_forbes_1795,SBTI_1795,Forbes_834,Evonik Industries AG,Evonik Industries,92,SBTI_1795Forbes_834
+sbti_forbes_2080,SBTI_2080,Forbes_989,Geely Automobile Holdings Limited,Geely Automobile Holdings,86,SBTI_2080Forbes_989
+sbti_forbes_3642,SBTI_3642,Forbes_222,Mondelez International Inc,Mondelez International,92,SBTI_3642Forbes_222
+sbti_forbes_1084,SBTI_1084,Forbes_92,"Cisco Systems, Inc.",Cisco Systems,87,SBTI_1084Forbes_92
+sbti_forbes_2432,SBTI_2432,Forbes_1589,Hero Group,Metro Group,86,SBTI_2432Forbes_1589
+sbti_forbes_662,SBTI_662,Forbes_1405,"Berry Global Group, Inc.",Berry Global Group,90,SBTI_662Forbes_1405
+sbti_forbes_1134,SBTI_1134,Forbes_436,CNH Industrial N.V.,CNH Industrial,88,SBTI_1134Forbes_436
+sbti_forbes_469,SBTI_469,Forbes_663,Atlas Copco AB,Atlas Copco,88,SBTI_469Forbes_663
+sbti_forbes_5055,SBTI_5055,Forbes_352,Standard Chartered Bank,Standard Chartered,88,SBTI_5055Forbes_352
+sbti_forbes_2797,SBTI_2797,Forbes_1136,J Sainsbury plc,J Sainsbury,85,SBTI_2797Forbes_1136
+sbti_forbes_4930,SBTI_4930,Forbes_1761,Sky Group,SKF Group,89,SBTI_4930Forbes_1761
+sbti_forbes_2948,SBTI_2948,Forbes_1425,"Kawasaki Kisen Kaisha, Ltd.",Kawasaki Kisen Kaisha,91,SBTI_2948Forbes_1425
+sbti_forbes_4991,SBTI_4991,Forbes_1533,Sonova Holding AG,Sonova Holding,90,SBTI_4991Forbes_1533
+sbti_forbes_2836,SBTI_2836,Forbes_1845,JD Sports Fashion PLC,JD Sports Fashion,89,SBTI_2836Forbes_1845
+sbti_forbes_2506,SBTI_2506,Forbes_185,Honeywell International Inc.,Honeywell International,92,SBTI_2506Forbes_185
+sbti_forbes_4732,SBTI_4732,Forbes_1711,SCSK Corporation,Sumec Corporation,85,SBTI_4732Forbes_1711
+sbti_forbes_3044,SBTI_3044,Forbes_1574,Knorr-Bremse AG,Knorr-Bremse,89,SBTI_3044Forbes_1574
+sbti_forbes_1669,SBTI_1669,Forbes_429,Emerson Electric Co.,Emerson Electric,91,SBTI_1669Forbes_429
+sbti_forbes_5093,SBTI_5093,Forbes_713,STMicroelectronics NV,STMicroelectronics,92,SBTI_5093Forbes_713
+sbti_forbes_4215,SBTI_4215,Forbes_820,Phoenix Group Holdings plc,Phoenix Group Holdings,92,SBTI_4215Forbes_820
+sbti_forbes_2638,SBTI_2638,Forbes_1366,Indorama Ventures PCL,Indorama Ventures,89,SBTI_2638Forbes_1366
+sbti_forbes_1608,SBTI_1608,Forbes_666,EDP - Energias de Portugal S.A.,Edp-energias De Portugal,92,SBTI_1608Forbes_666
+sbti_forbes_4038,SBTI_4038,Forbes_1993,Ontex,Onex,89,SBTI_4038Forbes_1993
+sbti_forbes_2598,SBTI_2598,Forbes_92,IFCO Systems,Cisco Systems,88,SBTI_2598Forbes_92
+sbti_forbes_582,SBTI_582,Forbes_268,Banco do Brasil S.A.,Banco do Brasil,88,SBTI_582Forbes_268
+sbti_forbes_1387,SBTI_1387,Forbes_624,Dekkers International,Hermès International,85,SBTI_1387Forbes_624
+sbti_forbes_3539,SBTI_3539,Forbes_1434,Mettler-Toledo International Inc.,Mettler-Toledo International,93,SBTI_3539Forbes_1434
+sbti_forbes_2624,SBTI_2624,Forbes_1148,Impala Platinum Holdings Limited,Impala Platinum Holdings,86,SBTI_2624Forbes_1148
+sbti_forbes_136,SBTI_136,Forbes_1076,"Agilent Technologies, Inc",Agilent Technologies,91,SBTI_136Forbes_1076
+sbti_forbes_2087,SBTI_2087,Forbes_432,General Mills Inc.,General Mills,87,SBTI_2087Forbes_432
+sbti_forbes_1480,SBTI_1480,Forbes_625,DLA Piper International,International Paper,86,SBTI_1480Forbes_625
+sbti_forbes_1182,SBTI_1182,Forbes_848,Compass Group PLC,Compass Group,87,SBTI_1182Forbes_848
+sbti_forbes_583,SBTI_583,Forbes_976,BanColombia SA,Bancolombia,88,SBTI_583Forbes_976
+sbti_forbes_448,SBTI_448,Forbes_781,Astellas Pharma Inc.,Astellas Pharma,88,SBTI_448Forbes_781
+sbti_forbes_4951,SBTI_4951,Forbes_1789,Smoore International Holdings Limited,Smoore International Holdings,88,SBTI_4951Forbes_1789
+sbti_forbes_1987,SBTI_1987,Forbes_271,Freeport-McMoRan Inc.,Freeport-McMoRan,89,SBTI_1987Forbes_271
+sbti_forbes_4408,SBTI_4408,Forbes_797,Raiffeisen Bank International AG,Raiffeisen Bank International,95,SBTI_4408Forbes_797
+sbti_forbes_1400,SBTI_1400,Forbes_176,Delphi Technologies,Dell Technologies,89,SBTI_1400Forbes_176
+sbti_forbes_942,SBTI_942,Forbes_680,"Cardinal Health, Inc.",Cardinal Health,88,SBTI_942Forbes_680
+sbti_forbes_396,SBTI_396,Forbes_984,"Arrow Electronics, Inc.",Arrow Electronics,89,SBTI_396Forbes_984
+sbti_forbes_114,SBTI_114,Forbes_564,"Advanced Micro Devices, Inc",Advanced Micro Devices,92,SBTI_114Forbes_564
+sbti_forbes_442,SBTI_442,Forbes_280,ASML Holdings,ASML Holding,96,SBTI_442Forbes_280
+sbti_forbes_3929,SBTI_3929,Forbes_285,Novo Nordisk A/S,Novo Nordisk,86,SBTI_3929Forbes_285
+sbti_forbes_2423,SBTI_2423,Forbes_1431,"Henry Schein, Inc.",Henry Schein,86,SBTI_2423Forbes_1431
+sbti_forbes_3166,SBTI_3166,Forbes_1529,Las Vegas Sands Corp,Las Vegas Sands,86,SBTI_3166Forbes_1529
+sbti_forbes_1783,SBTI_1783,Forbes_495,Evergreen Marine Corp.,Evergreen Marine Corp. (Taiwan),86,SBTI_1783Forbes_495
+sbti_forbes_5653,SBTI_5653,Forbes_319,"Tyson Foods, Inc.",Tyson Foods,85,SBTI_5653Forbes_319
+sbti_forbes_5946,SBTI_5946,Forbes_1122,West Fraser Timber Co. Ltd,West Fraser Timber Co.,91,SBTI_5946Forbes_1122
+sbti_forbes_173,SBTI_173,Forbes_1764,Akamai Technologies INC,Akamai Technologies,90,SBTI_173Forbes_1764
+sbti_forbes_1286,SBTI_1286,Forbes_1535,"Crown Holdings, Inc",Crown Holdings,88,SBTI_1286Forbes_1535
+sbti_forbes_5232,SBTI_5232,Forbes_1767,"TAIWAN BUSINESS BANK, LTD.",Taiwan Business Bank,91,SBTI_5232Forbes_1767
+sbti_forbes_1003,SBTI_1003,Forbes_195,Cerba Healthcare,HCA Healthcare,87,SBTI_1003Forbes_195
+sbti_forbes_4747,SBTI_4747,Forbes_694,See Group,Seazen Group,86,SBTI_4747Forbes_694
+sbti_forbes_869,SBTI_869,Forbes_64,BWI Group,BMW Group,89,SBTI_869Forbes_64
+sbti_forbes_2988,SBTI_2988,Forbes_1203,Kerry Group PLC,Kerry Group,85,SBTI_2988Forbes_1203
+sbti_forbes_6068,SBTI_6068,Forbes_1280,Yara International ASA,Yara International,90,SBTI_6068Forbes_1280
+sbti_forbes_5136,SBTI_5136,Forbes_1618,"Sumitomo Forestry Co., Ltd","Sumitomo Forestry Co.,",91,SBTI_5136Forbes_1618
+sbti_forbes_1335,SBTI_1335,Forbes_1744,"Daito Trust Construction Co., Ltd.",Daito Trust Construction,87,SBTI_1335Forbes_1744
+sbti_forbes_3278,SBTI_3278,Forbes_724,"LONGi Green Energy Technology Co., Ltd.",Longi Green Energy Technology,89,SBTI_3278Forbes_724
+sbti_forbes_6091,SBTI_6091,Forbes_904,Yuanta Financial Holding Co Ltd,Yuanta Financial Holding,87,SBTI_6091Forbes_904
+sbti_forbes_1030,SBTI_1030,Forbes_624,Chemonics International,Hermès International,86,SBTI_1030Forbes_624
+sbti_forbes_4495,SBTI_4495,Forbes_980,Restaurant Brands International Inc.,Restaurant Brands International,94,SBTI_4495Forbes_980
+sbti_forbes_1176,SBTI_1176,Forbes_1345,"COMPAL ELECTRONICS, INC.",Compal Electronics,90,SBTI_1176Forbes_1345
+sbti_forbes_3283,SBTI_3283,Forbes_791,Lorenz Group,Lonza Group,87,SBTI_3283Forbes_791
+sbti_forbes_2124,SBTI_2124,Forbes_207,"Gilead Sciences, Inc.",Gilead Sciences,88,SBTI_2124Forbes_207
+sbti_forbes_1188,SBTI_1188,Forbes_875,"Conagra Brands, Inc.",Conagra Brands,88,SBTI_1188Forbes_875
+sbti_forbes_441,SBTI_441,Forbes_1764,ASM Technologies,Akamai Technologies,86,SBTI_441Forbes_1764
+sbti_forbes_307,SBTI_307,Forbes_549,"Analog Devices, Inc.",Analog Devices,88,SBTI_307Forbes_549
+sbti_forbes_3319,SBTI_3319,Forbes_693,"Luxshare Precision Industry Co.,Ltd",Luxshare Precision Industry,89,SBTI_3319Forbes_693
+sbti_forbes_4357,SBTI_4357,Forbes_882,Public Service Enterprise Group Inc. (PSEG),Public Service Enterprise Group,87,SBTI_4357Forbes_882
+sbti_forbes_5361,SBTI_5361,Forbes_1487,Thai Beverage PLC,Thai Beverage,87,SBTI_5361Forbes_1487
+sbti_forbes_3216,SBTI_3216,Forbes_546,LG Electronics Inc.,LG Electronics,88,SBTI_3216Forbes_546
+sbti_forbes_5618,SBTI_5618,Forbes_513,TSB Bank,VTB Bank,88,SBTI_5618Forbes_513
+sbti_forbes_3399,SBTI_3399,Forbes_1022,Manulife Financial Corporation,iA Financial Corporation,85,SBTI_3399Forbes_1022
+sbti_forbes_4489,SBTI_4489,Forbes_417,RES Group,RWE Group,89,SBTI_4489Forbes_417
+sbti_forbes_1039,SBTI_1039,Forbes_126,Chime Communications,Charter Communications,86,SBTI_1039Forbes_126
+sbti_forbes_509,SBTI_509,Forbes_1069,"AvalonBay Communities, Inc.",AvalonBay Communities,91,SBTI_509Forbes_1069
+sbti_forbes_280,SBTI_280,Forbes_779,American Airlines,American Airlines Group,85,SBTI_280Forbes_779
+sbti_forbes_1242,SBTI_1242,Forbes_1928,"CoStar Group, Inc.",CoStar Group,86,SBTI_1242Forbes_1928
+sbti_forbes_423,SBTI_423,Forbes_653,"ASE Technology Holding, Co., Ltd.",ASE Technology Holding,86,SBTI_423Forbes_653
+sbti_forbes_454,SBTI_454,Forbes_914,ASUSTEK COMPUTER INC.,Asustek Computer,89,SBTI_454Forbes_914
+sbti_forbes_6155,SBTI_6155,Forbes_80,Zurich Insurance Group Ltd,Zurich Insurance Group,92,SBTI_6155Forbes_80
+sbti_forbes_5673,SBTI_5673,Forbes_1140,"Ulta Beauty, Inc.",Ulta Beauty,85,SBTI_5673Forbes_1140
+sbti_forbes_128,SBTI_128,Forbes_1846,Aéroports de Paris SA,Aeroports de Paris,89,SBTI_128Forbes_1846
+sbti_forbes_987,SBTI_987,Forbes_1144,CELLNEX TELECOM S.A.,Cellnex Telecom,88,SBTI_987Forbes_1144
+sbti_forbes_253,SBTI_253,Forbes_323,"Altria Group, Inc.",Altria Group,86,SBTI_253Forbes_323
+sbti_forbes_815,SBTI_815,Forbes_101,British American Tobacco (BAT),British American Tobacco,92,SBTI_815Forbes_101
+sbti_forbes_4125,SBTI_4125,Forbes_1925,Palantir Technologies Inc.,Palantir Technologies,91,SBTI_4125Forbes_1925
+sbti_forbes_3960,SBTI_3960,Forbes_213,NØIE,Nike,86,SBTI_3960Forbes_213
+sbti_forbes_2893,SBTI_2893,Forbes_947,Julius Baer Group Ltd.,Julius Baer Group,89,SBTI_2893Forbes_947
+sbti_forbes_5709,SBTI_5709,Forbes_1983,Unity Software Inc,Unity Software,88,SBTI_5709Forbes_1983
+sbti_forbes_5211,SBTI_5211,Forbes_1711,SYSMEX CORPORATION,Sumec Corporation,86,SBTI_5211Forbes_1711
+sbti_forbes_2579,SBTI_2579,Forbes_136,Iberdrola SA,Iberdrola,86,SBTI_2579Forbes_136
+sbti_forbes_6003,SBTI_6003,Forbes_1374,Wolters Kluwer N.V.,Wolters Kluwer,88,SBTI_6003Forbes_1374
+sbti_forbes_627,SBTI_627,Forbes_1204,Beiersdorf AG,Beiersdorf,87,SBTI_627Forbes_1204
+sbti_forbes_4702,SBTI_4702,Forbes_1291,Schaeffler AG,Schaeffler,87,SBTI_4702Forbes_1291
+sbti_forbes_5648,SBTI_5648,Forbes_417,TWE Group,RWE Group,89,SBTI_5648Forbes_417
+sbti_forbes_3773,SBTI_3773,Forbes_1711,NEC Corporation,Sumec Corporation,88,SBTI_3773Forbes_1711
+sbti_forbes_4435,SBTI_4435,Forbes_725,Reckitt Benckiser Group plc,Reckitt Benckiser Group,92,SBTI_4435Forbes_725
+sbti_forbes_5445,SBTI_5445,Forbes_120,Thermo Fisher Scientific Inc.,Thermo Fisher Scientific,92,SBTI_5445Forbes_120
+sbti_forbes_2443,SBTI_2443,Forbes_614,HF Holding,S.F. Holding,86,SBTI_2443Forbes_614
+sbti_forbes_1844,SBTI_1844,Forbes_1168,Fastighets AB Balder,Fastighets Balder,92,SBTI_1844Forbes_1168
+sbti_forbes_2392,SBTI_2392,Forbes_1950,"Healthpeak Properties, Inc.",Healthpeak Properties,91,SBTI_2392Forbes_1950
+sbti_forbes_5476,SBTI_5476,Forbes_1937,TIM Group,TMX Group,89,SBTI_5476Forbes_1937
+sbti_forbes_5874,SBTI_5874,Forbes_1191,voestalpine AG,Voestalpine,88,SBTI_5874Forbes_1191
+sbti_forbes_5174,SBTI_5174,Forbes_578,Svenska Handelsbanken publ.,Svenska Handelsbanken,89,SBTI_5174Forbes_578
+sbti_forbes_261,SBTI_261,Forbes_1657,AMAG Group,Bawag Group,86,SBTI_261Forbes_1657
+sbti_forbes_4634,SBTI_4634,Forbes_1814,Salzgitter AG,Salzgitter,87,SBTI_4634Forbes_1814
+sbti_forbes_2437,SBTI_2437,Forbes_364,Hewlett Packard Enterprise Company,Hewlett Packard Enterprise,87,SBTI_2437Forbes_364
+sbti_forbes_4603,SBTI_4603,Forbes_1326,Saab AB,SSAB AB,86,SBTI_4603Forbes_1326
+sbti_forbes_2666,SBTI_2666,Forbes_1542,Ingersoll Rand Inc.,Ingersoll Rand,88,SBTI_2666Forbes_1542
+sbti_forbes_5291,SBTI_5291,Forbes_553,TE Connectivity Ltd,TE Connectivity,88,SBTI_5291Forbes_553
+sbti_forbes_5713,SBTI_5713,Forbes_890,Universal Music Group N.V.,Universal Music Group,91,SBTI_5713Forbes_890
+sbti_forbes_3343,SBTI_3343,Forbes_219,Mäder Group,Midea Group,86,SBTI_3343Forbes_219
+sbti_forbes_1348,SBTI_1348,Forbes_1899,Danieli Group,Azrieli Group,85,SBTI_1348Forbes_1899
+sbti_forbes_1048,SBTI_1048,Forbes_1222,"Chipotle Mexican Grill, Inc.",Chipotle Mexican Grill,92,SBTI_1048Forbes_1222
+sbti_forbes_1953,SBTI_1953,Forbes_372,Fortescue Metals Group Ltd,Fortescue Metals Group,92,SBTI_1953Forbes_372
+sbti_forbes_5457,SBTI_5457,Forbes_1437,"Thor Industries, Inc.",Thor Industries,88,SBTI_5457Forbes_1437
+sbti_forbes_3018,SBTI_3018,Forbes_1441,KION GROUP AG,KION Group,87,SBTI_3018Forbes_1441
+sbti_forbes_2827,SBTI_2827,Forbes_365,Japan Tobacco Inc.,Japan Tobacco,87,SBTI_2827Forbes_365
+sbti_forbes_2878,SBTI_2878,Forbes_1304,Jones Engineering,Jacobs Engineering,86,SBTI_2878Forbes_1304
+sbti_forbes_558,SBTI_558,Forbes_411,BAE Systems PLC,BAE Systems,85,SBTI_558Forbes_411
+sbti_forbes_3403,SBTI_3403,Forbes_1495,Marfrig Global Foods S.A.,Marfrig Global Foods,91,SBTI_3403Forbes_1495
+sbti_forbes_5895,SBTI_5895,Forbes_1655,Wacker Chemie AG,Wacker Chemie,90,SBTI_5895Forbes_1655
+sbti_forbes_4305,SBTI_4305,Forbes_441,"Principal Financial Group, Inc.",Principal Financial Group,93,SBTI_4305Forbes_441
+sbti_forbes_1540,SBTI_1540,Forbes_357,"DuPont de Nemours, Inc.",DuPont de Nemours,89,SBTI_1540Forbes_357
+sbti_forbes_1930,SBTI_1930,Forbes_1777,"Foot Locker, Inc.",Foot Locker,85,SBTI_1930Forbes_1777
+sbti_forbes_1884,SBTI_1884,Forbes_1072,"First Financial Holding Co., Ltd.",First Financial Holding,87,SBTI_1884Forbes_1072
+sbti_forbes_6094,SBTI_6094,Forbes_1157,"Yum China Holdings, Inc.",Yum China Holdings,90,SBTI_6094Forbes_1157
+sbti_forbes_5159,SBTI_5159,Forbes_586,SUSE,SSE,86,SBTI_5159Forbes_586
+sbti_forbes_5432,SBTI_5432,Forbes_1697,"The Shanghai Commercial & Savings Bank, Ltd.",Shanghai Commercial & Savings Bank,89,SBTI_5432Forbes_1697
+sbti_forbes_4769,SBTI_4769,Forbes_1711,Semtech Corporation,Sumec Corporation,89,SBTI_4769Forbes_1711
+sbti_forbes_3764,SBTI_3764,Forbes_247,NatWest Group plc,NatWest Group,87,SBTI_3764Forbes_247
+sbti_forbes_5705,SBTI_5705,Forbes_1681,"United Natural Foods, Inc.",United Natural Foods,91,SBTI_5705Forbes_1681
+sbti_forbes_3489,SBTI_3489,Forbes_829,Mega Financial Holding Company,Mega Financial Holding,85,SBTI_3489Forbes_829
+sbti_forbes_446,SBTI_446,Forbes_872,Assa Abloy AB,Assa Abloy,87,SBTI_446Forbes_872
+sbti_forbes_920,SBTI_920,Forbes_524,Capgemini SE,Capgemini,86,SBTI_920Forbes_524
+sbti_forbes_1258,SBTI_1258,Forbes_1661,CPI Property Group S.A.,CPI Property Group,90,SBTI_1258Forbes_1661
+sbti_forbes_3217,SBTI_3217,Forbes_1613,LG Innotek,"LG Innotek Co.,",87,SBTI_3217Forbes_1613
+sbti_forbes_1169,SBTI_1169,Forbes_876,Commerzbank AG,Commerzbank,88,SBTI_1169Forbes_876
+sbti_forbes_737,SBTI_737,Forbes_1392,BNK Financial Group Inc.,BNK Financial Group,90,SBTI_737Forbes_1392
+sbti_forbes_440,SBTI_440,Forbes_1940,ASM International N.V.,ASM International,89,SBTI_440Forbes_1940
+sbti_forbes_3702,SBTI_3702,Forbes_514,"Murata Manufacturing Co., Ltd.",Murata Manufacturing,85,SBTI_3702Forbes_514
+sbti_forbes_3400,SBTI_3400,Forbes_548,Manutan International,Magna International,90,SBTI_3400Forbes_548

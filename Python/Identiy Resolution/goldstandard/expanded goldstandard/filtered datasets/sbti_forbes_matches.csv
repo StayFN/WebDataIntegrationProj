@@ -1,0 +1,133 @@
+Match ID,sbti_uid,forbes_uid,sbti_company,forbes_company,Similarity Score,sbti_fobes_uids
+sbti_forbes_1747,SBTI_1747,Forbes_301,EssilorLuxottica,EssilorLuxottica,100,SBTI_1747Forbes_301
+sbti_forbes_1549,SBTI_1549,Forbes_1588,DXC Technology,DXC Technology,100,SBTI_1549Forbes_1588
+sbti_forbes_2178,SBTI_2178,Forbes_1902,Gold Fields,Gold Fields,100,SBTI_2178Forbes_1902
+sbti_forbes_527,SBTI_527,Forbes_48,AXA Group,AXA Group,100,SBTI_527Forbes_48
+sbti_forbes_5329,SBTI_5329,Forbes_1327,Teleperformance,Teleperformance,100,SBTI_5329Forbes_1327
+sbti_forbes_3269,SBTI_3269,Forbes_1979,Logitech International,Logitech International,100,SBTI_3269Forbes_1979
+sbti_forbes_2722,SBTI_2722,Forbes_505,Intuit,Intuit,100,SBTI_2722Forbes_505
+sbti_forbes_4488,SBTI_4488,Forbes_677,Republic Services,Republic Services,100,SBTI_4488Forbes_677
+sbti_forbes_2457,SBTI_2457,Forbes_1498,Hilton,Hilton,100,SBTI_2457Forbes_1498
+sbti_forbes_3956,SBTI_3956,Forbes_657,NXP Semiconductors,NXP Semiconductors,100,SBTI_3956Forbes_657
+sbti_forbes_2338,SBTI_2338,Forbes_483,Hana Financial Group,Hana Financial Group,100,SBTI_2338Forbes_483
+sbti_forbes_5048,SBTI_5048,Forbes_826,St. James's Place,St. James's Place,100,SBTI_5048Forbes_826
+sbti_forbes_2832,SBTI_2832,Forbes_401,JBS,JBS,100,SBTI_2832Forbes_401
+sbti_forbes_1354,SBTI_1354,Forbes_371,Danske Bank,Danske Bank,100,SBTI_1354Forbes_371
+sbti_forbes_5678,SBTI_5678,Forbes_1199,Umicore,Umicore,100,SBTI_5678Forbes_1199
+sbti_forbes_5392,SBTI_5392,Forbes_435,The Estée Lauder Companies,The Estée Lauder Companies,100,SBTI_5392Forbes_435
+sbti_forbes_1622,SBTI_1622,Forbes_792,Eiffage,Eiffage,100,SBTI_1622Forbes_792
+sbti_forbes_260,SBTI_260,Forbes_1848,Amadeus IT Group,Amadeus IT Group ,100,SBTI_260Forbes_1848
+sbti_forbes_6138,SBTI_6138,Forbes_1229,Zimmer Biomet,Zimmer Biomet,100,SBTI_6138Forbes_1229
+sbti_forbes_6009,SBTI_6009,Forbes_595,Woori Financial Group,Woori Financial Group,100,SBTI_6009Forbes_595
+sbti_forbes_2719,SBTI_2719,Forbes_130,Intesa Sanpaolo,Intesa Sanpaolo,100,SBTI_2719Forbes_130
+sbti_forbes_1135,SBTI_1135,Forbes_316,CNP Assurances,CNP Assurances,100,SBTI_1135Forbes_316
+sbti_forbes_2917,SBTI_2917,Forbes_1039,Kakao,Kakao,100,SBTI_2917Forbes_1039
+sbti_forbes_3206,SBTI_3206,Forbes_1147,Leonardo,Leonardo,100,SBTI_3206Forbes_1147
+sbti_forbes_5660,SBTI_5660,Forbes_1065,UCB,UCB,100,SBTI_5660Forbes_1065
+sbti_forbes_5332,SBTI_5332,Forbes_597,Telstra,Telstra,100,SBTI_5332Forbes_597
+sbti_forbes_3914,SBTI_3914,Forbes_619,Northern Trust,Northern Trust,100,SBTI_3914Forbes_619
+sbti_forbes_3439,SBTI_3439,Forbes_1992,Match Group,Match Group,100,SBTI_3439Forbes_1992
+sbti_forbes_1612,SBTI_1612,Forbes_1010,Edwards Lifesciences,Edwards Lifesciences,100,SBTI_1612Forbes_1010
+sbti_forbes_44,SBTI_44,Forbes_67,AbbVie,AbbVie,100,SBTI_44Forbes_67
+sbti_forbes_415,SBTI_415,Forbes_574,Asahi Group Holdings,Asahi Group Holdings,100,SBTI_415Forbes_574
+sbti_forbes_4214,SBTI_4214,Forbes_215,Philip Morris International,Philip Morris International,100,SBTI_4214Forbes_215
+sbti_forbes_5352,SBTI_5352,Forbes_308,Tesco,Tesco,100,SBTI_5352Forbes_308
+sbti_forbes_1719,SBTI_1719,Forbes_1214,EQT AB,EQT AB,100,SBTI_1719Forbes_1214
+sbti_forbes_1141,SBTI_1141,Forbes_636,Coca Cola European Partners,Coca-Cola European Partners,100,SBTI_1141Forbes_636
+sbti_forbes_5102,SBTI_5102,Forbes_818,Stora Enso,Stora Enso,100,SBTI_5102Forbes_818
+sbti_forbes_1954,SBTI_1954,Forbes_1446,Fortinet,Fortinet,100,SBTI_1954Forbes_1446
+sbti_forbes_5948,SBTI_5948,Forbes_658,Western Digital,Western Digital,100,SBTI_5948Forbes_658
+sbti_forbes_5191,SBTI_5191,Forbes_606,Swisscom,Swisscom,100,SBTI_5191Forbes_606
+sbti_forbes_6012,SBTI_6012,Forbes_1603,Workday,Workday,100,SBTI_6012Forbes_1603
+sbti_forbes_814,SBTI_814,Forbes_113,Bristol Myers Squibb,Bristol Myers Squibb,100,SBTI_814Forbes_113
+sbti_forbes_1359,SBTI_1359,Forbes_1098,Dassault Systemes,Dassault Systemes,100,SBTI_1359Forbes_1098
+sbti_forbes_3411,SBTI_3411,Forbes_612,Marriott International,Marriott International,100,SBTI_3411Forbes_612
+sbti_forbes_5323,SBTI_5323,Forbes_197,TELEFÓNICA,Telefónica,100,SBTI_5323Forbes_197
+sbti_forbes_581,SBTI_581,Forbes_1652,Banco Comercial Portugues,Banco Comercial Portugues,100,SBTI_581Forbes_1652
+sbti_forbes_4984,SBTI_4984,Forbes_969,Solvay,Solvay,100,SBTI_4984Forbes_969
+sbti_forbes_1861,SBTI_1861,Forbes_894,Ferrovial,Ferrovial,100,SBTI_1861Forbes_894
+sbti_forbes_5402,SBTI_5402,Forbes_76,The Home Depot,The Home Depot,100,SBTI_5402Forbes_76
+sbti_forbes_1251,SBTI_1251,Forbes_1467,Covivio,Covivio,100,SBTI_1251Forbes_1467
+sbti_forbes_1206,SBTI_1206,Forbes_512,Continental,Continental,100,SBTI_1206Forbes_512
+sbti_forbes_4710,SBTI_4710,Forbes_1341,Schroders,Schroders,100,SBTI_4710Forbes_1341
+sbti_forbes_267,SBTI_267,Forbes_6,Amazon,Amazon,100,SBTI_267Forbes_6
+sbti_forbes_244,SBTI_244,Forbes_1232,Alstom,Alstom,100,SBTI_244Forbes_1232
+sbti_forbes_5455,SBTI_5455,Forbes_684,Thomson Reuters,Thomson Reuters,100,SBTI_5455Forbes_684
+sbti_forbes_5043,SBTI_5043,Forbes_586,SSE,SSE,100,SBTI_5043Forbes_586
+sbti_forbes_4859,SBTI_4859,Forbes_1071,Sibanye-Stillwater,Sibanye Stillwater,100,SBTI_4859Forbes_1071
+sbti_forbes_3012,SBTI_3012,Forbes_1160,Kingfisher,Kingfisher,100,SBTI_3012Forbes_1160
+sbti_forbes_4358,SBTI_4358,Forbes_707,Publicis Groupe,Publicis Groupe,100,SBTI_4358Forbes_707
+sbti_forbes_1405,SBTI_1405,Forbes_1042,Delta Electronics,Delta Electronics,100,SBTI_1405Forbes_1042
+sbti_forbes_5183,SBTI_5183,Forbes_1986,Swedish Match,Swedish Match,100,SBTI_5183Forbes_1986
+sbti_forbes_3222,SBTI_3222,Forbes_584,Liberty Global,Liberty Global,100,SBTI_3222Forbes_584
+sbti_forbes_4323,SBTI_4323,Forbes_525,Prologis,Prologis,100,SBTI_4323Forbes_525
+sbti_forbes_512,SBTI_512,Forbes_1581,Avantor,Avantor,100,SBTI_512Forbes_1581
+sbti_forbes_885,SBTI_885,Forbes_1172,Caesars Entertainment,Caesars Entertainment,100,SBTI_885Forbes_1172
+sbti_forbes_2386,SBTI_2386,Forbes_809,HCL Technologies,HCL Technologies,100,SBTI_2386Forbes_809
+sbti_forbes_4501,SBTI_4501,Forbes_1536,Rexel,Rexel,100,SBTI_4501Forbes_1536
+sbti_forbes_2872,SBTI_2872,Forbes_40,Johnson & Johnson,Johnson & Johnson,100,SBTI_2872Forbes_40
+sbti_forbes_1301,SBTI_1301,Forbes_522,Cummins,Cummins,100,SBTI_1301Forbes_522
+sbti_forbes_5288,SBTI_5288,Forbes_1044,TD SYNNEX,TD SYNNEX,100,SBTI_5288Forbes_1044
+sbti_forbes_3133,SBTI_3133,Forbes_633,Labcorp,Labcorp,100,SBTI_3133Forbes_633
+sbti_forbes_1726,SBTI_1726,Forbes_963,Equity Residential,Equity Residential,100,SBTI_1726Forbes_963
+sbti_forbes_3921,SBTI_3921,Forbes_68,Novartis,Novartis,100,SBTI_3921Forbes_68
+sbti_forbes_4704,SBTI_4704,Forbes_226,Schneider Electric,Schneider Electric,100,SBTI_4704Forbes_226
+sbti_forbes_1272,SBTI_1272,Forbes_598,Credit Suisse Group,Credit Suisse Group,100,SBTI_1272Forbes_598
+sbti_forbes_3194,SBTI_3194,Forbes_1016,Legrand,Legrand,100,SBTI_3194Forbes_1016
+sbti_forbes_4054,SBTI_4054,Forbes_530,ORANGE,Orange,100,SBTI_4054Forbes_530
+sbti_forbes_2995,SBTI_2995,Forbes_1340,Keysight Technologies,Keysight Technologies,100,SBTI_2995Forbes_1340
+sbti_forbes_2425,SBTI_2425,Forbes_1954,Hera,Hera,100,SBTI_2425Forbes_1954
+sbti_forbes_1401,SBTI_1401,Forbes_615,Delta Air Lines,Delta Air Lines,100,SBTI_1401Forbes_615
+sbti_forbes_2625,SBTI_2625,Forbes_430,Imperial Brands,Imperial Brands,100,SBTI_2625Forbes_430
+sbti_forbes_3795,SBTI_3795,Forbes_241,Netflix,Netflix,100,SBTI_3795Forbes_241
+sbti_forbes_2431,SBTI_2431,Forbes_624,Hermès International,Hermès International,100,SBTI_2431Forbes_624
+sbti_forbes_1368,SBTI_1368,Forbes_1155,DaVita,DaVita,100,SBTI_1368Forbes_1155
+sbti_forbes_3436,SBTI_3436,Forbes_267,Mastercard,Mastercard,100,SBTI_3436Forbes_267
+sbti_forbes_1271,SBTI_1271,Forbes_121,Credit Agricole,Credit Agricole,100,SBTI_1271Forbes_121
+sbti_forbes_2088,SBTI_2088,Forbes_69,General Motors,General Motors,100,SBTI_2088Forbes_69
+sbti_forbes_1446,SBTI_1446,Forbes_1772,DGB FINANCIAL GROUP,DGB Financial Group,100,SBTI_1446Forbes_1772
+sbti_forbes_738,SBTI_738,Forbes_39,BNP Paribas,BNP Paribas,100,SBTI_738Forbes_39
+sbti_forbes_4897,SBTI_4897,Forbes_731,Simon Property Group,Simon Property Group,100,SBTI_4897Forbes_731
+sbti_forbes_6034,SBTI_6034,Forbes_1380,X5 Retail Group,X5 Retail Group,100,SBTI_6034Forbes_1380
+sbti_forbes_5939,SBTI_5939,Forbes_1435,Wendel,Wendel,100,SBTI_5939Forbes_1435
+sbti_forbes_42,SBTI_42,Forbes_274,ABB,ABB,100,SBTI_42Forbes_274
+sbti_forbes_1164,SBTI_1164,Forbes_32,Comcast,Comcast,100,SBTI_1164Forbes_32
+sbti_forbes_36,SBTI_36,Forbes_1615,AB Sagax,AB Sagax,100,SBTI_36Forbes_1615
+sbti_forbes_4105,SBTI_4105,Forbes_1592,Owens Corning,Owens Corning,100,SBTI_4105Forbes_1592
+sbti_forbes_4952,SBTI_4952,Forbes_1351,Smurfit Kappa Group,Smurfit Kappa Group,100,SBTI_4952Forbes_1351
+sbti_forbes_3347,SBTI_3347,Forbes_548,Magna International,Magna International,100,SBTI_3347Forbes_548
+sbti_forbes_956,SBTI_956,Forbes_473,Carrefour,Carrefour,100,SBTI_956Forbes_473
+sbti_forbes_356,SBTI_356,Forbes_1712,Aramark,Aramark,100,SBTI_356Forbes_1712
+sbti_forbes_386,SBTI_386,Forbes_1242,Arkema,Arkema,100,SBTI_386Forbes_1242
+sbti_forbes_4923,SBTI_4923,Forbes_772,SK Telecom,SK Telecom,100,SBTI_4923Forbes_772
+sbti_forbes_1582,SBTI_1582,Forbes_691,Ecolab,Ecolab,100,SBTI_1582Forbes_691
+sbti_forbes_2636,SBTI_2636,Forbes_302,Inditex,Inditex,100,SBTI_2636Forbes_302
+sbti_forbes_163,SBTI_163,Forbes_122,Airbus,AIRBUS,100,SBTI_163Forbes_122
+sbti_forbes_3749,SBTI_3749,Forbes_447,Naspers,Naspers,100,SBTI_3749Forbes_447
+sbti_forbes_4597,SBTI_4597,Forbes_698,S&P Global,S&P Global,100,SBTI_4597Forbes_698
+sbti_forbes_5743,SBTI_5743,Forbes_1382,Vakifbank,VakifBank,100,SBTI_5743Forbes_1382
+sbti_forbes_4129,SBTI_4129,Forbes_1586,Palo Alto Networks,Palo Alto Networks,100,SBTI_4129Forbes_1586
+sbti_forbes_1385,SBTI_1385,Forbes_153,Deere & Company,Deere & Company,100,SBTI_1385Forbes_153
+sbti_forbes_5231,SBTI_5231,Forbes_1367,Taishin Financial Holdings,Taishin Financial Holdings,100,SBTI_5231Forbes_1367
+sbti_forbes_1766,SBTI_1766,Forbes_1399,Euronext,Euronext,100,SBTI_1766Forbes_1399
+sbti_forbes_3015,SBTI_3015,Forbes_1489,Kingspan Group Plc,Kingspan Group PLC,100,SBTI_3015Forbes_1489
+sbti_forbes_1534,SBTI_1534,Forbes_1459,Duke Realty,Duke Realty,100,SBTI_1534Forbes_1459
+sbti_forbes_138,SBTI_138,Forbes_1518,Agility,Agility,100,SBTI_138Forbes_1518
+sbti_forbes_5708,SBTI_5708,Forbes_22,UnitedHealth Group,UnitedHealth Group,100,SBTI_5708Forbes_22
+sbti_forbes_735,SBTI_735,Forbes_64,BMW Group,BMW Group,100,SBTI_735Forbes_64
+sbti_forbes_2143,SBTI_2143,Forbes_129,GlaxoSmithKline,GlaxoSmithKline,100,SBTI_2143Forbes_129
+sbti_forbes_1395,SBTI_1395,Forbes_176,Dell Technologies,Dell Technologies,100,SBTI_1395Forbes_176
+sbti_forbes_1353,SBTI_1353,Forbes_331,Danone,Danone,100,SBTI_1353Forbes_331
+sbti_forbes_5037,SBTI_5037,Forbes_1726,SQM,SQM,100,SBTI_5037Forbes_1726
+sbti_forbes_5802,SBTI_5802,Forbes_933,Vestas Wind Systems,Vestas Wind Systems,100,SBTI_5802Forbes_933
+sbti_forbes_4830,SBTI_4830,Forbes_279,Shinhan Financial Group,Shinhan Financial Group,100,SBTI_4830Forbes_279
+sbti_forbes_601,SBTI_601,Forbes_1128,Bath & Body Works,Bath & Body Works,100,SBTI_601Forbes_1128
+sbti_forbes_599,SBTI_599,Forbes_1886,Barry Callebaut,Barry Callebaut,100,SBTI_599Forbes_1886
+sbti_forbes_4619,SBTI_4619,Forbes_284,SAINT-GOBAIN,Saint-Gobain,100,SBTI_4619Forbes_284
+sbti_forbes_1805,SBTI_1805,Forbes_1212,Experian,Experian,100,SBTI_1805Forbes_1212
+sbti_forbes_1571,SBTI_1571,Forbes_398,Eaton,Eaton,100,SBTI_1571Forbes_398
+sbti_forbes_5649,SBTI_5649,Forbes_1987,Twilio,Twilio,100,SBTI_5649Forbes_1987
+sbti_forbes_4192,SBTI_4192,Forbes_489,Pernod Ricard,Pernod Ricard,100,SBTI_4192Forbes_489
+sbti_forbes_351,SBTI_351,Forbes_959,Aptiv,Aptiv,100,SBTI_351Forbes_959
+sbti_forbes_2664,SBTI_2664,Forbes_183,ING Group,ING Group,100,SBTI_2664Forbes_183
+sbti_forbes_4188,SBTI_4188,Forbes_1407,PerkinElmer,PerkinElmer,100,SBTI_4188Forbes_1407
