@@ -1,0 +1,209 @@
+Match ID,dbpedia_uid,forbes_uid,dbpedia_company,forbes_company,Similarity Score,dbpedia_fobes_uids
+dbpedia_forbes_4196,DBPedia_4195,Forbes_1937,TMF Group,TMX Group,89,DBPedia_4195Forbes_1937
+dbpedia_forbes_5760,DBPedia_5759,Forbes_428,DBS Bank,DNB Bank,88,DBPedia_5759Forbes_428
+dbpedia_forbes_7307,DBPedia_7306,Forbes_277,National Grid plc,National Grid,87,DBPedia_7306Forbes_277
+dbpedia_forbes_10377,DBPedia_10376,Forbes_949,Aldar Properties,Emaar Properties,88,DBPedia_10376Forbes_949
+dbpedia_forbes_2082,DBPedia_2081,Forbes_1690,Winstar Communications,SBA Communications,85,DBPedia_2081Forbes_1690
+dbpedia_forbes_6121,DBPedia_6120,Forbes_972,TSMC,SMC,86,DBPedia_6120Forbes_972
+dbpedia_forbes_4263,DBPedia_4262,Forbes_892,Ryobi Holdings,SBI Holdings,85,DBPedia_4262Forbes_892
+dbpedia_forbes_9829,DBPedia_9828,Forbes_1633,Interactive Brokers,Interactive Brokers Group,86,DBPedia_9828Forbes_1633
+dbpedia_forbes_4060,DBPedia_4059,Forbes_71,Hanwha Life Insurance,China Life Insurance,88,DBPedia_4059Forbes_71
+dbpedia_forbes_578,DBPedia_577,Forbes_154,DFCU Bank,HDFC Bank,89,DBPedia_577Forbes_154
+dbpedia_forbes_10469,DBPedia_10468,Forbes_589,Charter International,Baxter International,88,DBPedia_10468Forbes_589
+dbpedia_forbes_136,DBPedia_135,Forbes_1928,Costain Group,CoStar Group,88,DBPedia_135Forbes_1928
+dbpedia_forbes_10097,DBPedia_10096,Forbes_176,Maxwell Technologies,Dell Technologies,86,DBPedia_10096Forbes_176
+dbpedia_forbes_5083,DBPedia_5082,Forbes_1022,Invest Financial Corporation,iA Financial Corporation,88,DBPedia_5082Forbes_1022
+dbpedia_forbes_3474,DBPedia_3473,Forbes_315,Regis Resources,EOG Resources,86,DBPedia_3473Forbes_315
+dbpedia_forbes_4271,DBPedia_4270,Forbes_623,Shandong Heavy Industry,Sany Heavy Industry,86,DBPedia_4270Forbes_623
+dbpedia_forbes_9003,DBPedia_9002,Forbes_1690,Sunday Communications,SBA Communications,87,DBPedia_9002Forbes_1690
+dbpedia_forbes_9356,DBPedia_9355,Forbes_1473,Citi Orient Securities,Orient Securities,87,DBPedia_9355Forbes_1473
+dbpedia_forbes_8928,DBPedia_8927,Forbes_1318,International Airlines Group,International Airlines,88,DBPedia_8927Forbes_1318
+dbpedia_forbes_8262,DBPedia_8261,Forbes_548,Neumann International,Magna International,85,DBPedia_8261Forbes_548
+dbpedia_forbes_2614,DBPedia_2613,Forbes_406,NKIA,Nokia,89,DBPedia_2613Forbes_406
+dbpedia_forbes_2487,DBPedia_2486,Forbes_548,ManTech International,Magna International,85,DBPedia_2486Forbes_548
+dbpedia_forbes_6070,DBPedia_6069,Forbes_19,Event Communications,Verizon Communications,86,DBPedia_6069Forbes_19
+dbpedia_forbes_853,DBPedia_852,Forbes_1286,KCG Holdings,SG Holdings,87,DBPedia_852Forbes_1286
+dbpedia_forbes_3853,DBPedia_3852,Forbes_1052,Taro Pharmaceuticals,Teva Pharmaceutical,87,DBPedia_3852Forbes_1052
+dbpedia_forbes_4723,DBPedia_4722,Forbes_1286,Silgan Holdings,SG Holdings,85,DBPedia_4722Forbes_1286
+dbpedia_forbes_1071,DBPedia_1070,Forbes_1280,RSM International,Yara International,86,DBPedia_1070Forbes_1280
+dbpedia_forbes_5155,DBPedia_5154,Forbes_1711,Sysmex Corporation,Sumec Corporation,86,DBPedia_5154Forbes_1711
+dbpedia_forbes_844,DBPedia_843,Forbes_1588,TCL Technology,DXC Technology,86,DBPedia_843Forbes_1588
+dbpedia_forbes_2524,DBPedia_2523,Forbes_358,GOME Electrical Appliances,Gree Electric Appliances,88,DBPedia_2523Forbes_358
+dbpedia_forbes_2856,DBPedia_2855,Forbes_416,Greenland Holdings,Greenland Holdings Group,86,DBPedia_2855Forbes_416
+dbpedia_forbes_9183,DBPedia_9182,Forbes_1438,"Williams-Sonoma, Inc.",Williams-Sonoma,88,DBPedia_9182Forbes_1438
+dbpedia_forbes_8888,DBPedia_8887,Forbes_1878,POSCO International,WESCO International,89,DBPedia_8887Forbes_1878
+dbpedia_forbes_8350,DBPedia_8349,Forbes_369,Vaalco Energy,Valero Energy,85,DBPedia_8349Forbes_369
+dbpedia_forbes_7752,DBPedia_7751,Forbes_589,ATEN International,Baxter International,89,DBPedia_7751Forbes_589
+dbpedia_forbes_10451,DBPedia_10450,Forbes_1501,Nomura Holdings,Nu Holdings,85,DBPedia_10450Forbes_1501
+dbpedia_forbes_8550,DBPedia_8549,Forbes_58,Mitsubishi UFJ Financial Group,Mitsubishi UFJ Financial,89,DBPedia_8549Forbes_58
+dbpedia_forbes_4217,DBPedia_4216,Forbes_1070,Randstad NV,Randstad N.V.,87,DBPedia_4216Forbes_1070
+dbpedia_forbes_10553,DBPedia_10552,Forbes_548,KMG International,Magna International,89,DBPedia_10552Forbes_548
+dbpedia_forbes_9596,DBPedia_9595,Forbes_311,American Electric Power,American Electric,85,DBPedia_9595Forbes_311
+dbpedia_forbes_2528,DBPedia_2527,Forbes_428,SDB bank,DNB Bank,88,DBPedia_2527Forbes_428
+dbpedia_forbes_10270,DBPedia_10269,Forbes_1526,Bank PHB,RHB Bank,88,DBPedia_10269Forbes_1526
+dbpedia_forbes_4380,DBPedia_4379,Forbes_733,Capri Holdings,CLP Holdings,85,DBPedia_4379Forbes_733
+dbpedia_forbes_2731,DBPedia_2730,Forbes_1925,Aastra Technologies,Palantir Technologies,85,DBPedia_2730Forbes_1925
+dbpedia_forbes_10574,DBPedia_10573,Forbes_703,TOA Technologies,Trane Technologies,88,DBPedia_10573Forbes_703
+dbpedia_forbes_5910,DBPedia_5909,Forbes_1711,FMC Corporation,Sumec Corporation,88,DBPedia_5909Forbes_1711
+dbpedia_forbes_1972,DBPedia_1971,Forbes_1761,RSK Group,SKF Group,89,DBPedia_1971Forbes_1761
+dbpedia_forbes_4297,DBPedia_4296,Forbes_612,Sherritt International,Marriott International,86,DBPedia_4296Forbes_612
+dbpedia_forbes_5084,DBPedia_5083,Forbes_246,China Communications Construction Company,China Communications Construction,89,DBPedia_5083Forbes_246
+dbpedia_forbes_5943,DBPedia_5942,Forbes_309,Art Technology Group,BOE Technology Group,85,DBPedia_5942Forbes_309
+dbpedia_forbes_8649,DBPedia_8648,Forbes_1022,Sterling Financial Corporation,iA Financial Corporation,85,DBPedia_8648Forbes_1022
+dbpedia_forbes_601,DBPedia_600,Forbes_600,Bank M,M&T Bank,86,DBPedia_600Forbes_600
+dbpedia_forbes_2808,DBPedia_2807,Forbes_1711,UBE Corporation,Sumec Corporation,88,DBPedia_2807Forbes_1711
+dbpedia_forbes_685,DBPedia_684,Forbes_1277,Grupo Nutresa,Grupo Inbursa,85,DBPedia_684Forbes_1277
+dbpedia_forbes_7921,DBPedia_7920,Forbes_1565,Nine Dragons Paper Holdings Limited,Nine Dragons Paper Holdings,87,DBPedia_7920Forbes_1565
+dbpedia_forbes_1510,DBPedia_1509,Forbes_1286,SHV Holdings,SG Holdings,87,DBPedia_1509Forbes_1286
+dbpedia_forbes_3540,DBPedia_3539,Forbes_1022,Fulton Financial Corporation,iA Financial Corporation,85,DBPedia_3539Forbes_1022
+dbpedia_forbes_16,DBPedia_15,Forbes_1589,Petrol Group,Metro Group,87,DBPedia_15Forbes_1589
+dbpedia_forbes_3767,DBPedia_3766,Forbes_1878,Tyco International,WESCO International,86,DBPedia_3766Forbes_1878
+dbpedia_forbes_2165,DBPedia_2164,Forbes_112,OnDeck Capital,Capital One,88,DBPedia_2164Forbes_112
+dbpedia_forbes_9591,DBPedia_9590,Forbes_1657,Akwa Group,Bawag Group,86,DBPedia_9590Forbes_1657
+dbpedia_forbes_271,DBPedia_270,Forbes_1342,StoneX Group Inc.,StoneX Group,86,DBPedia_270Forbes_1342
+dbpedia_forbes_6124,DBPedia_6123,Forbes_513,TBC Bank,VTB Bank,88,DBPedia_6123Forbes_513
+dbpedia_forbes_6008,DBPedia_6007,Forbes_176,Exela Technologies,Dell Technologies,86,DBPedia_6007Forbes_176
+dbpedia_forbes_6233,DBPedia_6232,Forbes_1280,RPM International,Yara International,86,DBPedia_6232Forbes_1280
+dbpedia_forbes_5566,DBPedia_5565,Forbes_1286,MGM Holdings,SG Holdings,87,DBPedia_5565Forbes_1286
+dbpedia_forbes_9355,DBPedia_9354,Forbes_1761,S Group,SKF Group,88,DBPedia_9354Forbes_1761
+dbpedia_forbes_8617,DBPedia_8616,Forbes_596,Ysco,Sysco,89,DBPedia_8616Forbes_596
+dbpedia_forbes_4047,DBPedia_4046,Forbes_944,Jefferies Financial Group,Jefferies Financial ,86,DBPedia_4046Forbes_944
+dbpedia_forbes_6177,DBPedia_6176,Forbes_633,Tabcorp,Labcorp,86,DBPedia_6176Forbes_633
+dbpedia_forbes_2267,DBPedia_2266,Forbes_512,Continental AG,Continental,88,DBPedia_2266Forbes_512
+dbpedia_forbes_3586,DBPedia_3585,Forbes_352,Standard Chartered Kenya,Standard Chartered,86,DBPedia_3585Forbes_352
+dbpedia_forbes_2319,DBPedia_2318,Forbes_1711,VSE Corporation,Sumec Corporation,88,DBPedia_2318Forbes_1711
+dbpedia_forbes_8440,DBPedia_8439,Forbes_836,Uniqa Insurance Group,QBE Insurance Group,85,DBPedia_8439Forbes_836
+dbpedia_forbes_1597,DBPedia_1596,Forbes_1392,CNO Financial Group,BNK Financial Group,89,DBPedia_1596Forbes_1392
+dbpedia_forbes_6790,DBPedia_6789,Forbes_428,DSB Bank,DNB Bank,88,DBPedia_6789Forbes_428
+dbpedia_forbes_4139,DBPedia_4138,Forbes_1052,Taisho Pharmaceutical,Teva Pharmaceutical,85,DBPedia_4138Forbes_1052
+dbpedia_forbes_7498,DBPedia_7497,Forbes_1528,Virgin Money UK plc,Virgin Money UK,88,DBPedia_7497Forbes_1528
+dbpedia_forbes_8345,DBPedia_8344,Forbes_926,Canadia Bank,Canara Bank,87,DBPedia_8344Forbes_926
+dbpedia_forbes_676,DBPedia_675,Forbes_949,EPR Properties,Emaar Properties,87,DBPedia_675Forbes_949
+dbpedia_forbes_1725,DBPedia_1724,Forbes_1022,BOK Financial Corporation,iA Financial Corporation,86,DBPedia_1724Forbes_1022
+dbpedia_forbes_4403,DBPedia_4402,Forbes_1814,Salzgitter AG,Salzgitter,87,DBPedia_4402Forbes_1814
+dbpedia_forbes_4933,DBPedia_4932,Forbes_230,Ouster (company),Southern Company,87,DBPedia_4932Forbes_230
+dbpedia_forbes_9173,DBPedia_9172,Forbes_1501,UTI Holdings,Nu Holdings,87,DBPedia_9172Forbes_1501
+dbpedia_forbes_10548,DBPedia_10547,Forbes_1940,ATN International,ASM International,88,DBPedia_10547Forbes_1940
+dbpedia_forbes_4184,DBPedia_4183,Forbes_1516,Post Properties,Boston Properties,88,DBPedia_4183Forbes_1516
+dbpedia_forbes_2281,DBPedia_2280,Forbes_1158,Penske Automotive Group,Penske Automotive,85,DBPedia_2280Forbes_1158
+dbpedia_forbes_3152,DBPedia_3151,Forbes_1526,RBA bank,RHB Bank,88,DBPedia_3151Forbes_1526
+dbpedia_forbes_1740,DBPedia_1739,Forbes_64,BMD Group,BMW Group,89,DBPedia_1739Forbes_64
+dbpedia_forbes_1500,DBPedia_1499,Forbes_407,Mitsumi Electric,Mitsubishi Electric,86,DBPedia_1499Forbes_407
+dbpedia_forbes_590,DBPedia_589,Forbes_1081,CNA Financial,Csc Financial,85,DBPedia_589Forbes_1081
+dbpedia_forbes_9502,DBPedia_9501,Forbes_176,Bally Technologies,Dell Technologies,86,DBPedia_9501Forbes_176
+dbpedia_forbes_975,DBPedia_974,Forbes_938,Semiconductor Manufacturing International Corporation,Semiconductor Manufacturing International,87,DBPedia_974Forbes_938
+dbpedia_forbes_4377,DBPedia_4376,Forbes_1052,Reata Pharmaceuticals,Teva Pharmaceutical,85,DBPedia_4376Forbes_1052
+dbpedia_forbes_4368,DBPedia_4367,Forbes_599,One Communications,Rogers Communications,87,DBPedia_4367Forbes_599
+dbpedia_forbes_2605,DBPedia_2604,Forbes_1587,Chugoku Electric Power Company,Chugoku Electric Power,85,DBPedia_2604Forbes_1587
+dbpedia_forbes_1417,DBPedia_1416,Forbes_1532,NII Holdings,Nitori Holdings,89,DBPedia_1416Forbes_1532
+dbpedia_forbes_3882,DBPedia_3881,Forbes_487,CMV Group,CME Group,89,DBPedia_3881Forbes_487
+dbpedia_forbes_233,DBPedia_232,Forbes_1393,Meiji Holdings,Oji Holdings,85,DBPedia_232Forbes_1393
+dbpedia_forbes_7550,DBPedia_7549,Forbes_1022,Sagicor Financial Corporation,iA Financial Corporation,87,DBPedia_7549Forbes_1022
+dbpedia_forbes_2507,DBPedia_2506,Forbes_1813,Electric Power Development Company,Electric Power Development,87,DBPedia_2506Forbes_1813
+dbpedia_forbes_9426,DBPedia_9425,Forbes_262,Nalcor Energy,Suncor Energy,85,DBPedia_9425Forbes_262
+dbpedia_forbes_3364,DBPedia_3363,Forbes_57,Santander UK,Santander,86,DBPedia_3363Forbes_57
+dbpedia_forbes_6539,DBPedia_6538,Forbes_589,Benteler International,Baxter International,86,DBPedia_6538Forbes_589
+dbpedia_forbes_675,DBPedia_674,Forbes_256,Terna Energy,NextEra Energy,85,DBPedia_674Forbes_256
+dbpedia_forbes_2706,DBPedia_2705,Forbes_1559,CIB Bank,Chiba Bank,89,DBPedia_2705Forbes_1559
+dbpedia_forbes_5038,DBPedia_5037,Forbes_417,RWS Group,RWE Group,89,DBPedia_5037Forbes_417
+dbpedia_forbes_5722,DBPedia_5721,Forbes_1680,Singapore Airlines Cargo,Singapore Airlines,86,DBPedia_5721Forbes_1680
+dbpedia_forbes_2573,DBPedia_2572,Forbes_636,Coca-Cola Europacific Partners,Coca-Cola European Partners,88,DBPedia_2572Forbes_636
+dbpedia_forbes_8125,DBPedia_8124,Forbes_1870,LPL Financial,E-L Financial,85,DBPedia_8124Forbes_1870
+dbpedia_forbes_9553,DBPedia_9552,Forbes_1404,Wharf Real Estate Investment Company,Wharf Real Estate Investment,88,DBPedia_9552Forbes_1404
+dbpedia_forbes_1892,DBPedia_1891,Forbes_388,Group O,OMV Group,88,DBPedia_1891Forbes_388
+dbpedia_forbes_2892,DBPedia_2891,Forbes_315,Ecora Resources,EOG Resources,86,DBPedia_2891Forbes_315
+dbpedia_forbes_9086,DBPedia_9085,Forbes_1489,Kingspan Group,Kingspan Group PLC,88,DBPedia_9085Forbes_1489
+dbpedia_forbes_3793,DBPedia_3792,Forbes_589,BTU International,Baxter International,86,DBPedia_3792Forbes_589
+dbpedia_forbes_4708,DBPedia_4707,Forbes_1342,NEX Group,StoneX Group,86,DBPedia_4707Forbes_1342
+dbpedia_forbes_2575,DBPedia_2574,Forbes_1989,Endo International,EFG International,86,DBPedia_2574Forbes_1989
+dbpedia_forbes_9935,DBPedia_9934,Forbes_1502,Quadient,Adient,86,DBPedia_9934Forbes_1502
+dbpedia_forbes_7379,DBPedia_7378,Forbes_1128,"Bath & Body Works, Inc.",Bath & Body Works,88,DBPedia_7378Forbes_1128
+dbpedia_forbes_4025,DBPedia_4024,Forbes_1203,Kier Group,Kerry Group,86,DBPedia_4024Forbes_1203
+dbpedia_forbes_3653,DBPedia_3652,Forbes_428,NBS Bank,DNB Bank,88,DBPedia_3652Forbes_428
+dbpedia_forbes_3184,DBPedia_3183,Forbes_826,St. James's Place plc,St. James's Place,89,DBPedia_3183Forbes_826
+dbpedia_forbes_298,DBPedia_297,Forbes_1711,MPC Corporation,Sumec Corporation,88,DBPedia_297Forbes_1711
+dbpedia_forbes_8168,DBPedia_8167,Forbes_153,Egger (company),Deere & Company,85,DBPedia_8167Forbes_153
+dbpedia_forbes_3632,DBPedia_3631,Forbes_1992,Mack Group,Match Group,86,DBPedia_3631Forbes_1992
+dbpedia_forbes_1451,DBPedia_1450,Forbes_1286,MAS Holdings,SG Holdings,87,DBPedia_1450Forbes_1286
+dbpedia_forbes_8918,DBPedia_8917,Forbes_599,Hearst Communications,Rogers Communications,86,DBPedia_8917Forbes_599
+dbpedia_forbes_1822,DBPedia_1821,Forbes_1728,Fisher Communications,Shaw Communications,85,DBPedia_1821Forbes_1728
+dbpedia_forbes_3814,DBPedia_3813,Forbes_183,PIN Group,ING Group,89,DBPedia_3813Forbes_183
+dbpedia_forbes_9451,DBPedia_9450,Forbes_1045,Antofagasta plc,Antofagasta,85,DBPedia_9450Forbes_1045
+dbpedia_forbes_1321,DBPedia_1320,Forbes_901,Colt Group,Coles Group,86,DBPedia_1320Forbes_901
+dbpedia_forbes_10253,DBPedia_10252,Forbes_39,BNP Paribas CIB,BNP Paribas,85,DBPedia_10252Forbes_39
+dbpedia_forbes_2525,DBPedia_2524,Forbes_1289,Frontier Communications,Frontier Communications Parent,87,DBPedia_2524Forbes_1289
+dbpedia_forbes_5971,DBPedia_5970,Forbes_1877,FBD Holdings,FIBI Holdings,88,DBPedia_5970Forbes_1877
+dbpedia_forbes_1756,DBPedia_1755,Forbes_369,Walter Energy,Valero Energy,85,DBPedia_1755Forbes_369
+dbpedia_forbes_916,DBPedia_915,Forbes_307,KCB Group,KBC Group,89,DBPedia_915Forbes_307
+dbpedia_forbes_1251,DBPedia_1250,Forbes_1052,Santen Pharmaceutical,Teva Pharmaceutical,85,DBPedia_1250Forbes_1052
+dbpedia_forbes_4798,DBPedia_4797,Forbes_1878,WW International,WESCO International,86,DBPedia_4797Forbes_1878
+dbpedia_forbes_8736,DBPedia_8735,Forbes_1985,Autoliv,Li Auto,86,DBPedia_8735Forbes_1985
+dbpedia_forbes_3827,DBPedia_3826,Forbes_660,AAEON,Aeon,89,DBPedia_3826Forbes_660
+dbpedia_forbes_8912,DBPedia_8911,Forbes_624,Haynes International,Hermès International,87,DBPedia_8911Forbes_624
+dbpedia_forbes_9006,DBPedia_9005,Forbes_1711,TEAC Corporation,Sumec Corporation,85,DBPedia_9005Forbes_1711
+dbpedia_forbes_9036,DBPedia_9035,Forbes_17,Ping An Insurance,Ping An Insurance Group,85,DBPedia_9035Forbes_17
+dbpedia_forbes_8423,DBPedia_8422,Forbes_1937,Max Group,TMX Group,89,DBPedia_8422Forbes_1937
+dbpedia_forbes_3578,DBPedia_3577,Forbes_500,London Stock Exchange Group,London Stock Exchange,88,DBPedia_3577Forbes_500
+dbpedia_forbes_5786,DBPedia_5785,Forbes_1022,Tompkins Financial Corporation,iA Financial Corporation,85,DBPedia_5785Forbes_1022
+dbpedia_forbes_7040,DBPedia_7039,Forbes_1315,Abt Electronics,Electronic Arts,87,DBPedia_7039Forbes_1315
+dbpedia_forbes_662,DBPedia_661,Forbes_1940,Astra International,ASM International,89,DBPedia_661Forbes_1940
+dbpedia_forbes_3738,DBPedia_3737,Forbes_428,DCB Bank,DNB Bank,88,DBPedia_3737Forbes_428
+dbpedia_forbes_3994,DBPedia_3993,Forbes_1257,Etro,Metro,89,DBPedia_3993Forbes_1257
+dbpedia_forbes_1955,DBPedia_1954,Forbes_961,HMS Holdings,GS Holdings,87,DBPedia_1954Forbes_961
+dbpedia_forbes_5706,DBPedia_5705,Forbes_1711,SRAM Corporation,Sumec Corporation,85,DBPedia_5705Forbes_1711
+dbpedia_forbes_4867,DBPedia_4866,Forbes_1940,CSG International,ASM International,88,DBPedia_4866Forbes_1940
+dbpedia_forbes_4774,DBPedia_4773,Forbes_1255,Western Alliance Bancorporation,Western Alliance Bancorp.,87,DBPedia_4773Forbes_1255
+dbpedia_forbes_5895,DBPedia_5894,Forbes_1728,WE Communications,Shaw Communications,89,DBPedia_5894Forbes_1728
+dbpedia_forbes_9894,DBPedia_9893,Forbes_612,Smit International,Marriott International,85,DBPedia_9893Forbes_612
+dbpedia_forbes_1167,DBPedia_1166,Forbes_1022,Regions Financial Corporation,iA Financial Corporation,87,DBPedia_1166Forbes_1022
+dbpedia_forbes_858,DBPedia_857,Forbes_192,Manz,ANZ,86,DBPedia_857Forbes_192
+dbpedia_forbes_6560,DBPedia_6559,Forbes_1119,Mizuho Financial Group,Meritz Financial Group,86,DBPedia_6559Forbes_1119
+dbpedia_forbes_7608,DBPedia_7607,Forbes_586,SUSE,SSE,86,DBPedia_7607Forbes_586
+dbpedia_forbes_5363,DBPedia_5362,Forbes_1695,Vector Group,Iveco Group,87,DBPedia_5362Forbes_1695
+dbpedia_forbes_10545,DBPedia_10544,Forbes_217,China Resources,China Resources Land,86,DBPedia_10544Forbes_217
+dbpedia_forbes_8277,DBPedia_8276,Forbes_1019,Shanxi Construction Engineering Group Corporation,Shaanxi Construction Engineering Group,85,DBPedia_8276Forbes_1019
+dbpedia_forbes_6726,DBPedia_6725,Forbes_154,DFCC Bank,HDFC Bank,89,DBPedia_6725Forbes_154
+dbpedia_forbes_3329,DBPedia_3328,Forbes_251,Power Corporation of Canada,Power Corp of Canada,85,DBPedia_3328Forbes_251
+dbpedia_forbes_3183,DBPedia_3182,Forbes_1034,Şahinler Holding,Schindler Holding,85,DBPedia_3182Forbes_1034
+dbpedia_forbes_3561,DBPedia_3560,Forbes_847,Man Group,MTN Group,89,DBPedia_3560Forbes_847
+dbpedia_forbes_4330,DBPedia_4329,Forbes_257,OP Financial Group,KB Financial Group,89,DBPedia_4329Forbes_257
+dbpedia_forbes_324,DBPedia_323,Forbes_54,Medline Industries,Reliance Industries,86,DBPedia_323Forbes_54
+dbpedia_forbes_7446,DBPedia_7445,Forbes_362,VWR International,Wilmar International,86,DBPedia_7445Forbes_362
+dbpedia_forbes_3624,DBPedia_3623,Forbes_428,NIB Bank,DNB Bank,88,DBPedia_3623Forbes_428
+dbpedia_forbes_9737,DBPedia_9736,Forbes_258,China Railway No.2 Group,China Railway Group,88,DBPedia_9736Forbes_258
+dbpedia_forbes_1265,DBPedia_1264,Forbes_1172,Corus Entertainment,Caesars Entertainment,85,DBPedia_1264Forbes_1172
+dbpedia_forbes_8840,DBPedia_8839,Forbes_1220,Cavalier Corporation,Carnival Corporation,85,DBPedia_8839Forbes_1220
+dbpedia_forbes_2030,DBPedia_2029,Forbes_1989,Digi International,EFG International,86,DBPedia_2029Forbes_1989
+dbpedia_forbes_1594,DBPedia_1593,Forbes_64,BMV Group,BMW Group,89,DBPedia_1593Forbes_64
+dbpedia_forbes_940,DBPedia_939,Forbes_1711,LECG Corporation,Sumec Corporation,85,DBPedia_939Forbes_1711
+dbpedia_forbes_9574,DBPedia_9573,Forbes_1764,ATI Technologies,Akamai Technologies,86,DBPedia_9573Forbes_1764
+dbpedia_forbes_7086,DBPedia_7085,Forbes_1690,PS Communication,SBA Communications,88,DBPedia_7085Forbes_1690
+dbpedia_forbes_373,DBPedia_372,Forbes_1450,Linear Technology,Align Technology,85,DBPedia_372Forbes_1450
+dbpedia_forbes_6333,DBPedia_6332,Forbes_1212,Nexperia,Experian,88,DBPedia_6332Forbes_1212
+dbpedia_forbes_1027,DBPedia_1026,Forbes_219,Idra Group,Midea Group,86,DBPedia_1026Forbes_219
+dbpedia_forbes_6940,DBPedia_6939,Forbes_153,Dräger (company),Deere & Company,85,DBPedia_6939Forbes_153
+dbpedia_forbes_8694,DBPedia_8693,Forbes_132,U.S. Bancorp,US Bancorp,86,DBPedia_8693Forbes_132
+dbpedia_forbes_8987,DBPedia_8986,Forbes_754,Kellogg's,Kellogg,88,DBPedia_8986Forbes_754
+dbpedia_forbes_4458,DBPedia_4457,Forbes_149,Visma,Visa,89,DBPedia_4457Forbes_149
+dbpedia_forbes_4547,DBPedia_4546,Forbes_641,Cameron International,Crown Castle International,85,DBPedia_4546Forbes_641
+dbpedia_forbes_10590,DBPedia_10589,Forbes_413,BG Group,BT Group,88,DBPedia_10589Forbes_413
+dbpedia_forbes_358,DBPedia_357,Forbes_957,SEMCORP Group,Suncorp Group,85,DBPedia_357Forbes_957
+dbpedia_forbes_6725,DBPedia_6724,Forbes_1928,CSR Group,CoStar Group,86,DBPedia_6724Forbes_1928
+dbpedia_forbes_1428,DBPedia_1427,Forbes_1183,SF Express,STO Express,86,DBPedia_1427Forbes_1183
+dbpedia_forbes_5998,DBPedia_5997,Forbes_1575,PAX Technology,HNA Technology,86,DBPedia_5997Forbes_1575
+dbpedia_forbes_6081,DBPedia_6080,Forbes_996,Ezra Holdings,AerCap Holdings,86,DBPedia_6080Forbes_996
+dbpedia_forbes_2250,DBPedia_2249,Forbes_291,Krogerus,Kroger,86,DBPedia_2249Forbes_291
+dbpedia_forbes_6362,DBPedia_6361,Forbes_1208,Shikoku Electric Power,Tohoku Electric Power,88,DBPedia_6361Forbes_1208
+dbpedia_forbes_1610,DBPedia_1609,Forbes_1164,Cato Corporation,CJ Corporation,87,DBPedia_1609Forbes_1164
+dbpedia_forbes_3739,DBPedia_3738,Forbes_733,DL Holdings,CLP Holdings,87,DBPedia_3738Forbes_733
+dbpedia_forbes_1590,DBPedia_1589,Forbes_139,Caterpillar Inc.,Caterpillar,85,DBPedia_1589Forbes_139
+dbpedia_forbes_5026,DBPedia_5025,Forbes_624,Harman International,Hermès International,87,DBPedia_5025Forbes_624
+dbpedia_forbes_9819,DBPedia_9818,Forbes_1989,ICF International,EFG International,88,DBPedia_9818Forbes_1989
+dbpedia_forbes_1447,DBPedia_1446,Forbes_1922,MGA Entertainment,Galaxy Entertainment,86,DBPedia_1446Forbes_1922
+dbpedia_forbes_7909,DBPedia_7908,Forbes_671,Centrus Energy,Cenovus Energy,86,DBPedia_7908Forbes_671
+dbpedia_forbes_114,DBPedia_113,Forbes_599,Rlg Communications,Rogers Communications,87,DBPedia_113Forbes_599
+dbpedia_forbes_5814,DBPedia_5813,Forbes_195,API Healthcare,HCA Healthcare,86,DBPedia_5813Forbes_195
+dbpedia_forbes_2008,DBPedia_2007,Forbes_75,CBH Group,BHP Group,89,DBPedia_2007Forbes_75
+dbpedia_forbes_8725,DBPedia_8724,Forbes_414,ATB Financial,CTBC Financial,89,DBPedia_8724Forbes_414
+dbpedia_forbes_4713,DBPedia_4712,Forbes_38,SCM Holdings,HSBC Holdings,88,DBPedia_4712Forbes_38
+dbpedia_forbes_1036,DBPedia_1035,Forbes_417,REA Group,RWE Group,89,DBPedia_1035Forbes_417
