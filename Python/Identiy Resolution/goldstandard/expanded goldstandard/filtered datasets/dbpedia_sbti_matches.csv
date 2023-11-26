@@ -1,0 +1,369 @@
+Match ID,dbpedia_uid,sbti_uid,dbpedia_company,sbti_company,Similarity Score,dbpedia_sbti_uids
+dbpedia_sbti_9657,DBPedia_9656,SBTI_4154,Parque Arauco S.A.,Parque Arauco S.A,100,DBPedia_9656SBTI_4154
+dbpedia_sbti_1208,DBPedia_1207,SBTI_5732,"Ushio, Inc.",USHIO INC.,100,DBPedia_1207SBTI_5732
+dbpedia_sbti_246,DBPedia_245,SBTI_356,Aramark,Aramark,100,DBPedia_245SBTI_356
+dbpedia_sbti_2812,DBPedia_2811,SBTI_571,Bally's Corporation,Bally's Corporation,100,DBPedia_2811SBTI_571
+dbpedia_sbti_10229,DBPedia_10228,SBTI_5061,Staples Inc.,Staples Inc.,100,DBPedia_10228SBTI_5061
+dbpedia_sbti_8297,DBPedia_8296,SBTI_5935,Wells & Co,Wells & Co.,100,DBPedia_8296SBTI_5935
+dbpedia_sbti_3337,DBPedia_3336,SBTI_4492,Resolute Forest Products,Resolute Forest Products,100,DBPedia_3336SBTI_4492
+dbpedia_sbti_5905,DBPedia_5904,SBTI_5402,The Home Depot,The Home Depot,100,DBPedia_5904SBTI_5402
+dbpedia_sbti_9592,DBPedia_9591,SBTI_213,Allbirds,Allbirds,100,DBPedia_9591SBTI_213
+dbpedia_sbti_4632,DBPedia_4631,SBTI_3545,MGM Resorts International,MGM Resorts International,100,DBPedia_4631SBTI_3545
+dbpedia_sbti_6288,DBPedia_6287,SBTI_4074,Orthex,Orthex,100,DBPedia_6287SBTI_4074
+dbpedia_sbti_2523,DBPedia_2522,SBTI_4953,Snap Inc.,Snap Inc.,100,DBPedia_2522SBTI_4953
+dbpedia_sbti_7226,DBPedia_7225,SBTI_6047,Xylem Inc.,Xylem Inc.,100,DBPedia_7225SBTI_6047
+dbpedia_sbti_7753,DBPedia_7752,SBTI_44,AbbVie,AbbVie,100,DBPedia_7752SBTI_44
+dbpedia_sbti_2851,DBPedia_2850,SBTI_2526,HP Inc.,HP Inc,100,DBPedia_2850SBTI_2526
+dbpedia_sbti_3763,DBPedia_3762,SBTI_1290,CSL Limited,CSL Limited,100,DBPedia_3762SBTI_1290
+dbpedia_sbti_3588,DBPedia_3587,SBTI_3222,Liberty Global,Liberty Global,100,DBPedia_3587SBTI_3222
+dbpedia_sbti_4801,DBPedia_4800,SBTI_856,Bupa,Bupa,100,DBPedia_4800SBTI_856
+dbpedia_sbti_9815,DBPedia_9814,SBTI_2610,IKEA,IKEA,100,DBPedia_9814SBTI_2610
+dbpedia_sbti_3194,DBPedia_3193,SBTI_6013,Workiva,Workiva,100,DBPedia_3193SBTI_6013
+dbpedia_sbti_5936,DBPedia_5935,SBTI_5262,"Tapestry, Inc.","Tapestry, Inc.",100,DBPedia_5935SBTI_5262
+dbpedia_sbti_4939,DBPedia_4938,SBTI_1727,Eramet,ERAMET,100,DBPedia_4938SBTI_1727
+dbpedia_sbti_481,DBPedia_480,SBTI_1257,CPFL Energia,CPFL Energia,100,DBPedia_480SBTI_1257
+dbpedia_sbti_4408,DBPedia_4407,SBTI_5678,Umicore,Umicore,100,DBPedia_4407SBTI_5678
+dbpedia_sbti_6253,DBPedia_6252,SBTI_3965,O-I Glass,O-I Glass,100,DBPedia_6252SBTI_3965
+dbpedia_sbti_10209,DBPedia_10208,SBTI_4897,Simon Property Group,Simon Property Group,100,DBPedia_10208SBTI_4897
+dbpedia_sbti_1987,DBPedia_1986,SBTI_2957,KB Home,KB Home,100,DBPedia_1986SBTI_2957
+dbpedia_sbti_5236,DBPedia_5235,SBTI_4785,Severn Trent,Severn Trent,100,DBPedia_5235SBTI_4785
+dbpedia_sbti_6190,DBPedia_6189,SBTI_5246,Takasago International Corporation,Takasago International Corporation,100,DBPedia_6189SBTI_5246
+dbpedia_sbti_2709,DBPedia_2708,SBTI_1004,Ceridian,Ceridian,100,DBPedia_2708SBTI_1004
+dbpedia_sbti_1394,DBPedia_1393,SBTI_1644,Elementis,Elementis,100,DBPedia_1393SBTI_1644
+dbpedia_sbti_2672,DBPedia_2671,SBTI_5730,USG Corporation,USG Corporation,100,DBPedia_2671SBTI_5730
+dbpedia_sbti_3727,DBPedia_3726,SBTI_5474,Tietoevry,TietoEVRY,100,DBPedia_3726SBTI_5474
+dbpedia_sbti_2899,DBPedia_2898,SBTI_2458,Hilton Food Group,Hilton Food Group,100,DBPedia_2898SBTI_2458
+dbpedia_sbti_4041,DBPedia_4040,SBTI_5355,Tetra Tech,Tetra Tech,100,DBPedia_4040SBTI_5355
+dbpedia_sbti_8994,DBPedia_8993,SBTI_3215,LG Chem,LG Chem,100,DBPedia_8993SBTI_3215
+dbpedia_sbti_2738,DBPedia_2737,SBTI_119,AECOM,AECOM,100,DBPedia_2737SBTI_119
+dbpedia_sbti_8685,DBPedia_8684,SBTI_1694,Energia Group,Energia Group,100,DBPedia_8684SBTI_1694
+dbpedia_sbti_3821,DBPedia_3820,SBTI_5510,Tokuyama Corporation,Tokuyama Corporation,100,DBPedia_3820SBTI_5510
+dbpedia_sbti_2808,DBPedia_2807,SBTI_5656,UBE Corporation,UBE Corporation,100,DBPedia_2807SBTI_5656
+dbpedia_sbti_8222,DBPedia_8221,SBTI_3027,Kiwi Property Group,Kiwi Property Group,100,DBPedia_8221SBTI_3027
+dbpedia_sbti_6508,DBPedia_6507,SBTI_4717,Schwarz Gruppe,Schwarz Gruppe,100,DBPedia_6507SBTI_4717
+dbpedia_sbti_8362,DBPedia_8361,SBTI_4192,Pernod Ricard,Pernod Ricard,100,DBPedia_8361SBTI_4192
+dbpedia_sbti_9270,DBPedia_9269,SBTI_4181,Pennon Group,Pennon Group,100,DBPedia_9269SBTI_4181
+dbpedia_sbti_2726,DBPedia_2725,SBTI_1303,Currys plc,Currys plc,100,DBPedia_2725SBTI_1303
+dbpedia_sbti_218,DBPedia_217,SBTI_5442,The Walt Disney Company,The Walt Disney Company,100,DBPedia_217SBTI_5442
+dbpedia_sbti_5560,DBPedia_5559,SBTI_3652,Moody's Corporation,Moody's Corporation,100,DBPedia_5559SBTI_3652
+dbpedia_sbti_5332,DBPedia_5331,SBTI_2618,Imagination Technologies,Imagination Technologies,100,DBPedia_5331SBTI_2618
+dbpedia_sbti_2683,DBPedia_2682,SBTI_1353,Danone,Danone,100,DBPedia_2682SBTI_1353
+dbpedia_sbti_3521,DBPedia_3520,SBTI_2185,Goodman Group,Goodman Group,100,DBPedia_3520SBTI_2185
+dbpedia_sbti_4395,DBPedia_4394,SBTI_4537,Robert Bosch GmbH,Robert Bosch GmbH,100,DBPedia_4394SBTI_4537
+dbpedia_sbti_9449,DBPedia_9448,SBTI_3199,Lendlease,Lendlease,100,DBPedia_9448SBTI_3199
+dbpedia_sbti_8637,DBPedia_8636,SBTI_1681,En+ Group,En+ Group,100,DBPedia_8636SBTI_1681
+dbpedia_sbti_7867,DBPedia_7866,SBTI_563,Baker McKenzie,Baker McKenzie,100,DBPedia_7866SBTI_563
+dbpedia_sbti_10213,DBPedia_10212,SBTI_4883,Sika AG,Sika AG,100,DBPedia_10212SBTI_4883
+dbpedia_sbti_2692,DBPedia_2691,SBTI_5475,Tiffany & Co.,Tiffany & Co.,100,DBPedia_2691SBTI_5475
+dbpedia_sbti_9958,DBPedia_9957,SBTI_4670,Saputo Inc.,Saputo Inc.,100,DBPedia_9957SBTI_4670
+dbpedia_sbti_9975,DBPedia_9974,SBTI_601,Bath & Body Works,Bath & Body Works,100,DBPedia_9974SBTI_601
+dbpedia_sbti_99,DBPedia_98,SBTI_4587,Rubix,Rubix,100,DBPedia_98SBTI_4587
+dbpedia_sbti_7944,DBPedia_7943,SBTI_484,Audley Travel,Audley Travel,100,DBPedia_7943SBTI_484
+dbpedia_sbti_4145,DBPedia_4144,SBTI_399,Artelia,Artelia,100,DBPedia_4144SBTI_399
+dbpedia_sbti_8041,DBPedia_8040,SBTI_1908,Flint Group,Flint Group,100,DBPedia_8040SBTI_1908
+dbpedia_sbti_2656,DBPedia_2655,SBTI_238,Alphabet Inc.,Alphabet Inc.,100,DBPedia_2655SBTI_238
+dbpedia_sbti_7097,DBPedia_7096,SBTI_3320,LVMH,LVMH,100,DBPedia_7096SBTI_3320
+dbpedia_sbti_1345,DBPedia_1344,SBTI_4612,Safran,Safran,100,DBPedia_1344SBTI_4612
+dbpedia_sbti_1341,DBPedia_1340,SBTI_3342,"Macy's, Inc.","Macy's, Inc.",100,DBPedia_1340SBTI_3342
+dbpedia_sbti_10554,DBPedia_10553,SBTI_2931,Kao Corporation,KAO Corporation,100,DBPedia_10553SBTI_2931
+dbpedia_sbti_2252,DBPedia_2251,SBTI_4377,Qinetiq,Qinetiq,100,DBPedia_2251SBTI_4377
+dbpedia_sbti_2882,DBPedia_2881,SBTI_1805,Experian,Experian,100,DBPedia_2881SBTI_1805
+dbpedia_sbti_2854,DBPedia_2853,SBTI_1747,EssilorLuxottica,EssilorLuxottica,100,DBPedia_2853SBTI_1747
+dbpedia_sbti_3605,DBPedia_3604,SBTI_3268,Logista,Logista,100,DBPedia_3604SBTI_3268
+dbpedia_sbti_9063,DBPedia_9062,SBTI_2488,Höganäs AB,Höganäs AB,100,DBPedia_9062SBTI_2488
+dbpedia_sbti_3062,DBPedia_3061,SBTI_5204,Syngenta,Syngenta,100,DBPedia_3061SBTI_5204
+dbpedia_sbti_451,DBPedia_450,SBTI_163,Airbus,Airbus,100,DBPedia_450SBTI_163
+dbpedia_sbti_7545,DBPedia_7544,SBTI_3211,Levi Strauss & Co.,Levi Strauss & Co.,100,DBPedia_7544SBTI_3211
+dbpedia_sbti_996,DBPedia_995,SBTI_2625,Imperial Brands,Imperial Brands,100,DBPedia_995SBTI_2625
+dbpedia_sbti_5292,DBPedia_5291,SBTI_6071,Yaskawa Electric Corporation,Yaskawa Electric Corporation,100,DBPedia_5291SBTI_6071
+dbpedia_sbti_4131,DBPedia_4130,SBTI_1488,DocuSign,DocuSign,100,DBPedia_4130SBTI_1488
+dbpedia_sbti_8518,DBPedia_8517,SBTI_2058,Gap Inc.,Gap Inc.,100,DBPedia_8517SBTI_2058
+dbpedia_sbti_7552,DBPedia_7551,SBTI_351,Aptiv,Aptiv,100,DBPedia_7551SBTI_351
+dbpedia_sbti_5155,DBPedia_5154,SBTI_5211,Sysmex Corporation,SYSMEX CORPORATION,100,DBPedia_5154SBTI_5211
+dbpedia_sbti_1055,DBPedia_1054,SBTI_2583,ICA Gruppen,ICA Gruppen,100,DBPedia_1054SBTI_2583
+dbpedia_sbti_6865,DBPedia_6864,SBTI_733,BMC Software,BMC Software,100,DBPedia_6864SBTI_733
+dbpedia_sbti_2852,DBPedia_2851,SBTI_5401,The Hershey Company,The Hershey Company,100,DBPedia_2851SBTI_5401
+dbpedia_sbti_9512,DBPedia_9511,SBTI_814,Bristol Myers Squibb,Bristol Myers Squibb,100,DBPedia_9511SBTI_814
+dbpedia_sbti_7902,DBPedia_7901,SBTI_3838,"Nike, Inc.","NIKE, Inc.",100,DBPedia_7901SBTI_3838
+dbpedia_sbti_2902,DBPedia_2901,SBTI_1745,Essentra,Essentra,100,DBPedia_2901SBTI_1745
+dbpedia_sbti_4508,DBPedia_4507,SBTI_913,Canfor,Canfor,100,DBPedia_4507SBTI_913
+dbpedia_sbti_4374,DBPedia_4373,SBTI_5903,Wallenius Wilhelmsen,Wallenius Wilhelmsen,100,DBPedia_4373SBTI_5903
+dbpedia_sbti_8902,DBPedia_8901,SBTI_2247,Groupe Bruxelles Lambert,Groupe Bruxelles Lambert,100,DBPedia_8901SBTI_2247
+dbpedia_sbti_6791,DBPedia_6790,SBTI_6025,WPP plc,WPP Plc,100,DBPedia_6790SBTI_6025
+dbpedia_sbti_5827,DBPedia_5826,SBTI_851,Bunge Limited,Bunge Limited,100,DBPedia_5826SBTI_851
+dbpedia_sbti_3230,DBPedia_3229,SBTI_5034,Springer Nature,Springer Nature,100,DBPedia_3229SBTI_5034
+dbpedia_sbti_2315,DBPedia_2314,SBTI_5888,Votorantim Cimentos,Votorantim Cimentos,100,DBPedia_2314SBTI_5888
+dbpedia_sbti_9005,DBPedia_9004,SBTI_5449,THG plc,THG PLC,100,DBPedia_9004SBTI_5449
+dbpedia_sbti_904,DBPedia_903,SBTI_4980,Solera Holdings,Solera Holdings,100,DBPedia_903SBTI_4980
+dbpedia_sbti_6129,DBPedia_6128,SBTI_4214,Philip Morris International,Philip Morris International,100,DBPedia_6128SBTI_4214
+dbpedia_sbti_5316,DBPedia_5315,SBTI_3982,OCP Group,OCP Group,100,DBPedia_5315SBTI_3982
+dbpedia_sbti_7402,DBPedia_7401,SBTI_4573,Royal HaskoningDHV,Royal HaskoningDHV,100,DBPedia_7401SBTI_4573
+dbpedia_sbti_2834,DBPedia_2833,SBTI_6026,WS Audiology,WS Audiology,100,DBPedia_2833SBTI_6026
+dbpedia_sbti_5451,DBPedia_5450,SBTI_5710,Univar Solutions,Univar Solutions,100,DBPedia_5450SBTI_5710
+dbpedia_sbti_1932,DBPedia_1931,SBTI_5276,Taylor Wimpey,Taylor Wimpey,100,DBPedia_1931SBTI_5276
+dbpedia_sbti_2059,DBPedia_2058,SBTI_3409,Marks & Spencer,Marks & Spencer,100,DBPedia_2058SBTI_3409
+dbpedia_sbti_9183,DBPedia_9182,SBTI_5975,"Williams-Sonoma, Inc.","Williams-Sonoma, Inc.",100,DBPedia_9182SBTI_5975
+dbpedia_sbti_7608,DBPedia_7607,SBTI_5159,SUSE,SUSE,100,DBPedia_7607SBTI_5159
+dbpedia_sbti_1928,DBPedia_1927,SBTI_3900,Nordzucker,Nordzucker,100,DBPedia_1927SBTI_3900
+dbpedia_sbti_3255,DBPedia_3254,SBTI_4826,Shimizu Corporation,Shimizu Corporation,100,DBPedia_3254SBTI_4826
+dbpedia_sbti_8606,DBPedia_8605,SBTI_2182,Good Energy,Good Energy,100,DBPedia_8605SBTI_2182
+dbpedia_sbti_1593,DBPedia_1592,SBTI_611,BCE Inc.,BCE inc.,100,DBPedia_1592SBTI_611
+dbpedia_sbti_1636,DBPedia_1635,SBTI_494,Australian Broadcasting Corporation,Australian Broadcasting Corporation,100,DBPedia_1635SBTI_494
+dbpedia_sbti_3665,DBPedia_3664,SBTI_2178,Gold Fields,Gold Fields,100,DBPedia_3664SBTI_2178
+dbpedia_sbti_5106,DBPedia_5105,SBTI_3123,L'Oréal,L'Oréal,100,DBPedia_5105SBTI_3123
+dbpedia_sbti_973,DBPedia_972,SBTI_4066,Orion Corporation,Orion Corporation,100,DBPedia_972SBTI_4066
+dbpedia_sbti_5772,DBPedia_5771,SBTI_4570,Royal BAM Group,Royal BAM Group,100,DBPedia_5771SBTI_4570
+dbpedia_sbti_1363,DBPedia_1362,SBTI_2101,Genpact,Genpact,100,DBPedia_1362SBTI_2101
+dbpedia_sbti_3750,DBPedia_3749,SBTI_529,Axel Springer SE,Axel Springer SE,100,DBPedia_3749SBTI_529
+dbpedia_sbti_4209,DBPedia_4208,SBTI_3747,"Nasdaq, Inc.","Nasdaq, Inc.",100,DBPedia_4208SBTI_3747
+dbpedia_sbti_5592,DBPedia_5591,SBTI_3950,Nutreco,Nutreco,100,DBPedia_5591SBTI_3950
+dbpedia_sbti_4780,DBPedia_4779,SBTI_1074,CIE Automotive,CIE Automotive,100,DBPedia_4779SBTI_1074
+dbpedia_sbti_2279,DBPedia_2278,SBTI_774,Boston Properties,Boston Properties,100,DBPedia_2278SBTI_774
+dbpedia_sbti_1066,DBPedia_1065,SBTI_3080,Korian,KORIAN,100,DBPedia_1065SBTI_3080
+dbpedia_sbti_10392,DBPedia_10391,SBTI_302,An Post,An Post,100,DBPedia_10391SBTI_302
+dbpedia_sbti_3736,DBPedia_3735,SBTI_263,Amalgamated Bank,Amalgamated Bank,100,DBPedia_3735SBTI_263
+dbpedia_sbti_8165,DBPedia_8164,SBTI_4973,Soitec,Soitec,100,DBPedia_8164SBTI_4973
+dbpedia_sbti_1002,DBPedia_1001,SBTI_4449,Redrow plc,Redrow plc,100,DBPedia_1001SBTI_4449
+dbpedia_sbti_1814,DBPedia_1813,SBTI_4371,PVH Corp.,PVH Corp.,100,DBPedia_1813SBTI_4371
+dbpedia_sbti_1683,DBPedia_1682,SBTI_1135,CNP Assurances,CNP Assurances,100,DBPedia_1682SBTI_1135
+dbpedia_sbti_9644,DBPedia_9643,SBTI_1905,Flexport,Flexport,100,DBPedia_9643SBTI_1905
+dbpedia_sbti_6578,DBPedia_6577,SBTI_1633,Elastic NV,Elastic NV,100,DBPedia_6577SBTI_1633
+dbpedia_sbti_4407,DBPedia_4406,SBTI_4488,Republic Services,Republic Services,100,DBPedia_4406SBTI_4488
+dbpedia_sbti_10433,DBPedia_10432,SBTI_1852,Federal Realty Investment Trust,Federal Realty Investment Trust,100,DBPedia_10432SBTI_1852
+dbpedia_sbti_8946,DBPedia_8945,SBTI_1251,Covivio,Covivio,100,DBPedia_8945SBTI_1251
+dbpedia_sbti_2062,DBPedia_2061,SBTI_2983,Keolis,Keolis,100,DBPedia_2061SBTI_2983
+dbpedia_sbti_6623,DBPedia_6622,SBTI_3673,Mowi,Mowi,100,DBPedia_6622SBTI_3673
+dbpedia_sbti_1433,DBPedia_1432,SBTI_2071,GE HealthCare,GE Healthcare,100,DBPedia_1432SBTI_2071
+dbpedia_sbti_221,DBPedia_220,SBTI_5443,The Wendy's Company,The Wendy's Company,100,DBPedia_220SBTI_5443
+dbpedia_sbti_5460,DBPedia_5459,SBTI_1418,Dentons,Dentons,100,DBPedia_5459SBTI_1418
+dbpedia_sbti_4104,DBPedia_4103,SBTI_1509,Dover Corporation,Dover Corporation,100,DBPedia_4103SBTI_1509
+dbpedia_sbti_4419,DBPedia_4418,SBTI_5754,Valmet,Valmet,100,DBPedia_4418SBTI_5754
+dbpedia_sbti_9830,DBPedia_9829,SBTI_2670,Ingram Micro,Ingram Micro,100,DBPedia_9829SBTI_2670
+dbpedia_sbti_1550,DBPedia_1549,SBTI_1993,Frigoglass,FRIGOGLASS,100,DBPedia_1549SBTI_1993
+dbpedia_sbti_4796,DBPedia_4795,SBTI_206,Algar Telecom,Algar Telecom,100,DBPedia_4795SBTI_206
+dbpedia_sbti_8031,DBPedia_8030,SBTI_5352,Tesco,Tesco,100,DBPedia_8030SBTI_5352
+dbpedia_sbti_6386,DBPedia_6385,SBTI_4323,Prologis,Prologis,100,DBPedia_6385SBTI_4323
+dbpedia_sbti_699,DBPedia_698,SBTI_2383,Hays plc,Hays plc,100,DBPedia_698SBTI_2383
+dbpedia_sbti_4558,DBPedia_4557,SBTI_4501,Rexel,Rexel,100,DBPedia_4557SBTI_4501
+dbpedia_sbti_3929,DBPedia_3928,SBTI_250,Altice Portugal,Altice Portugal,100,DBPedia_3928SBTI_250
+dbpedia_sbti_7180,DBPedia_7179,SBTI_3140,Lactalis,Lactalis,100,DBPedia_7179SBTI_3140
+dbpedia_sbti_4203,DBPedia_4202,SBTI_2614,"Illumina, Inc.","Illumina, Inc.",100,DBPedia_4202SBTI_2614
+dbpedia_sbti_8792,DBPedia_8791,SBTI_2406,Helen of Troy Limited,Helen of Troy Limited,100,DBPedia_8791SBTI_2406
+dbpedia_sbti_4432,DBPedia_4431,SBTI_1211,Convatec,ConvaTec,100,DBPedia_4431SBTI_1211
+dbpedia_sbti_6935,DBPedia_6934,SBTI_1861,Ferrovial,Ferrovial,100,DBPedia_6934SBTI_1861
+dbpedia_sbti_7640,DBPedia_7639,SBTI_2197,Grant Thornton LLP,Grant Thornton LLP,100,DBPedia_7639SBTI_2197
+dbpedia_sbti_5242,DBPedia_5241,SBTI_4404,Radisson Hotel Group,Radisson Hotel Group,100,DBPedia_5241SBTI_4404
+dbpedia_sbti_8800,DBPedia_8799,SBTI_3484,Mediahuis,Mediahuis,100,DBPedia_8799SBTI_3484
+dbpedia_sbti_7763,DBPedia_7762,SBTI_88,Acuity Brands,Acuity Brands,100,DBPedia_7762SBTI_88
+dbpedia_sbti_4010,DBPedia_4009,SBTI_5392,The Estée Lauder Companies,The Estée Lauder Companies,100,DBPedia_4009SBTI_5392
+dbpedia_sbti_7297,DBPedia_7296,SBTI_4064,Origin Energy,Origin Energy,100,DBPedia_7296SBTI_4064
+dbpedia_sbti_10188,DBPedia_10187,SBTI_3234,Linde plc,Linde plc,100,DBPedia_10187SBTI_3234
+dbpedia_sbti_7300,DBPedia_7299,SBTI_3664,Morrison & Foerster,Morrison Foerster,100,DBPedia_7299SBTI_3664
+dbpedia_sbti_3054,DBPedia_3053,SBTI_3413,Marsh McLennan,Marsh McLennan,100,DBPedia_3053SBTI_3413
+dbpedia_sbti_9666,DBPedia_9665,SBTI_1952,Forterra plc,Forterra PLC,100,DBPedia_9665SBTI_1952
+dbpedia_sbti_4509,DBPedia_4508,SBTI_5810,VF Corporation,VF Corporation,100,DBPedia_4508SBTI_5810
+dbpedia_sbti_5732,DBPedia_5731,SBTI_5959,Whirlpool Corporation,Whirlpool Corporation,100,DBPedia_5731SBTI_5959
+dbpedia_sbti_5856,DBPedia_5855,SBTI_5601,Trimble Inc.,Trimble Inc,100,DBPedia_5855SBTI_5601
+dbpedia_sbti_1557,DBPedia_1556,SBTI_70,Acer Inc.,Acer Inc.,100,DBPedia_1556SBTI_70
+dbpedia_sbti_7048,DBPedia_7047,SBTI_5330,Telia Company,Telia Company,100,DBPedia_7047SBTI_5330
+dbpedia_sbti_4911,DBPedia_4910,SBTI_4129,Palo Alto Networks,Palo Alto Networks,100,DBPedia_4910SBTI_4129
+dbpedia_sbti_8002,DBPedia_8001,SBTI_2721,Intrepid Travel,Intrepid Travel,100,DBPedia_8001SBTI_2721
+dbpedia_sbti_9914,DBPedia_9913,SBTI_915,Canon Inc.,CANON INC.,100,DBPedia_9913SBTI_915
+dbpedia_sbti_9610,DBPedia_9609,SBTI_1527,DS Smith,DS Smith,100,DBPedia_9609SBTI_1527
+dbpedia_sbti_5765,DBPedia_5764,SBTI_801,BRF S.A.,BRF S.A.,100,DBPedia_5764SBTI_801
+dbpedia_sbti_4394,DBPedia_4393,SBTI_1395,Dell Technologies,Dell Technologies,100,DBPedia_4393SBTI_1395
+dbpedia_sbti_4428,DBPedia_4427,SBTI_3432,Masisa,MASISA,100,DBPedia_4427SBTI_3432
+dbpedia_sbti_3964,DBPedia_3963,SBTI_4120,PageGroup,PageGroup,100,DBPedia_3963SBTI_4120
+dbpedia_sbti_10049,DBPedia_10048,SBTI_5855,Vistra Corp,Vistra Corp.,100,DBPedia_10048SBTI_5855
+dbpedia_sbti_8937,DBPedia_8936,SBTI_5333,Telus Corporation,TELUS Corporation,100,DBPedia_8936SBTI_5333
+dbpedia_sbti_1911,DBPedia_1910,SBTI_426,Ashurst LLP,Ashurst LLP,100,DBPedia_1910SBTI_426
+dbpedia_sbti_1879,DBPedia_1878,SBTI_5354,Tetra Pak,TETRA PAK,100,DBPedia_1878SBTI_5354
+dbpedia_sbti_6325,DBPedia_6324,SBTI_3820,Next plc,Next plc,100,DBPedia_6324SBTI_3820
+dbpedia_sbti_9826,DBPedia_9825,SBTI_2636,Inditex,Inditex,100,DBPedia_9825SBTI_2636
+dbpedia_sbti_779,DBPedia_778,SBTI_2427,Herbert Smith Freehills,Herbert Smith Freehills,100,DBPedia_778SBTI_2427
+dbpedia_sbti_5382,DBPedia_5381,SBTI_1164,Comcast,Comcast,100,DBPedia_5381SBTI_1164
+dbpedia_sbti_6219,DBPedia_6218,SBTI_4457,Regal Rexnord Corporation,Regal Rexnord Corporation,100,DBPedia_6218SBTI_4457
+dbpedia_sbti_7215,DBPedia_7214,SBTI_5006,Spark New Zealand,Spark New Zealand,100,DBPedia_7214SBTI_5006
+dbpedia_sbti_3909,DBPedia_3908,SBTI_5383,The Coca-Cola Company,The Coca-Cola Company,100,DBPedia_3908SBTI_5383
+dbpedia_sbti_472,DBPedia_471,SBTI_1354,Danske Bank,Danske Bank,100,DBPedia_471SBTI_1354
+dbpedia_sbti_570,DBPedia_569,SBTI_35,AB InBev,AB InBev,100,DBPedia_569SBTI_35
+dbpedia_sbti_9956,DBPedia_9955,SBTI_4676,Saudi Telecom Company,Saudi Telecom Company,100,DBPedia_9955SBTI_4676
+dbpedia_sbti_2939,DBPedia_2938,SBTI_488,August Faller GmbH & Co. KG,August Faller GmbH & CO. KG,100,DBPedia_2938SBTI_488
+dbpedia_sbti_3941,DBPedia_3940,SBTI_2481,HNI Corporation,HNI Corporation,100,DBPedia_3940SBTI_2481
+dbpedia_sbti_2802,DBPedia_2801,SBTI_5649,Twilio,Twilio,100,DBPedia_2801SBTI_5649
+dbpedia_sbti_9346,DBPedia_9345,SBTI_4478,Rémy Cointreau,Rémy Cointreau,100,DBPedia_9345SBTI_4478
+dbpedia_sbti_4039,DBPedia_4038,SBTI_3917,Nortura,Nortura,100,DBPedia_4038SBTI_3917
+dbpedia_sbti_2668,DBPedia_2667,SBTI_1293,CSX Corporation,CSX Corporation,100,DBPedia_2667SBTI_1293
+dbpedia_sbti_5838,DBPedia_5837,SBTI_94,Addleshaw Goddard,Addleshaw Goddard,100,DBPedia_5837SBTI_94
+dbpedia_sbti_4495,DBPedia_4494,SBTI_4332,Prysmian Group,Prysmian Group,100,DBPedia_4494SBTI_4332
+dbpedia_sbti_2090,DBPedia_2089,SBTI_3508,Mercado Libre,Mercado Libre,100,DBPedia_2089SBTI_3508
+dbpedia_sbti_1246,DBPedia_1245,SBTI_773,Boston Consulting Group,Boston Consulting Group,100,DBPedia_1245SBTI_773
+dbpedia_sbti_7298,DBPedia_7297,SBTI_4788,Shaftesbury plc,Shaftesbury PLC,100,DBPedia_7297SBTI_4788
+dbpedia_sbti_4264,DBPedia_4263,SBTI_3112,Kyndryl,Kyndryl,100,DBPedia_4263SBTI_3112
+dbpedia_sbti_9790,DBPedia_9789,SBTI_4431,Real Chemistry,Real Chemistry,100,DBPedia_9789SBTI_4431
+dbpedia_sbti_501,DBPedia_500,SBTI_1276,CRH plc,CRH plc,100,DBPedia_500SBTI_1276
+dbpedia_sbti_5857,DBPedia_5856,SBTI_183,AkzoNobel,AkzoNobel,100,DBPedia_5856SBTI_183
+dbpedia_sbti_3033,DBPedia_3032,SBTI_2956,KB Financial Group,KB Financial Group,100,DBPedia_3032SBTI_2956
+dbpedia_sbti_5166,DBPedia_5165,SBTI_5485,TLT LLP,TLT LLP,100,DBPedia_5165SBTI_5485
+dbpedia_sbti_9296,DBPedia_9295,SBTI_5856,Vistry Group,Vistry Group,100,DBPedia_9295SBTI_5856
+dbpedia_sbti_5044,DBPedia_5043,SBTI_1873,Finastra,Finastra,100,DBPedia_5043SBTI_1873
+dbpedia_sbti_5133,DBPedia_5132,SBTI_1470,Diploma plc,Diploma PLC,100,DBPedia_5132SBTI_1470
+dbpedia_sbti_8867,DBPedia_8866,SBTI_1954,Fortinet,Fortinet,100,DBPedia_8866SBTI_1954
+dbpedia_sbti_9391,DBPedia_9390,SBTI_2115,Getlink,GETLINK,100,DBPedia_9390SBTI_2115
+dbpedia_sbti_3961,DBPedia_3960,SBTI_1923,Fnac Darty,Fnac Darty,100,DBPedia_3960SBTI_1923
+dbpedia_sbti_9091,DBPedia_9090,SBTI_2704,Intermediate Capital Group,Intermediate Capital Group,100,DBPedia_9090SBTI_2704
+dbpedia_sbti_10388,DBPedia_10387,SBTI_1305,Cushman & Wakefield,Cushman & Wakefield,100,DBPedia_10387SBTI_1305
+dbpedia_sbti_4952,DBPedia_4951,SBTI_2257,Groupe SEB,Groupe SEB,100,DBPedia_4951SBTI_2257
+dbpedia_sbti_868,DBPedia_867,SBTI_5635,TUI Group,TUI Group,100,DBPedia_867SBTI_5635
+dbpedia_sbti_5237,DBPedia_5236,SBTI_3749,Naspers,Naspers,100,DBPedia_5236SBTI_3749
+dbpedia_sbti_3818,DBPedia_3817,SBTI_858,Bureau Veritas,BUREAU VERITAS,100,DBPedia_3817SBTI_858
+dbpedia_sbti_6343,DBPedia_6342,SBTI_4820,SHI International Corp,SHI International Corp,100,DBPedia_6342SBTI_4820
+dbpedia_sbti_2595,DBPedia_2594,SBTI_3577,Mills & Reeve,Mills & Reeve,100,DBPedia_2594SBTI_3577
+dbpedia_sbti_8343,DBPedia_8342,SBTI_2566,Hyatt,Hyatt,100,DBPedia_8342SBTI_2566
+dbpedia_sbti_9139,DBPedia_9138,SBTI_4735,Seagate Technology,Seagate Technology,100,DBPedia_9138SBTI_4735
+dbpedia_sbti_5910,DBPedia_5909,SBTI_1922,FMC Corporation,FMC Corporation,100,DBPedia_5909SBTI_1922
+dbpedia_sbti_9151,DBPedia_9150,SBTI_4434,Recipharm,Recipharm,100,DBPedia_9150SBTI_4434
+dbpedia_sbti_3373,DBPedia_3372,SBTI_1262,Cranswick plc,Cranswick plc,100,DBPedia_3372SBTI_1262
+dbpedia_sbti_6181,DBPedia_6180,SBTI_5565,Trace3,Trace3,100,DBPedia_6180SBTI_5565
+dbpedia_sbti_9619,DBPedia_9618,SBTI_1726,Equity Residential,Equity Residential,100,DBPedia_9618SBTI_1726
+dbpedia_sbti_10504,DBPedia_10503,SBTI_2434,Hersha Hospitality Trust,Hersha Hospitality Trust,100,DBPedia_10503SBTI_2434
+dbpedia_sbti_4230,DBPedia_4229,SBTI_3760,Natura & Co,Natura & Co,100,DBPedia_4229SBTI_3760
+dbpedia_sbti_8921,DBPedia_8920,SBTI_2773,Itochu Techno-Solutions,Itochu Techno-Solutions,100,DBPedia_8920SBTI_2773
+dbpedia_sbti_347,DBPedia_346,SBTI_4939,Slaughter and May,Slaughter and May,100,DBPedia_346SBTI_4939
+dbpedia_sbti_10274,DBPedia_10273,SBTI_866,Buzzi Unicem,Buzzi Unicem,100,DBPedia_10273SBTI_866
+dbpedia_sbti_437,DBPedia_436,SBTI_5540,Toto Ltd.,TOTO LTD.,100,DBPedia_436SBTI_5540
+dbpedia_sbti_10037,DBPedia_10036,SBTI_5698,Unite Students,Unite Students,100,DBPedia_10036SBTI_5698
+dbpedia_sbti_8464,DBPedia_8463,SBTI_4193,Persimmon plc,Persimmon PLC,100,DBPedia_8463SBTI_4193
+dbpedia_sbti_9710,DBPedia_9709,SBTI_5322,Teleflex,Teleflex,100,DBPedia_9709SBTI_5322
+dbpedia_sbti_9888,DBPedia_9887,SBTI_6089,YouGov,YouGov,100,DBPedia_9887SBTI_6089
+dbpedia_sbti_3187,DBPedia_3186,SBTI_4443,Red Bull GmbH,Red Bull GmbH,100,DBPedia_3186SBTI_4443
+dbpedia_sbti_9442,DBPedia_9441,SBTI_3245,Lion Corporation,Lion Corporation,100,DBPedia_9441SBTI_3245
+dbpedia_sbti_4440,DBPedia_4439,SBTI_1245,Coty Inc.,Coty Inc.,100,DBPedia_4439SBTI_1245
+dbpedia_sbti_637,DBPedia_636,SBTI_160,Air New Zealand,Air New Zealand,100,DBPedia_636SBTI_160
+dbpedia_sbti_10218,DBPedia_10217,SBTI_3367,Mahle GmbH,MAHLE GmbH,100,DBPedia_10217SBTI_3367
+dbpedia_sbti_9041,DBPedia_9040,SBTI_3414,Marshalls plc,Marshalls plc,100,DBPedia_9040SBTI_3414
+dbpedia_sbti_9467,DBPedia_9466,SBTI_3344,Maeda Corporation,Maeda Corporation,100,DBPedia_9466SBTI_3344
+dbpedia_sbti_8513,DBPedia_8512,SBTI_1240,Costa Coffee,Costa Coffee,100,DBPedia_8512SBTI_1240
+dbpedia_sbti_4984,DBPedia_4983,SBTI_5334,Temenos AG,Temenos AG,100,DBPedia_4983SBTI_5334
+dbpedia_sbti_9078,DBPedia_9077,SBTI_2621,IMI plc,IMI plc,100,DBPedia_9077SBTI_2621
+dbpedia_sbti_5526,DBPedia_5525,SBTI_4280,PostNL,PostNL,100,DBPedia_5525SBTI_4280
+dbpedia_sbti_8559,DBPedia_8558,SBTI_3814,Nexans,NEXANS,100,DBPedia_8558SBTI_3814
+dbpedia_sbti_10190,DBPedia_10189,SBTI_3202,Lenzing AG,Lenzing AG,100,DBPedia_10189SBTI_3202
+dbpedia_sbti_104,DBPedia_103,SBTI_5846,Virgin Media Ireland,Virgin Media Ireland,100,DBPedia_103SBTI_5846
+dbpedia_sbti_10365,DBPedia_10364,SBTI_210,ALK-Abelló,ALK-Abelló,100,DBPedia_10364SBTI_210
+dbpedia_sbti_2111,DBPedia_2110,SBTI_3548,Michelin,Michelin,100,DBPedia_2110SBTI_3548
+dbpedia_sbti_7572,DBPedia_7571,SBTI_1622,Eiffage,Eiffage,100,DBPedia_7571SBTI_1622
+dbpedia_sbti_1079,DBPedia_1078,SBTI_2766,ISS A/S,ISS A/S,100,DBPedia_1078SBTI_2766
+dbpedia_sbti_9749,DBPedia_9748,SBTI_2986,Kering,Kering,100,DBPedia_9748SBTI_2986
+dbpedia_sbti_4768,DBPedia_4767,SBTI_820,Brixmor Property Group,Brixmor Property Group,100,DBPedia_4767SBTI_820
+dbpedia_sbti_145,DBPedia_144,SBTI_4187,Perfetti Van Melle,Perfetti Van Melle,100,DBPedia_144SBTI_4187
+dbpedia_sbti_2291,DBPedia_2290,SBTI_1158,Colruyt Group,Colruyt Group,100,DBPedia_2290SBTI_1158
+dbpedia_sbti_8965,DBPedia_8964,SBTI_1016,Chanel,CHANEL,100,DBPedia_8964SBTI_1016
+dbpedia_sbti_8629,DBPedia_8628,SBTI_4619,Saint-Gobain,SAINT-GOBAIN,100,DBPedia_8628SBTI_4619
+dbpedia_sbti_6830,DBPedia_6829,SBTI_875,C&A,C&A,100,DBPedia_6829SBTI_875
+dbpedia_sbti_7651,DBPedia_7650,SBTI_3600,Mitie,Mitie,100,DBPedia_7650SBTI_3600
+dbpedia_sbti_6223,DBPedia_6222,SBTI_4812,Sharp Corporation,Sharp Corporation,100,DBPedia_6222SBTI_4812
+dbpedia_sbti_10550,DBPedia_10549,SBTI_2917,Kakao,Kakao,100,DBPedia_10549SBTI_2917
+dbpedia_sbti_1643,DBPedia_1642,SBTI_178,Aker Solutions,Aker Solutions,100,DBPedia_1642SBTI_178
+dbpedia_sbti_7554,DBPedia_7553,SBTI_5102,Stora Enso,Stora Enso,100,DBPedia_7553SBTI_5102
+dbpedia_sbti_4580,DBPedia_4579,SBTI_5423,The ODP Corporation,The ODP Corporation,100,DBPedia_4579SBTI_5423
+dbpedia_sbti_1096,DBPedia_1095,SBTI_4008,"Okta, Inc.","Okta, Inc",100,DBPedia_1095SBTI_4008
+dbpedia_sbti_188,DBPedia_187,SBTI_2549,Hulamin,Hulamin,100,DBPedia_187SBTI_2549
+dbpedia_sbti_1187,DBPedia_1186,SBTI_1420,Dentsu International,Dentsu International,100,DBPedia_1186SBTI_1420
+dbpedia_sbti_9883,DBPedia_9882,SBTI_3030,Klépierre,Klépierre,100,DBPedia_9882SBTI_3030
+dbpedia_sbti_8140,DBPedia_8139,SBTI_3159,Landsec,Landsec,100,DBPedia_8139SBTI_3159
+dbpedia_sbti_10312,DBPedia_10311,SBTI_5651,"Twitter, Inc.",Twitter Inc,100,DBPedia_10311SBTI_5651
+dbpedia_sbti_10661,DBPedia_10660,SBTI_3795,Netflix,Netflix,100,DBPedia_10660SBTI_3795
+dbpedia_sbti_5754,DBPedia_5753,SBTI_42,ABB,ABB,100,DBPedia_5753SBTI_42
+dbpedia_sbti_8886,DBPedia_8885,SBTI_4082,Oshkosh Corporation,Oshkosh Corporation,100,DBPedia_8885SBTI_4082
+dbpedia_sbti_3103,DBPedia_3102,SBTI_2994,Keurig Dr Pepper,Keurig Dr Pepper,100,DBPedia_3102SBTI_2994
+dbpedia_sbti_9029,DBPedia_9028,SBTI_1507,Dormakaba,dormakaba,100,DBPedia_9028SBTI_1507
+dbpedia_sbti_7830,DBPedia_7829,SBTI_6138,Zimmer Biomet,Zimmer Biomet,100,DBPedia_7829SBTI_6138
+dbpedia_sbti_3845,DBPedia_3844,SBTI_105,Adobe Inc.,"Adobe, Inc.",100,DBPedia_3844SBTI_105
+dbpedia_sbti_3907,DBPedia_3906,SBTI_1932,Ford Motor Company,Ford Motor Company,100,DBPedia_3906SBTI_1932
+dbpedia_sbti_616,DBPedia_615,SBTI_3,2 Sisters Food Group,2 Sisters Food Group,100,DBPedia_615SBTI_3
+dbpedia_sbti_7881,DBPedia_7880,SBTI_5353,"Tesla, Inc.",Tesla Inc.,100,DBPedia_7880SBTI_5353
+dbpedia_sbti_8089,DBPedia_8088,SBTI_3411,Marriott International,Marriott International,100,DBPedia_8088SBTI_3411
+dbpedia_sbti_7557,DBPedia_7556,SBTI_3956,NXP Semiconductors,NXP Semiconductors,100,DBPedia_7556SBTI_3956
+dbpedia_sbti_5940,DBPedia_5939,SBTI_452,AstraZeneca,AstraZeneca,100,DBPedia_5939SBTI_452
+dbpedia_sbti_3721,DBPedia_3720,SBTI_2584,Icade,Icade,100,DBPedia_3720SBTI_2584
+dbpedia_sbti_8461,DBPedia_8460,SBTI_4166,PayPal,PayPal,100,DBPedia_8460SBTI_4166
+dbpedia_sbti_3657,DBPedia_3656,SBTI_6137,Ziff Davis,Ziff Davis,100,DBPedia_3656SBTI_6137
+dbpedia_sbti_3082,DBPedia_3081,SBTI_862,Buro Happold,Buro Happold,100,DBPedia_3081SBTI_862
+dbpedia_sbti_846,DBPedia_845,SBTI_3402,Marel,Marel,100,DBPedia_845SBTI_3402
+dbpedia_sbti_8109,DBPedia_8108,SBTI_5491,TOA Corporation,TOA Corporation,100,DBPedia_8108SBTI_5491
+dbpedia_sbti_9521,DBPedia_9520,SBTI_986,Celestica,Celestica,100,DBPedia_9520SBTI_986
+dbpedia_sbti_5421,DBPedia_5420,SBTI_5817,Vicinity Centres,Vicinity Centres,100,DBPedia_5420SBTI_5817
+dbpedia_sbti_4403,DBPedia_4402,SBTI_4634,Salzgitter AG,Salzgitter AG,100,DBPedia_4402SBTI_4634
+dbpedia_sbti_667,DBPedia_666,SBTI_3914,Northern Trust,Northern Trust,100,DBPedia_666SBTI_3914
+dbpedia_sbti_7394,DBPedia_7393,SBTI_5708,UnitedHealth Group,UnitedHealth Group,100,DBPedia_7393SBTI_5708
+dbpedia_sbti_4572,DBPedia_4571,SBTI_345,Apple Inc.,"Apple, Inc.",100,DBPedia_4571SBTI_345
+dbpedia_sbti_6572,DBPedia_6571,SBTI_5455,Thomson Reuters,Thomson Reuters,100,DBPedia_6571SBTI_5455
+dbpedia_sbti_2114,DBPedia_2113,SBTI_2588,ICL Group Ltd.,ICL Group LTD,100,DBPedia_2113SBTI_2588
+dbpedia_sbti_3022,DBPedia_3021,SBTI_1785,Everlane,Everlane,100,DBPedia_3021SBTI_1785
+dbpedia_sbti_3984,DBPedia_3983,SBTI_5407,The J.M. Smucker Company,The J.M. Smucker Company,100,DBPedia_3983SBTI_5407
+dbpedia_sbti_7583,DBPedia_7582,SBTI_1661,Elsewedy Electric,ELSEWEDY ELECTRIC,100,DBPedia_7582SBTI_1661
+dbpedia_sbti_1927,DBPedia_1926,SBTI_1864,Fever-Tree,Fever-Tree,100,DBPedia_1926SBTI_1864
+dbpedia_sbti_1273,DBPedia_1272,SBTI_2487,Hogan Lovells,Hogan Lovells,100,DBPedia_1272SBTI_2487
+dbpedia_sbti_10294,DBPedia_10293,SBTI_5585,Travis Perkins,Travis Perkins,100,DBPedia_10293SBTI_5585
+dbpedia_sbti_8322,DBPedia_8321,SBTI_2620,Imerys,Imerys,100,DBPedia_8321SBTI_2620
+dbpedia_sbti_6278,DBPedia_6277,SBTI_3509,Mercadona,Mercadona,100,DBPedia_6277SBTI_3509
+dbpedia_sbti_10398,DBPedia_10397,SBTI_227,Alma Media,Alma Media,100,DBPedia_10397SBTI_227
+dbpedia_sbti_3429,DBPedia_3428,SBTI_5753,Vallourec,VALLOUREC,100,DBPedia_3428SBTI_5753
+dbpedia_sbti_5575,DBPedia_5574,SBTI_1142,Coca-Cola FEMSA,Coca-Cola FEMSA,100,DBPedia_5574SBTI_1142
+dbpedia_sbti_7889,DBPedia_7888,SBTI_2399,Heineken N.V.,HEINEKEN N.V.,100,DBPedia_7888SBTI_2399
+dbpedia_sbti_7407,DBPedia_7406,SBTI_4485,Renishaw plc,Renishaw plc,100,DBPedia_7406SBTI_4485
+dbpedia_sbti_4951,DBPedia_4950,SBTI_1759,Eurazeo,Eurazeo,100,DBPedia_4950SBTI_1759
+dbpedia_sbti_5917,DBPedia_5916,SBTI_5378,The Cheesecake Factory,The Cheesecake Factory,100,DBPedia_5916SBTI_5378
+dbpedia_sbti_7905,DBPedia_7904,SBTI_5387,The Economist Group,The Economist Group,100,DBPedia_7904SBTI_5387
+dbpedia_sbti_9149,DBPedia_9148,SBTI_4783,Seventh Generation Inc.,"Seventh Generation, Inc.",100,DBPedia_9148SBTI_4783
+dbpedia_sbti_9124,DBPedia_9123,SBTI_4036,Onsemi,onsemi,100,DBPedia_9123SBTI_4036
+dbpedia_sbti_4857,DBPedia_4856,SBTI_569,Ball Corporation,Ball Corporation,100,DBPedia_4856SBTI_569
+dbpedia_sbti_8822,DBPedia_8821,SBTI_297,Amorepacific Corporation,AMOREPACIFIC CORPORATION,100,DBPedia_8821SBTI_297
+dbpedia_sbti_7637,DBPedia_7636,SBTI_3636,Mölnlycke Health Care,Mölnlycke Health Care,100,DBPedia_7636SBTI_3636
+dbpedia_sbti_4596,DBPedia_4595,SBTI_3470,McKesson Corporation,McKesson Corporation,100,DBPedia_4595SBTI_3470
+dbpedia_sbti_427,DBPedia_426,SBTI_5910,Warner Music Group,Warner Music Group,100,DBPedia_426SBTI_5910
+dbpedia_sbti_5725,DBPedia_5724,SBTI_23,A1 Telekom Austria Group,A1 Telekom Austria Group,100,DBPedia_5724SBTI_23
+dbpedia_sbti_7307,DBPedia_7306,SBTI_3753,National Grid plc,National Grid PLC,100,DBPedia_7306SBTI_3753
+dbpedia_sbti_1005,DBPedia_1004,SBTI_4771,Senior plc,Senior Plc,100,DBPedia_1004SBTI_4771
+dbpedia_sbti_3426,DBPedia_3425,SBTI_4483,Renewi,Renewi,100,DBPedia_3425SBTI_4483
+dbpedia_sbti_1639,DBPedia_1638,SBTI_5250,Takenaka Corporation,TAKENAKA CORPORATION,100,DBPedia_1638SBTI_5250
+dbpedia_sbti_8178,DBPedia_8177,SBTI_3813,News Corp,News Corp,100,DBPedia_8177SBTI_3813
+dbpedia_sbti_3885,DBPedia_3884,SBTI_5968,Wieland Group,Wieland Group,100,DBPedia_3884SBTI_5968
+dbpedia_sbti_1168,DBPedia_1167,SBTI_5747,Vale S.A.,Vale S.A.,100,DBPedia_1167SBTI_5747
+dbpedia_sbti_9159,DBPedia_9158,SBTI_6045,XP Power,XP Power,100,DBPedia_9158SBTI_6045
+dbpedia_sbti_8691,DBPedia_8690,SBTI_85,Activision Blizzard,Activision Blizzard,100,DBPedia_8690SBTI_85
+dbpedia_sbti_4390,DBPedia_4389,SBTI_5886,Vornado Realty Trust,Vornado Realty Trust,100,DBPedia_4389SBTI_5886
+dbpedia_sbti_3432,DBPedia_3431,SBTI_4642,Sanden Corporation,SANDEN CORPORATION,100,DBPedia_3431SBTI_4642
+dbpedia_sbti_759,DBPedia_758,SBTI_2180,Golden State Foods,Golden State Foods,100,DBPedia_758SBTI_2180
+dbpedia_sbti_7383,DBPedia_7382,SBTI_885,Caesars Entertainment,Caesars Entertainment,100,DBPedia_7382SBTI_885
+dbpedia_sbti_5558,DBPedia_5557,SBTI_2088,General Motors,General Motors,100,DBPedia_5557SBTI_2088
+dbpedia_sbti_5580,DBPedia_5579,SBTI_346,Applied Materials,Applied Materials,100,DBPedia_5579SBTI_346
+dbpedia_sbti_1103,DBPedia_1102,SBTI_3972,Obayashi Corporation,Obayashi Corporation,100,DBPedia_1102SBTI_3972
+dbpedia_sbti_5396,DBPedia_5395,SBTI_3439,Match Group,Match Group,100,DBPedia_5395SBTI_3439
+dbpedia_sbti_2091,DBPedia_2090,SBTI_4414,Ralph Lauren Corporation,Ralph Lauren Corporation,100,DBPedia_2090SBTI_4414
+dbpedia_sbti_5672,DBPedia_5671,SBTI_1612,Edwards Lifesciences,Edwards Lifesciences,100,DBPedia_5671SBTI_1612
+dbpedia_sbti_7800,DBPedia_7799,SBTI_5671,UKG,UKG,100,DBPedia_7799SBTI_5671
+dbpedia_sbti_5475,DBPedia_5474,SBTI_4508,Ricardo PLC,Ricardo PLC,100,DBPedia_5474SBTI_4508
+dbpedia_sbti_4346,DBPedia_4345,SBTI_4142,Panzani,PANZANI,100,DBPedia_4345SBTI_4142
+dbpedia_sbti_3244,DBPedia_3243,SBTI_4453,Refinitiv,Refinitiv,100,DBPedia_3243SBTI_4453
+dbpedia_sbti_3313,DBPedia_3312,SBTI_5839,Vinci SA,VINCI SA,100,DBPedia_3312SBTI_5839
+dbpedia_sbti_10361,DBPedia_10360,SBTI_140,Agrial,Agrial,100,DBPedia_10360SBTI_140
+dbpedia_sbti_4441,DBPedia_4440,SBTI_4370,Purolator Inc.,Purolator Inc.,100,DBPedia_4440SBTI_4370
+dbpedia_sbti_8947,DBPedia_8946,SBTI_5345,Tereos,TEREOS,100,DBPedia_8946SBTI_5345
+dbpedia_sbti_9094,DBPedia_9093,SBTI_3522,Meridian Energy,Meridian Energy,100,DBPedia_9093SBTI_3522
+dbpedia_sbti_1373,DBPedia_1372,SBTI_2055,Gamuda Berhad,Gamuda Berhad,100,DBPedia_1372SBTI_2055
+dbpedia_sbti_9172,DBPedia_9171,SBTI_4857,Sia Partners,Sia Partners,100,DBPedia_9171SBTI_4857
+dbpedia_sbti_9123,DBPedia_9122,SBTI_4024,Omnicom Group,Omnicom Group,100,DBPedia_9122SBTI_4024
+dbpedia_sbti_9508,DBPedia_9507,SBTI_495,Australian Ethical Investment,Australian Ethical Investment,100,DBPedia_9507SBTI_495
+dbpedia_sbti_2708,DBPedia_2707,SBTI_1301,Cummins,Cummins,100,DBPedia_2707SBTI_1301
+dbpedia_sbti_7918,DBPedia_7917,SBTI_476,Atresmedia,Atresmedia,100,DBPedia_7917SBTI_476
+dbpedia_sbti_652,DBPedia_651,SBTI_1582,Ecolab,Ecolab,100,DBPedia_651SBTI_1582
+dbpedia_sbti_4046,DBPedia_4045,SBTI_3921,Novartis,Novartis,100,DBPedia_4045SBTI_3921
+dbpedia_sbti_4537,DBPedia_4536,SBTI_1779,EVBox,EVBox,100,DBPedia_4536SBTI_1779
+dbpedia_sbti_9292,DBPedia_9291,SBTI_5748,Valeo,Valeo,100,DBPedia_9291SBTI_5748
+dbpedia_sbti_3948,DBPedia_3947,SBTI_5305,Ted Baker,Ted Baker,100,DBPedia_3947SBTI_5305
+dbpedia_sbti_3545,DBPedia_3544,SBTI_4948,Smithfield Foods,Smithfield Foods,100,DBPedia_3544SBTI_4948
+dbpedia_sbti_3083,DBPedia_3082,SBTI_2899,Just Group plc,Just Group Plc,100,DBPedia_3082SBTI_2899
+dbpedia_sbti_8348,DBPedia_8347,SBTI_1425,Desjardins Group,Desjardins Group,100,DBPedia_8347SBTI_1425
+dbpedia_sbti_4668,DBPedia_4667,SBTI_2072,GEA Group,GEA Group,100,DBPedia_4667SBTI_2072
