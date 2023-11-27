@@ -2,10 +2,7 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.CompanyBlockingKeyByNameGenerator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.CompanyNameComparatorJaroWrinkler;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.FoundedYearComparator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.IndustryComparator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RevenueComparatorPercentage;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.CompanyXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -57,7 +54,7 @@ public class IR_SBTI_DBPedia_using_linear_combination
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsDbPediaSbti = new MatchingGoldStandard();
 		gsDbPediaSbti.loadFromCSVFile(new File(
-				"data/goldstandard/dbpedia_sbti_goldstandard.csv"));
+				"data/goldstandard/dbpedia_sbti_goldstandard_test.csv"));
 
 		
 		// create a matching rule
@@ -67,13 +64,13 @@ public class IR_SBTI_DBPedia_using_linear_combination
 		
 		// add comparators
 		//matchingRule.addComparator(new ProfitComparatorPercentage(), 0.01);
-		matchingRule.addComparator(new RevenueComparatorPercentage(), 0.1);
+		//matchingRule.addComparator(new RevenueComparatorPercentage(), 0.1);
 		//matchingRule.addComparator(new AssetsComparatorPercentage(), 0.03);
-		matchingRule.addComparator(new IndustryComparator(), 0.1);
+		matchingRule.addComparator(new IndustryComparator(), 0.2);
 		//matchingRule.addComparator(new CompanyNameComparatorJaro(), 1);
-		matchingRule.addComparator(new CompanyNameComparatorJaroWrinkler(), 0.7);
+		matchingRule.addComparator(new CompanyNameComparatorJaroWrinkler(), 0.6);
 		//matchingRule.addComparator(new CompanyNameComparatorLevenshtein(), 0.8);
-		matchingRule.addComparator(new FoundedYearComparator(), 0.1);
+		matchingRule.addComparator(new CountryComparatorJaroWrinkler(), 0.2);
 
 
 
@@ -103,7 +100,7 @@ public class IR_SBTI_DBPedia_using_linear_combination
 //		 correspondences = maxWeight.getResult();
 */
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/dbpedia_2_sbti_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/dbpedia_2_sbti_correspondences.csv_LC"), correspondences);
 		
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result
