@@ -72,15 +72,15 @@ public class IR_using_linear_combination
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsDbpedia_Forbes = new MatchingGoldStandard();
 		gsDbpedia_Forbes.loadFromCSVFile(new File(
-				"data/goldstandard/dbpedia_forbes_goldstandard.csv"));
+				"data/goldstandard/dbpedia_forbes_goldstandard_train.csv"));
 
 		MatchingGoldStandard gsDbpedia_Sbti = new MatchingGoldStandard();
 		gsDbpedia_Sbti.loadFromCSVFile(new File(
-				"data/goldstandard/dbpedia_sbti_goldstandard.csv"));
+				"data/goldstandard/dbpedia_sbti_goldstandard_train.csv"));
 
 		MatchingGoldStandard gsSbti_Forbes = new MatchingGoldStandard();
 		gsSbti_Forbes.loadFromCSVFile(new File(
-				"data/goldstandard/sbti_forbes_goldstandard.csv"));
+				"data/goldstandard/sbti_forbes_goldstandard_train.csv"));
 
 		/*
 		// create a matching rule

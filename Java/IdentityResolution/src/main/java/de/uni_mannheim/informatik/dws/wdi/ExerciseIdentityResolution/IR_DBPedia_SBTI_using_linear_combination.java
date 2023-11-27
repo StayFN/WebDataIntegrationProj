@@ -8,7 +8,6 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Compa
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
-import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
@@ -22,7 +21,7 @@ import org.slf4j.Logger;
 
 import java.io.File;
 
-public class IR_SBTI_DBPedia_using_linear_combination
+public class IR_DBPedia_SBTI_using_linear_combination
 {
 	/*
 	 * Logging Options:
@@ -59,7 +58,7 @@ public class IR_SBTI_DBPedia_using_linear_combination
 		
 		// create a matching rule
 		LinearCombinationMatchingRule<Company, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.7);
+				0.5);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsDbPediaSbti);
 		
 		// add comparators
@@ -100,7 +99,7 @@ public class IR_SBTI_DBPedia_using_linear_combination
 //		 correspondences = maxWeight.getResult();
 */
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/dbpedia_2_sbti_correspondences.csv_LC"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/dbpedia_sbti_correspondences_LC.csv"), correspondences);
 		
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result

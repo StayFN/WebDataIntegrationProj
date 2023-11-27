@@ -63,28 +63,25 @@ public class IR_SBTI_Forbes_using_linear_combination
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsSBTI_Forbes = new MatchingGoldStandard();
 		gsSBTI_Forbes.loadFromCSVFile(new File(
-				"data/goldstandard/sbti_forbes_goldstandard.csv"));
+				"data/goldstandard/sbti_forbes_goldstandard_test.csv"));
 
 		
 		// create a matching rule
 		LinearCombinationMatchingRule<Company, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.7);
+				0.8);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsSBTI_Forbes);
-		
-		// add comparators
-		//matchingRule.addComparator(new ProfitComparatorPercentage(), 0.01);
-		matchingRule.addComparator(new RevenueComparatorPercentage(), 0.1);
-		//matchingRule.addComparator(new AssetsComparatorPercentage(), 0.03);
+
 		matchingRule.addComparator(new IndustryComparator(), 0.1);
 		//matchingRule.addComparator(new CompanyNameComparatorJaro(), 1);
 		matchingRule.addComparator(new CompanyNameComparatorJaroWrinkler(), 0.7);
-		matchingRule.addComparator(new FoundedYearComparator(), 0.1);
+		//matchingRule.addComparator(new CompanyNameComparatorLevenshtein(), 0.8);
+		matchingRule.addComparator(new CountryComparatorJaroWrinkler(), 0.2);
 
 
 
 		// create a blocker (blocking strategy)
-		//StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
-	     NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
+		StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
+		//NoBlocker<Company, Attribute> blocker = new NoBlocker<>();
 		//SortedNeighbourhoodBlocker<Company, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new CompanyBlockingKeyByNameGenerator(), 1);
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
@@ -108,7 +105,7 @@ public class IR_SBTI_Forbes_using_linear_combination
 //		 correspondences = maxWeight.getResult();
 */
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/forbes_2_sbti_correspondences.csv"), correspondences);		
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/sbti_forbes_correspondences_LC.csv"), correspondences);
 		
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result

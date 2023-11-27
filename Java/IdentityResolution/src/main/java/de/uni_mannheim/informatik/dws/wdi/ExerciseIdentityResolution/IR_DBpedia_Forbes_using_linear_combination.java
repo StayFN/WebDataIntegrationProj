@@ -63,7 +63,7 @@ public class IR_DBpedia_Forbes_using_linear_combination
 		logger.info("*\tLoading gold standard\t*");
 		MatchingGoldStandard gsDbpedia_Forbes = new MatchingGoldStandard();
 		gsDbpedia_Forbes.loadFromCSVFile(new File(
-				"data/goldstandard/dbpedia_forbes_goldstandard.csv"));
+				"data/goldstandard/dbpedia_forbes_goldstandard_test.csv"));
 
 		
 		// create a matching rule
@@ -72,16 +72,13 @@ public class IR_DBpedia_Forbes_using_linear_combination
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsDbpedia_Forbes);
 		
 		// add comparators
-		//matchingRule.addComparator(new ProfitComparatorPercentage(), 0.01);
+		matchingRule.addComparator(new ProfitComparatorPercentage(), 0.1);
 		matchingRule.addComparator(new RevenueComparatorPercentage(), 0.1);
-		//matchingRule.addComparator(new AssetsComparatorPercentage(), 0.03);
+		matchingRule.addComparator(new AssetsComparatorPercentage(), 0.1);
 		matchingRule.addComparator(new IndustryComparator(), 0.1);
-		//matchingRule.addComparator(new CompanyNameComparatorJaro(), 1);
-		matchingRule.addComparator(new CompanyNameComparatorJaroWrinkler(), 0.7);
-		//matchingRule.addComparator(new CompanyNameComparatorLevenshtein(), 0.8);
+		matchingRule.addComparator(new CompanyNameComparatorJaroWrinkler(), 0.4);
 		matchingRule.addComparator(new FoundedYearComparator(), 0.1);
-
-
+		matchingRule.addComparator(new CountryComparatorJaroWrinkler(), 0.1);
 
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Company, Attribute> blocker = new StandardRecordBlocker<Company, Attribute>(new CompanyBlockingKeyByNameGenerator());
@@ -109,7 +106,7 @@ public class IR_DBpedia_Forbes_using_linear_combination
 //		 correspondences = maxWeight.getResult();
 */
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/forbes_2_dbpedia_correspondences.csv"), correspondences);		
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/dbpedia_forbes_correspondences_LC2.csv"), correspondences);
 		
 		logger.info("*\tEvaluating result\t*");
 		// evaluate your result
