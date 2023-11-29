@@ -99,12 +99,21 @@ public class DataFusion_Main_Company
 		CorrespondenceSet<Company, Attribute> correspondences = new CorrespondenceSet<>();
 		
 
+		//correspondences.loadCorrespondences(new File("data/correspondences/sbti_forbes_correspondences_LC.csv"),dataSBTI, dataForbes);
+
+		//correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_sbti_correspondences_LC.csv"),dataDbPedia, dataSBTI);
+
+		//correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_forbes_correspondences_ML_LR.csv"),dataDbPedia, dataForbes);
+
 		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_sbti_correspondences_cleaned.csv"),dataSBTI, dataForbes);
 
 		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_sbti_correspondences_cleaned.csv"),dataDbPedia, dataSBTI);
 
 		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_dbpedia_correspondences_cleaned.csv"),dataDbPedia, dataForbes);
 
+
+		
+		
 
 		// write group size distribution
 		correspondences.printGroupSizeDistribution();
@@ -122,10 +131,10 @@ public class DataFusion_Main_Company
 		
 		// add attribute fusers
 		strategy.addAttributeFuser(Company.COMPANYNAME, new CompanyNameFuserShortestString(),new CompanyNameEvaluationRule());
-		strategy.addAttributeFuser(Company.ASSETS,new AssetFuserMean(),new AssetEvaluationRule());
-		strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
-		strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFuserFavourSource(),new FoundedYearEvaluationRule());
-		strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
+		//strategy.addAttributeFuser(Company.ASSETS,new AssetFuserMean(),new AssetEvaluationRule());
+		//strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
+		//strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFuserFavourSource(),new FoundedYearEvaluationRule());
+		//strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
 
 		//strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new CountryEvaluationRule());
 
