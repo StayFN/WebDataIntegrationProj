@@ -13,8 +13,9 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers;
 
 import java.util.List;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Actor;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Person;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Union;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -25,32 +26,32 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
- * {@link AttributeValueFuser} for the actors of {@link Movie}s. 
+ * {@link AttributeValueFuser} for the actors of {@link Company}s. 
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class KeyPersonsFuserUnion extends AttributeValueFuser<List<Actor>, Movie, Attribute> {
+public class KeyPersonsFuserUnion extends AttributeValueFuser<List<Person>, Company, Attribute> {
 	
 	public KeyPersonsFuserUnion() {
-		super(new Union<Actor, Movie, Attribute>());
+		super(new Union<Person, Company, Attribute>());
 	}
 	
 	@Override
-	public boolean hasValue(Movie record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Movie.ACTORS);
+	public boolean hasValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
+		return record.hasValue(Company.KEYPERSONS);
 	}
 	
 	@Override
-	public List<Actor> getValue(Movie record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getActors();
+	public List<Person> getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
+		return record.getKeyPersons();
 	}
 
 	@Override
-	public void fuse(RecordGroup<Movie, Attribute> group, Movie fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
-		FusedValue<List<Actor>, Movie, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setActors(fused.getValue());
-		fusedRecord.setAttributeProvenance(Movie.ACTORS, fused.getOriginalIds());
+	public void fuse(RecordGroup<Company, Attribute> group, Company fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
+		FusedValue<List<Person>, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		fusedRecord.setKeyPersons(fused.getValue());
+		fusedRecord.setAttributeProvenance(Company.KEYPERSONS, fused.getOriginalIds());
 	}
 
 }
