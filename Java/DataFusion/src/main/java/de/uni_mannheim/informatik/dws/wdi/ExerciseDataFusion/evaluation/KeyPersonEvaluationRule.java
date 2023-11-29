@@ -33,22 +33,32 @@ public class KeyPersonEvaluationRule extends EvaluationRule<Company, Attribute> 
 
 	@Override
 	public boolean isEqual(Company record1, Company record2, Attribute schemaElement) {
-		Set<String> keyperson1 = new HashSet<>();
-
-		for (Person a : record1.getKeyPersons()) {
-			// note: evaluating using the actor's name only suffices for simple
-			// lists
-			// in your project, you should have actor ids which you use here
-			// (and in the identity resolution)
-			keyperson1.add(a.getName());
+		if(record1.getKeyPersons()== null || record2.getKeyPersons()==null)
+			return true;
+		else {
+			
+			Set<String> keyperson1 = new HashSet<>();
+	
+			for (Person a : record1.getKeyPersons()) {
+				// note: evaluating using the actor's name only suffices for simple
+				// lists
+				// in your project, you should have actor ids which you use here
+				// (and in the identity resolution)
+				keyperson1.add(a.getName());
+			}
+	
+			Set<String> keyperson2 = new HashSet<>();
+			for (Person a : record2.getKeyPersons()) {
+				keyperson2.add(a.getName());
+			}
+	
+			//return keyperson1.containsAll(keyperson2) && keyperson2.containsAll(keyperson1);
+			keyperson1.retainAll(keyperson2);
+			if(keyperson1.isEmpty() || keyperson2.isEmpty()) {
+				return false;
+			}
+			return keyperson1.isEmpty();
 		}
-
-		Set<String> keyperson2 = new HashSet<>();
-		for (Person a : record2.getKeyPersons()) {
-			keyperson2.add(a.getName());
-		}
-
-		return keyperson1.containsAll(keyperson2) && keyperson2.containsAll(keyperson1);
 	}
 
 	/* (non-Javadoc)
