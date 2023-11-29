@@ -60,12 +60,13 @@ public class IR_DBPedia_Forbes_using_machine_learning {
 
 
 		// create a matching rule
-		String options[] = new String[] { "" };
+		String options[] = new String[] {""};
 		//String modelType = "SimpleLogistic"; // use a logistic regression
-		//String modelType = "AdaBoostM1"; // u
-		String modelType = "Bayes";
+		String modelType = "AdaBoostM1"; // u
+		//String modelType = "Bayes";
 
-		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
+
+		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.1, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsDbpedia_Forbes);
 		
 		// add comparators
@@ -99,7 +100,7 @@ public class IR_DBPedia_Forbes_using_machine_learning {
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ML_DBPedia_2_Forbes_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/dbpedia_forbes_correspondences_ML_Ada.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");

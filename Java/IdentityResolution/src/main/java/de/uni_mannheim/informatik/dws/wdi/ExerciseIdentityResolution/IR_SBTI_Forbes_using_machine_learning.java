@@ -60,10 +60,10 @@ public class IR_SBTI_Forbes_using_machine_learning {
 		// create a matching rule
 		String options[] = new String[] { "" };
 		//String modelType = "SimpleLogistic"; // use a logistic regression
-		String modelType = "Bayes"; // u
-		//String modelType = "SimpleLogistic";
+		//String modelType = "Bayes"; // u
+		String modelType = "AdaBoostM1";
 
-		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
+		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsDbpedia_sbti);
 		
 		// add comparators
@@ -93,7 +93,7 @@ public class IR_SBTI_Forbes_using_machine_learning {
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ML_Sbti_2_Forbes_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/sbti_forbes_correspondences_ML_Ada.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");

@@ -1,0 +1,231 @@
+Decision Stump
+
+Classifications
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.8682208994708995 : 0
+[0] CompanyNameComparatorJaroWrinkler > 0.8682208994708995 : 1
+[0] CompanyNameComparatorJaroWrinkler is missing : 0
+
+Class distributions
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.8682208994708995
+1	0	
+0.015384615384615385	0.9846153846153847	
+[0] CompanyNameComparatorJaroWrinkler > 0.8682208994708995
+1	0	
+0.832258064516129	0.16774193548387098	
+[0] CompanyNameComparatorJaroWrinkler is missing
+1	0	
+0.37714285714285717	0.6228571428571429	
+
+
+Weight: 2.4
+
+Decision Stump
+
+Classifications
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.9493589743589744 : 0
+[0] CompanyNameComparatorJaroWrinkler > 0.9493589743589744 : 1
+[0] CompanyNameComparatorJaroWrinkler is missing : 0
+
+Class distributions
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.9493589743589744
+1	0	
+0.12605992085924228	0.8739400791407577	
+[0] CompanyNameComparatorJaroWrinkler > 0.9493589743589744
+1	0	
+0.9999999999999999	1.4014391285959572E-16	
+[0] CompanyNameComparatorJaroWrinkler is missing
+1	0	
+0.2526587173702868	0.7473412826297133	
+
+
+Weight: 2.11
+
+Decision Stump
+
+Classifications
+
+[2] CountryComparatorJaroWrinkler <= 0.8108134920634922 : 0
+[2] CountryComparatorJaroWrinkler > 0.8108134920634922 : 1
+[2] CountryComparatorJaroWrinkler is missing : 1
+
+Class distributions
+
+[2] CountryComparatorJaroWrinkler <= 0.8108134920634922
+1	0	
+0.033025529209892344	0.9669744707901077	
+[2] CountryComparatorJaroWrinkler > 0.8108134920634922
+1	0	
+0.813936380120667	0.18606361987933298	
+[2] CountryComparatorJaroWrinkler is missing
+1	0	
+0.5811811450243822	0.4188188549756178	
+
+
+Weight: 1.81
+
+Decision Stump
+
+Classifications
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.8333333333333333 : 0
+[0] CompanyNameComparatorJaroWrinkler > 0.8333333333333333 : 0
+[0] CompanyNameComparatorJaroWrinkler is missing : 0
+
+Class distributions
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.8333333333333333
+1	0	
+0.0	1.0	
+[0] CompanyNameComparatorJaroWrinkler > 0.8333333333333333
+1	0	
+0.45674482843130937	0.5432551715686907	
+[0] CompanyNameComparatorJaroWrinkler is missing
+1	0	
+0.3673895097372623	0.6326104902627377	
+
+
+Weight: 0.54
+
+Decision Stump
+
+Classifications
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.8333333333333333 : 0
+[0] CompanyNameComparatorJaroWrinkler > 0.8333333333333333 : 1
+[0] CompanyNameComparatorJaroWrinkler is missing : 1
+
+Class distributions
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.8333333333333333
+1	0	
+0.0	1.0	
+[0] CompanyNameComparatorJaroWrinkler > 0.8333333333333333
+1	0	
+0.5914536643113921	0.4085463356886079	
+[0] CompanyNameComparatorJaroWrinkler is missing
+1	0	
+0.5000000000000008	0.49999999999999917	
+
+
+Weight: 0.64
+
+Decision Stump
+
+Classifications
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.8333333333333333 : 0
+[0] CompanyNameComparatorJaroWrinkler > 0.8333333333333333 : 0
+[0] CompanyNameComparatorJaroWrinkler is missing : 0
+
+Class distributions
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.8333333333333333
+1	0	
+0.0	1.0	
+[0] CompanyNameComparatorJaroWrinkler > 0.8333333333333333
+1	0	
+0.4330409409313088	0.5669590590686913	
+[0] CompanyNameComparatorJaroWrinkler is missing
+1	0	
+0.381897893687983	0.6181021063120171	
+
+
+Weight: 0.48
+
+Decision Stump
+
+Classifications
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.8333333333333333 : 0
+[0] CompanyNameComparatorJaroWrinkler > 0.8333333333333333 : 1
+[0] CompanyNameComparatorJaroWrinkler is missing : 1
+
+Class distributions
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.8333333333333333
+1	0	
+0.0	1.0	
+[0] CompanyNameComparatorJaroWrinkler > 0.8333333333333333
+1	0	
+0.5528136498649349	0.4471863501350652	
+[0] CompanyNameComparatorJaroWrinkler is missing
+1	0	
+0.5000000000000001	0.5	
+
+
+Weight: 0.39
+
+Decision Stump
+
+Classifications
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.9493589743589744 : 0
+[0] CompanyNameComparatorJaroWrinkler > 0.9493589743589744 : 1
+[0] CompanyNameComparatorJaroWrinkler is missing : 0
+
+Class distributions
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.9493589743589744
+1	0	
+0.38086467487040426	0.6191353251295957	
+[0] CompanyNameComparatorJaroWrinkler > 0.9493589743589744
+1	0	
+0.9999999999999832	1.6791154373337338E-14	
+[0] CompanyNameComparatorJaroWrinkler is missing
+1	0	
+0.4197898461548685	0.5802101538451316	
+
+
+Weight: 0.59
+
+Decision Stump
+
+Classifications
+
+[2] CountryComparatorJaroWrinkler <= 0.7701058201058201 : 0
+[2] CountryComparatorJaroWrinkler > 0.7701058201058201 : 1
+[2] CountryComparatorJaroWrinkler is missing : 1
+
+Class distributions
+
+[2] CountryComparatorJaroWrinkler <= 0.7701058201058201
+1	0	
+0.054579650014187686	0.9454203499858124	
+[2] CountryComparatorJaroWrinkler > 0.7701058201058201
+1	0	
+0.6045164879552515	0.39548351204474863	
+[2] CountryComparatorJaroWrinkler is missing
+1	0	
+0.5488820825926972	0.4511179174073029	
+
+
+Weight: 0.57
+
+Decision Stump
+
+Classifications
+
+[2] CountryComparatorJaroWrinkler <= 0.9152191894127378 : 0
+[2] CountryComparatorJaroWrinkler > 0.9152191894127378 : 1
+[2] CountryComparatorJaroWrinkler is missing : 0
+
+Class distributions
+
+[2] CountryComparatorJaroWrinkler <= 0.9152191894127378
+1	0	
+0.26176225393611385	0.7382377460638863	
+[2] CountryComparatorJaroWrinkler > 0.9152191894127378
+1	0	
+0.5655852268158892	0.43441477318411076	
+[2] CountryComparatorJaroWrinkler is missing
+1	0	
+0.43280970283579395	0.5671902971642061	
+
+
+Weight: 0.58
+
+Number of performed Iterations: 10

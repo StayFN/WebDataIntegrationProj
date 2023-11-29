@@ -1,0 +1,45 @@
+                                          Class
+Attribute                                     1       0
+                                         (0.27)  (0.73)
+========================================================
+[4] RevenueComparatorPercentage
+  mean                                    0.6182  0.0929
+  std. dev.                               0.3947  0.2071
+  weight sum                                  95     255
+  precision                               0.0071  0.0071
+
+[0] CompanyNameComparatorJaroWrinkler
+  mean                                     0.965  0.7996
+  std. dev.                               0.0614  0.1182
+  weight sum                                  95     255
+  precision                               0.0047  0.0047
+
+[1] IndustryComparator
+  mean                                    0.1053  0.0373
+  std. dev.                               0.2038  0.1313
+  weight sum                                  95     255
+  precision                                  0.5     0.5
+
+[3] FoundedYearComparator
+  mean                                    0.5684  0.0176
+  std. dev.                               0.4791    0.12
+  weight sum                                  95     255
+  precision                                  0.5     0.5
+
+[2] CountryComparatorJaroWrinkler
+  mean                                    0.0842  0.1176
+  std. dev.                               0.2777  0.2889
+  weight sum                                  95     255
+  precision                               0.0556  0.0556
+
+[6] AssetsComparatorPercentage
+  mean                                    0.5273  0.0469
+  std. dev.                               0.4466  0.1518
+  weight sum                                  95     255
+  precision                               0.0098  0.0098
+
+[5] ProfitComparatorPercentage
+  mean                                    0.4428  0.0666
+  std. dev.                               0.4316  0.1788
+  weight sum                                  95     255
+  precision                               0.0093  0.0093

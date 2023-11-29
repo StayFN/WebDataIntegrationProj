@@ -59,9 +59,9 @@ public class IR_DBPedia_Sbti_using_machine_learning {
 		String options[] = new String[] { "" };
 		//String modelType = "SimpleLogistic"; // use a logistic regression
 		//String modelType = "AdaBoostM1"; // u
-		String modelType = "SimpleLogistic";
+		String modelType = "AdaBoostM1";
 
-		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
+		WekaMatchingRule<Company, Attribute> matchingRule = new WekaMatchingRule<>(0.8, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsDbpedia_sbti);
 		
 		// add comparators
@@ -91,7 +91,7 @@ public class IR_DBPedia_Sbti_using_machine_learning {
 				blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ML_DBPedia_2_Sbti_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/dbpedia_sbti_correspondences_ML_Ada.csv"), correspondences);
 
 		// load the gold standard (test set)
 		logger.info("*\tLoading gold standard\t*");
@@ -113,5 +113,6 @@ public class IR_DBPedia_Sbti_using_machine_learning {
 				"Recall: %.4f",	perfTest.getRecall()));
 		logger.info(String.format(
 				"F1: %.4f",perfTest.getF1()));
+
     }
 }

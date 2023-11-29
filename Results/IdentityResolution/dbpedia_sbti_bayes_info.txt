@@ -1,0 +1,21 @@
+                                          Class
+Attribute                                     1       0
+                                         (0.38)  (0.62)
+========================================================
+[0] CompanyNameComparatorJaroWrinkler
+  mean                                    0.9789  0.7888
+  std. dev.                               0.0332  0.0975
+  weight sum                                 132     218
+  precision                               0.0048  0.0048
+
+[1] IndustryComparator
+  mean                                         0       0
+  std. dev.                               0.0017  0.0017
+  weight sum                                 132     218
+  precision                                 0.01    0.01
+
+[2] CountryComparatorJaroWrinkler
+  mean                                    0.1485  0.0886
+  std. dev.                               0.3345  0.2413
+  weight sum                                 132     218
+  precision                                 0.04    0.04

@@ -1,0 +1,231 @@
+Decision Stump
+
+Classifications
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.9710648148148148 : 0
+[0] CompanyNameComparatorJaroWrinkler > 0.9710648148148148 : 1
+[0] CompanyNameComparatorJaroWrinkler is missing : 0
+
+Class distributions
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.9710648148148148
+1	0	
+0.1056338028169014	0.8943661971830986	
+[0] CompanyNameComparatorJaroWrinkler > 0.9710648148148148
+1	0	
+0.9848484848484849	0.015151515151515152	
+[0] CompanyNameComparatorJaroWrinkler is missing
+1	0	
+0.2714285714285714	0.7285714285714285	
+
+
+Weight: 2.33
+
+Decision Stump
+
+Classifications
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.8534621578099838 : 0
+[0] CompanyNameComparatorJaroWrinkler > 0.8534621578099838 : 1
+[0] CompanyNameComparatorJaroWrinkler is missing : 1
+
+Class distributions
+
+[0] CompanyNameComparatorJaroWrinkler <= 0.8534621578099838
+1	0	
+0.22889260942358308	0.771107390576417	
+[0] CompanyNameComparatorJaroWrinkler > 0.8534621578099838
+1	0	
+0.8471443587946744	0.1528556412053256	
+[0] CompanyNameComparatorJaroWrinkler is missing
+1	0	
+0.5857518454848821	0.41424815451511776	
+
+
+Weight: 1.48
+
+Decision Stump
+
+Classifications
+
+[6] AssetsComparatorPercentage <= 0.7055591564924719 : 0
+[6] AssetsComparatorPercentage > 0.7055591564924719 : 1
+[6] AssetsComparatorPercentage is missing : 1
+
+Class distributions
+
+[6] AssetsComparatorPercentage <= 0.7055591564924719
+1	0	
+0.36277828669072465	0.6372217133092755	
+[6] AssetsComparatorPercentage > 0.7055591564924719
+1	0	
+0.9683281910987065	0.03167180890129356	
+[6] AssetsComparatorPercentage is missing
+1	0	
+0.5615344630121063	0.43846553698789364	
+
+
+Weight: 1.08
+
+Decision Stump
+
+Classifications
+
+[3] FoundedYearComparator <= 0.25 : 1
+[3] FoundedYearComparator > 0.25 : 1
+[3] FoundedYearComparator is missing : 1
+
+Class distributions
+
+[3] FoundedYearComparator <= 0.25
+1	0	
+0.5049283055901002	0.4950716944098998	
+[3] FoundedYearComparator > 0.25
+1	0	
+0.9446149841059206	0.0553850158940793	
+[3] FoundedYearComparator is missing
+1	0	
+0.6925955139155929	0.30740448608440707	
+
+
+Weight: 0.81
+
+Decision Stump
+
+Classifications
+
+[3] FoundedYearComparator <= 0.25 : 0
+[3] FoundedYearComparator > 0.25 : 1
+[3] FoundedYearComparator is missing : 0
+
+Class distributions
+
+[3] FoundedYearComparator <= 0.25
+1	0	
+0.31161756418881376	0.6883824358111862	
+[3] FoundedYearComparator > 0.25
+1	0	
+0.8833132194715085	0.11668678052849146	
+[3] FoundedYearComparator is missing
+1	0	
+0.49999999999999933	0.5000000000000007	
+
+
+Weight: 1.11
+
+Decision Stump
+
+Classifications
+
+[4] RevenueComparatorPercentage <= 0.8725334308075523 : 1
+[4] RevenueComparatorPercentage > 0.8725334308075523 : 1
+[4] RevenueComparatorPercentage is missing : 1
+
+Class distributions
+
+[4] RevenueComparatorPercentage <= 0.8725334308075523
+1	0	
+0.5326587360695682	0.4673412639304318	
+[4] RevenueComparatorPercentage > 0.8725334308075523
+1	0	
+0.9797202232956559	0.020279776704344155	
+[4] RevenueComparatorPercentage is missing
+1	0	
+0.6156561527663118	0.38434384723368814	
+
+
+Weight: 0.47
+
+Decision Stump
+
+Classifications
+
+[4] RevenueComparatorPercentage <= 0.8725334308075523 : 0
+[4] RevenueComparatorPercentage > 0.8725334308075523 : 1
+[4] RevenueComparatorPercentage is missing : 1
+
+Class distributions
+
+[4] RevenueComparatorPercentage <= 0.8725334308075523
+1	0	
+0.4157293605372614	0.5842706394627385	
+[4] RevenueComparatorPercentage > 0.8725334308075523
+1	0	
+0.9679068067652022	0.03209319323479776	
+[4] RevenueComparatorPercentage is missing
+1	0	
+0.5000000000000008	0.49999999999999917	
+
+
+Weight: 0.59
+
+Decision Stump
+
+Classifications
+
+[4] RevenueComparatorPercentage <= 0.1453028043226426 : 0
+[4] RevenueComparatorPercentage > 0.1453028043226426 : 1
+[4] RevenueComparatorPercentage is missing : 1
+
+Class distributions
+
+[4] RevenueComparatorPercentage <= 0.1453028043226426
+1	0	
+0.421843757991336	0.578156242008664	
+[4] RevenueComparatorPercentage > 0.1453028043226426
+1	0	
+0.760127204851838	0.23987279514816193	
+[4] RevenueComparatorPercentage is missing
+1	0	
+0.6080415972525166	0.3919584027474834	
+
+
+Weight: 0.75
+
+Decision Stump
+
+Classifications
+
+[5] ProfitComparatorPercentage <= 5.758409229535966E-4 : 0
+[5] ProfitComparatorPercentage > 5.758409229535966E-4 : 1
+[5] ProfitComparatorPercentage is missing : 1
+
+Class distributions
+
+[5] ProfitComparatorPercentage <= 5.758409229535966E-4
+1	0	
+0.46336575125960855	0.5366342487403916	
+[5] ProfitComparatorPercentage > 5.758409229535966E-4
+1	0	
+0.7115683098694732	0.28843169013052694	
+[5] ProfitComparatorPercentage is missing
+1	0	
+0.603183981155457	0.396816018844543	
+
+
+Weight: 0.55
+
+Decision Stump
+
+Classifications
+
+[6] AssetsComparatorPercentage <= 0.9999950267461591 : 1
+[6] AssetsComparatorPercentage > 0.9999950267461591 : 0
+[6] AssetsComparatorPercentage is missing : 1
+
+Class distributions
+
+[6] AssetsComparatorPercentage <= 0.9999950267461591
+1	0	
+0.6281379637348609	0.37186203626513903	
+[6] AssetsComparatorPercentage > 0.9999950267461591
+1	0	
+0.07635212761050694	0.923647872389493	
+[6] AssetsComparatorPercentage is missing
+1	0	
+0.5928508801276067	0.4071491198723932	
+
+
+Weight: 0.61
+
+Number of performed Iterations: 10
