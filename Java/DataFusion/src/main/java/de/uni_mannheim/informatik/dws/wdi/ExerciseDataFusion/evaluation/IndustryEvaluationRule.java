@@ -14,40 +14,40 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation;
 import java.util.HashSet;
 import java.util.Set;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
 import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
 /**
- * {@link EvaluationRule} for the actors of {@link Movie}s. The rule simply
- * compares the full set of actors of two {@link Movie}s and returns true, in
+ * {@link EvaluationRule} for the actors of {@link Company}s. The rule simply
+ * compares the full set of actors of two {@link Company}s and returns true, in
  * case they are identical.
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-/*public class IndustryEvaluationRule extends EvaluationRule<Company, Attribute> {
+public class IndustryEvaluationRule extends EvaluationRule<Company, Attribute> {
 
 	@Override
-	public boolean isEqual(Movie record1, Movie record2, Attribute schemaElement) {
-		Set<String> actors1 = new HashSet<>();
+	public boolean isEqual(Company record1, Company record2, Attribute schemaElement) {
+		Set<String> industry1 = new HashSet<>();
 
 		for (String a : record1.getIndustries()) {
 			// note: evaluating using the actor's name only suffices for simple
 			// lists
 			// in your project, you should have actor ids which you use here
 			// (and in the identity resolution)
-			actors1.add(a.getName());
+			industry1.add(a.getIndustry());
 		}
 
-		Set<String> actors2 = new HashSet<>();
+		Set<String> industry2 = new HashSet<>();
 		for (Industry a : record2.getIndustries()) {
-			actors2.add(a.getName());
+			industry2.add(a.getName());
 		}
 
-		return actors1.containsAll(actors2) && actors2.containsAll(actors1);
+		return industry1.containsAll(industry2) && industry2.containsAll(industry1);
 	}
 
 	/* (non-Javadoc)
