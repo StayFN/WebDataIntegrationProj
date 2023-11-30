@@ -52,6 +52,17 @@ public class IndustryEvaluationRule extends EvaluationRule<Company, Attribute> {
 		List<String> industries1 = record1.getIndustries();
 		List<String> industries2 = record2.getIndustries();
 		
+		/*
+		Set<String> set1 = new HashSet<>();
+		Set<String> set2 = new HashSet<>();
+		for (String industry : industries1) {
+			set1.add(industry);
+		}
+		for (String industry : industries2) {
+			set2.add(industry);
+		}
+		*/
+		
 		return industries1.containsAll(industries2) && industries2.containsAll(industries1);
 	}
 

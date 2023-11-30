@@ -1,35 +1,37 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.solution;
 
 import java.io.File;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
-import java.time.temporal.ChronoField;
-import java.util.Locale;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.CompanyNameFuserShortestString;
+
+//import java.time.LocalDateTime;
+//import java.time.format.DateTimeFormatter;
+//import java.time.format.DateTimeFormatterBuilder;
+//import java.time.temporal.ChronoField;
+//import java.util.Locale;
+
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.CompanyNameFuserShortestString;
 
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.*;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ActorsEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DateEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DirectorEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ActorsFuserUnion;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserFavourSource;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserVoting;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DirectorFuserLongestString;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.TitleFuserShortestString;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ActorsEvaluationRule;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DateEvaluationRule;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DirectorEvaluationRule;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ActorsFuserUnion;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserFavourSource;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserVoting;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DirectorFuserLongestString;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.TitleFuserShortestString;
 //import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.FusibleCompanyFactory;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.TitleFuserLongestString;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.TitleFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.CompanyXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.CompanyXMLReader;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.MovieXMLReader;
-import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeFuser;
-import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeFusionLogger;
-import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.MovieXMLReader;
+//import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeFuser;
+//import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeFusionLogger;
+//import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator;
@@ -37,7 +39,7 @@ import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy;
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
-import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
+//import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroupFactory;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
@@ -138,7 +140,8 @@ public class DataFusion_Main_Company
 
 		//strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new CountryEvaluationRule());
 
-		strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserIntersection(),new IndustryEvaluationRule());
+		//strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserIntersection(),new IndustryEvaluationRule());
+		strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new IndustryEvaluationRule());
 		//strategy.addAttributeFuser(Company.KEYPERSONS,new KeyPersonsFuserUnion(),new KeyPersonEvaluationRule());
 		//strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
 		//strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
