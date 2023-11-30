@@ -12,6 +12,7 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
@@ -28,30 +29,35 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-/*public class IndustryEvaluationRule extends EvaluationRule<Company, Attribute> {
+public class IndustryEvaluationRule extends EvaluationRule<Company, Attribute> {
 
 	@Override
-	public boolean isEqual(Movie record1, Movie record2, Attribute schemaElement) {
-		Set<String> actors1 = new HashSet<>();
-
+	public boolean isEqual(Company record1, Company record2, Attribute schemaElement) {
+		/*
+		 * Set<String> industries1 = new HashSet<>();
+		
 		for (String a : record1.getIndustries()) {
 			// note: evaluating using the actor's name only suffices for simple
 			// lists
 			// in your project, you should have actor ids which you use here
 			// (and in the identity resolution)
-			actors1.add(a.getName());
+			industries1.add(a.getName());
 		}
 
-		Set<String> actors2 = new HashSet<>();
-		for (Industry a : record2.getIndustries()) {
-			actors2.add(a.getName());
+		Set<String> industries2 = new HashSet<>();
+		for (String a : record2.getIndustries()) {
+			industries2.add(a.getName());
 		}
-
-		return actors1.containsAll(actors2) && actors2.containsAll(actors1);
+		*/
+		List<String> industries1 = record1.getIndustries();
+		List<String> industries2 = record2.getIndustries();
+		
+		return industries1.containsAll(industries2) && industries2.containsAll(industries1);
 	}
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.datafusion.EvaluationRule#isEqual(java.lang.Object, java.lang.Object, de.uni_mannheim.informatik.wdi.model.Correspondence)
+	*/
 	@Override
 	public boolean isEqual(Company record1, Company record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondence) {
@@ -61,4 +67,4 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 }
 
 
- */
+ 

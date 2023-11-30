@@ -99,17 +99,17 @@ public class DataFusion_Main_Company
 		CorrespondenceSet<Company, Attribute> correspondences = new CorrespondenceSet<>();
 		
 
-		//correspondences.loadCorrespondences(new File("data/correspondences/sbti_forbes_correspondences_LC.csv"),dataSBTI, dataForbes);
+		correspondences.loadCorrespondences(new File("data/correspondences/sbti_forbes_correspondences_LC.csv"),dataSBTI, dataForbes);
 
-		//correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_sbti_correspondences_LC.csv"),dataDbPedia, dataSBTI);
+		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_sbti_correspondences_LC.csv"),dataDbPedia, dataSBTI);
 
-		//correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_forbes_correspondences_ML_LR.csv"),dataDbPedia, dataForbes);
+		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_forbes_correspondences_ML_LR.csv"),dataDbPedia, dataForbes);
 
-		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_sbti_correspondences_cleaned.csv"),dataSBTI, dataForbes);
+		//correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_sbti_correspondences_cleaned.csv"),dataSBTI, dataForbes);
 
-		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_sbti_correspondences_cleaned.csv"),dataDbPedia, dataSBTI);
+		//correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_sbti_correspondences_cleaned.csv"),dataDbPedia, dataSBTI);
 
-		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_dbpedia_correspondences_cleaned.csv"),dataDbPedia, dataForbes);
+		//correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_dbpedia_correspondences_cleaned.csv"),dataDbPedia, dataForbes);
 
 
 		
@@ -138,12 +138,12 @@ public class DataFusion_Main_Company
 
 		//strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new CountryEvaluationRule());
 
-		/*//strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new IndustryEvaluationRule());
-		//strategy.addAttributeFuser(Company.KEYPERSONS,new KeyPersonsFuserUnion(),new ActorsEvaluationRule());
-		strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
-		strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
+		strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserIntersection(),new IndustryEvaluationRule());
+		//strategy.addAttributeFuser(Company.KEYPERSONS,new KeyPersonsFuserUnion(),new KeyPersonEvaluationRule());
+		//strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
+		//strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
 		//strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFavourSource(),new FoundedYearEvaluationRule());
-		*/
+		
 
 		// create the fusion engine
 		DataFusionEngine<Company, Attribute> engine = new DataFusionEngine<Company, Attribute>(strategy);
