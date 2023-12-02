@@ -133,12 +133,12 @@ public class DataFusion_Main_Company
 		
 		// add attribute fusers
 		strategy.addAttributeFuser(Company.COMPANYNAME, new CompanyNameFuserShortestString(),new CompanyNameEvaluationRule());
-		//strategy.addAttributeFuser(Company.ASSETS,new AssetFuserMean(),new AssetEvaluationRule());
-		//strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
-		//strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFuserFavourSource(),new FoundedYearEvaluationRule());
-		//strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
+		strategy.addAttributeFuser(Company.ASSETS,new AssetFuserMean(),new AssetEvaluationRule());
+		strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
+		strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFuserFavourSource(),new FoundedYearEvaluationRule());
+		strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
 
-		//strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new CountryEvaluationRule());
+		strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new CountryEvaluationRule());
 
 		//strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserIntersection(),new IndustryEvaluationRule());
 		strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new IndustryEvaluationRule());

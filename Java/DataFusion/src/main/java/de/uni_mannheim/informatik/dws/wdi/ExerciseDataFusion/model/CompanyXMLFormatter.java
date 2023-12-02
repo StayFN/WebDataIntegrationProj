@@ -101,9 +101,7 @@ public class CompanyXMLFormatter extends XMLFormatter<Company> {
 		company.appendChild(createTextElement("Profit",
 				String.valueOf(record.getProfit()),
 				doc));
-		company.appendChild(createTextElement("Revenue",
-				String.valueOf(record.getRevenue()),
-				doc));
+
 		//if any of the following are being uncommented we get error: 
 		//Exception in thread "main" org.w3c.dom.DOMException: INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified. 
 		/*
