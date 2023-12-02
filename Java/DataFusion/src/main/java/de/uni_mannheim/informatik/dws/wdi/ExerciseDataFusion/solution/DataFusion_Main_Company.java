@@ -159,7 +159,7 @@ public class DataFusion_Main_Company
 		FusibleDataSet<Company, Attribute> fusedDataSet = engine.run(correspondences, null);
 		fusedDataSet.printDataSetDensityReport();
 		// write the result
-		//new CompanyXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
+		new CompanyXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
 
 		// evaluate
 		logger.info("*\tEvaluating results\t*");
