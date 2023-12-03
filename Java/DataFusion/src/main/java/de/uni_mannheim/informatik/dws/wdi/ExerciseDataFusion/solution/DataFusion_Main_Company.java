@@ -137,19 +137,35 @@ public class DataFusion_Main_Company
 		strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
 		strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFuserFavourSource(),new FoundedYearEvaluationRule());
 		strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
-
 		strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new CountryEvaluationRule());
-
-
-		//strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserIntersection(),new IndustryEvaluationRule());
 		strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new IndustryEvaluationRule());
+
+		//Attributes only in 1 Dataset (to add in fused.xml)
+		strategy.addAttributeFuser(Company.ISIN,new ISINFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.LEI,new LEIFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.FORBES2022RATING,new ForbesRatingFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.REGION,new RegionFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SIZEEMPLOYEES,new SizeEmployeesFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SIZECATEGORY,new SizeCategoryEmployeesFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.LEGALTYPE,new LegalTypeFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALDESCRIPTION,new SUSTGOALDESCRIPTIONFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALSTATUS_NEAR_TERM,new SustGoalStatusNearTermFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALSTATUS_LONG_TERM,new SustGoalStatusLongTermFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALCLASSIFICATION_NEAR_TERM,new SustGoalClassificationNearTermFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALCLASSIFICATION_LONG_TERM,new SustGoalClassificationLongTermFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALYEAR_NEAR_TERM,new SustGoalYearNearTermFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALYEAR_LONG_TERM,new SustGoalYearLongTermFuserLongestString(), new TrueEvaluator());
 		strategy.addAttributeFuser(Company.NETZEROCOMMITEDYEAR,new NetZeroYearFuserLongestString(), new TrueEvaluator());
 
-		//strategy.addAttributeFuser(Company.KEYPERSONS,new KeyPersonsFuserUnion(),new KeyPersonEvaluationRule());
-		//strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
-		//strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
-		//strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFavourSource(),new FoundedYearEvaluationRule());
-		
+
+
+
+
+
+
+
+		strategy.addAttributeFuser(Company.NETZEROCOMMITEDYEAR,new NetZeroYearFuserLongestString(), new TrueEvaluator());
+
 
 		// create the fusion engine
 		DataFusionEngine<Company, Attribute> engine = new DataFusionEngine<Company, Attribute>(strategy);

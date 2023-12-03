@@ -104,19 +104,19 @@ public class CompanyXMLFormatter extends XMLFormatter<Company> {
 
 		//if any of the following are being uncommented we get error: 
 		//Exception in thread "main" org.w3c.dom.DOMException: INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified. 
-		/*
-		company.appendChild(createTextElement("Market Value",
+
+		company.appendChild(createTextElement("Market_Value",
 				String.valueOf(record.getMarketValue()),
 				doc));
-		company.appendChild(createTextElement("Size Employees",
+		company.appendChild(createTextElement("Size_Employees",
 				String.valueOf(record.getSizeEmployees()),
 				doc));
-		company.appendChild(createTextElement("Size Category",
+		company.appendChild(createTextElement("Size_Category",
 				String.valueOf(record.getSizeEmployees()),
 				doc));
-		company.appendChild(createTextElement("Legal Type",
+		company.appendChild(createTextElement("Legal_Type",
 				record.getLegalType(),
-				doc));*/
+				doc));
 		company.appendChild(createTextElement("SustGoalDescription",
 				record.getSustGoalDescription(),
 				doc));

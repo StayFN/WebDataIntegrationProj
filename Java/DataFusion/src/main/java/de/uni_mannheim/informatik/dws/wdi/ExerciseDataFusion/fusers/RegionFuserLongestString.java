@@ -27,24 +27,21 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class ISINFuserLongestString extends
+public class RegionFuserLongestString extends
 		AttributeValueFuser<String, Company, Attribute> {
 
-	public ISINFuserLongestString() {
+	public RegionFuserLongestString() {
 		super(new LongestString<Company, Attribute>());
 	}
 
 	@Override
 	public boolean hasValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Company.ISIN);
+		return record.hasValue(Company.REGION);
 	}
 
 	@Override
 	public String getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
-		if (record.getIsin() != null){
-			return record.getIsin();
-		}
-		return "";
+		return record.getRegion();
 	}
 
 	@Override
@@ -52,8 +49,8 @@ public class ISINFuserLongestString extends
 		FusedValue<String, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
 		if (fused.getValue() != null)
 		{
-			fusedRecord.setIsin(fused.getValue());
-			fusedRecord.setAttributeProvenance(Company.ISIN,
+			fusedRecord.setRegion(fused.getValue());
+			fusedRecord.setAttributeProvenance(Company.REGION,
 					fused.getOriginalIds());
 		}
 	}
