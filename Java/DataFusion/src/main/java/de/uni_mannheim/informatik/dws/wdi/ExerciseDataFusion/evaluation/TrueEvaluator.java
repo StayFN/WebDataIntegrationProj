@@ -25,7 +25,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class NetZeroYearEvaluator extends EvaluationRule<Company, Attribute> {
+public class TrueEvaluator extends EvaluationRule<Company, Attribute> {
 
 	@Override
 	public boolean isEqual(Company record1, Company record2, Attribute schemaElement) {

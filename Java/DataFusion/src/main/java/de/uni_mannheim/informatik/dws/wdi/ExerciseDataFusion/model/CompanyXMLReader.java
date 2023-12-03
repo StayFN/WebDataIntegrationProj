@@ -67,8 +67,8 @@ dataset.addAttribute(Company.ASSETS);
 	
 		// fill the attributes
 		setAttributeIfPresent(company, "CompanyName", node, "setCompanyName");
-		setAttributeIfPresent(company, "ISIN", node, "setISIN");
-		setAttributeIfPresent(company, "LEI", node, "setLEI");
+		setAttributeIfPresent(company, "ISIN", node, "setIsin");
+		setAttributeIfPresent(company, "LEI", node, "setLei");
 		setIntegerAttributeIfPresent(company, "Forbes2022Rating", node, "setForbes2022Rating");
 		setListAttributeIfPresent(company, "Industries", node, "setIndustries");
 		setIntegerAttributeIfPresent(company, "FoundedYear", node, "setFoundedYear");

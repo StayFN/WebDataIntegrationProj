@@ -143,7 +143,7 @@ public class DataFusion_Main_Company
 
 		//strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserIntersection(),new IndustryEvaluationRule());
 		strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new IndustryEvaluationRule());
-		strategy.addAttributeFuser(Company.NETZEROCOMMITEDYEAR,new NetZeroYearFuserLongestString(), new NetZeroYearEvaluator());
+		strategy.addAttributeFuser(Company.NETZEROCOMMITEDYEAR,new NetZeroYearFuserLongestString(), new TrueEvaluator());
 
 		//strategy.addAttributeFuser(Company.KEYPERSONS,new KeyPersonsFuserUnion(),new KeyPersonEvaluationRule());
 		//strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
