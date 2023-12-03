@@ -34,7 +34,8 @@ public class AssetEvaluationRule extends EvaluationRule<Company, Attribute> {
 		else if(record1.getAssets()== null ^ record2.getAssets()==null)
 			return false;
 		else 
-			return record1.getAssets().equals(record2.getAssets());
+			//return record1.getAssets().equals(record2.getAssets());
+			return Math.abs(record1.getAssets()-record2.getAssets())/(record1.getAssets()) < 0.1;
 	}
 
 	/* (non-Javadoc)
