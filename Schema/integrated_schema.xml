@@ -1,6 +1,5 @@
 <Companies>
     <Company>
-	<ID>Forbes_1</ID>
         <CompanyName>BioNTech</CompanyName>
         <ISIN>US0378331005</ISIN>
         <LEI>549300VJTTGNEANFBN84</LEI>
@@ -16,14 +15,10 @@
             <Person>
                 <Name>Ugur Sahin</Name>
                 <Founder>True</Founder>
-                <Ceo>True</Ceo>
-                <other/>
             </Person>
             <Person>
                 <Name>Ozlem Tureci</Name>
                 <Founder>True</Founder>
-                <Ceo>False</Ceo>
-                <other/>
             </Person>
         </KeyPersons>
         <Revenue>17997279300</Revenue>
@@ -36,18 +31,11 @@
         <SustGoalDescription>Target was approved using...</SustGoalDescription>
         <SustGoalStatus_NearTerm>Targets Set</SustGoalStatus_NearTerm>
         <SustGoalStatus_LongTerm>Targets Set</SustGoalStatus_LongTerm>
-        <SustGoalClassification_NearTerm>Well-below 2°C</SustGoalClassification_NearTerm>
-        <SustGoalClassification_LongTerm>Well-below 2°C</SustGoalClassification_LongTerm>
+        <SustGoalClassification_NearTerm>Well-below 2C</SustGoalClassification_NearTerm>
+        <SustGoalClassification_LongTerm>Well-below 2C</SustGoalClassification_LongTerm>
         <SustGoalYear_NearTerm>2030</SustGoalYear_NearTerm>
         <SustGoalYear_LongTerm>2050</SustGoalYear_LongTerm>
         <NetZeroCommitted>True</NetZeroCommitted>
         <NetZeroCommittedYear>2050</NetZeroCommittedYear>
     </Company>
-    <Company>
-        ...
-    </Company>
 </Companies>
-
-
-            
-
