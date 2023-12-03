@@ -72,20 +72,12 @@ public class CompanyXMLFormatter extends XMLFormatter<Company> {
 				record.getCountry(),
 				doc));
 		
-		/*//This is how its done for the moviecase:
-		company.appendChild(createTextElementWithProvenance("Country",
-				record.getCountry(),
-				record.getMergedAttributeProvenance(Company.COUNTRY), doc));
-		//leads to <Country provenance=""/> in the output file 
-		
-		//for comparison how its done in the movie case:
-		movie.appendChild(createTextElementWithProvenance("director",
-				record.getDirector(),
-				record.getMergedAttributeProvenance(Movie.DIRECTOR), doc));
-		*/
-		
 		company.appendChild(createTextElement("Region",
 				record.getRegion(),
+				doc));
+		
+		company.appendChild(createTextElement("FoundedYear",
+				String.valueOf(record.getFoundedYear()),
 				doc));
 		
 		company.appendChild(createTextElement("keyPersons",
