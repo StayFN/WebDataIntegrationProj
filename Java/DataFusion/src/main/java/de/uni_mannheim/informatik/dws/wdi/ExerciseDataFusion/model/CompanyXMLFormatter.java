@@ -15,7 +15,7 @@ import java.util.List;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
 //import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Person;
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
 
@@ -27,7 +27,10 @@ import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
  */
 public class CompanyXMLFormatter extends XMLFormatter<Company> {
 
-	CompanyXMLFormatter companyFormatter = new CompanyXMLFormatter();
+	
+	    
+	
+	//CompanyXMLFormatter companyFormatter = new CompanyXMLFormatter();
 	PersonXMLFormatter personFormatter = new PersonXMLFormatter();
 	@Override
 	public Element createRootElement(Document doc) {
@@ -37,17 +40,19 @@ public class CompanyXMLFormatter extends XMLFormatter<Company> {
 
 	@Override
 	public Element createElementFromRecord(Company record, Document doc) {
-		Element Company = doc.createElement("Company");
+		Element company = doc.createElement("Company");
 
-		Company.appendChild(createTextElement("ID", record.getIdentifier(), doc));
+		
+		company.appendChild(createTextElement("ID", record.getIdentifier(), doc));
+		
+		company.appendChild(createTextElement("CompanyName", record.getCompanyName(), doc));
 
-		Company.appendChild(createTextElement("ISIN",
-				record.getISIN(),
+		company.appendChild(createTextElement("ISIN", record.getIsin(), doc));
+		
+		company.appendChild(createTextElement("LEI",
+				record.getLei(),
 				doc));
-		Company.appendChild(createTextElement("LEI",
-				record.getLEI(),
-				doc));
-		Company.appendChild(createTextElement("forbes2022Rating", String.valueOf(record
+		company.appendChild(createTextElement("forbes2022Rating", String.valueOf(record
 				.getForbes2022Rating()), doc));
 		
 		List<String> industries = record.getIndustries(); // Assuming 'record' is an object that has a method 'getIndustries' that returns a list of industries.
@@ -60,76 +65,84 @@ public class CompanyXMLFormatter extends XMLFormatter<Company> {
 		    industryElement.appendChild(doc.createTextNode(industry));
 		    industriesElement.appendChild(industryElement);
 		}
-		Company.appendChild(industriesElement);
+		company.appendChild(industriesElement);
 		
 		
-		Company.appendChild(createTextElement("Country",
+		company.appendChild(createTextElement("Country",
 				record.getCountry(),
 				doc));
-		Company.appendChild(createTextElement("Region",
+		
+		company.appendChild(createTextElement("Region",
 				record.getRegion(),
 				doc));
-		Company.appendChild(createTextElement("keyPersons",
+		
+		company.appendChild(createTextElement("FoundedYear",
+				String.valueOf(record.getFoundedYear()),
+				doc));
+		
+		company.appendChild(createTextElement("keyPersons",
 				String.valueOf(record.getKeyPersons()),
 				doc));
-		Company.appendChild(createTextElement("Revenue",
+		
+		company.appendChild(createTextElement("Revenue",
 				String.valueOf(record.getRevenue()),
 				doc));
-		Company.appendChild(createTextElement("Asset",
+		company.appendChild(createTextElement("Asset",
 				record.getRegion(),
 				doc));
-		Company.appendChild(createTextElement("Profit",
+		company.appendChild(createTextElement("Profit",
 				String.valueOf(record.getProfit()),
 				doc));
-		Company.appendChild(createTextElement("Revenue",
-				String.valueOf(record.getRevenue()),
-				doc));
-		Company.appendChild(createTextElement("Market Value",
+
+		//if any of the following are being uncommented we get error: 
+		//Exception in thread "main" org.w3c.dom.DOMException: INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified. 
+
+		company.appendChild(createTextElement("Market_Value",
 				String.valueOf(record.getMarketValue()),
 				doc));
-		Company.appendChild(createTextElement("Size Employees",
+		company.appendChild(createTextElement("Size_Employees",
 				String.valueOf(record.getSizeEmployees()),
 				doc));
-		Company.appendChild(createTextElement("Size Category",
+		company.appendChild(createTextElement("Size_Category",
 				String.valueOf(record.getSizeEmployees()),
 				doc));
-		Company.appendChild(createTextElement("Legal Type",
+		company.appendChild(createTextElement("Legal_Type",
 				record.getLegalType(),
 				doc));
-		Company.appendChild(createTextElement("SustGoalDescription",
+		company.appendChild(createTextElement("SustGoalDescription",
 				record.getSustGoalDescription(),
 				doc));
-		Company.appendChild(createTextElement("SustGoalStatus_NearTerm",
+		company.appendChild(createTextElement("SustGoalStatus_NearTerm",
 				record.getSustGoalStatus_NearTerm(),
 				doc));
-		Company.appendChild(createTextElement("SustGoalStatus_LongTerm",
+		company.appendChild(createTextElement("SustGoalStatus_LongTerm",
 				record.getSustGoalStatus_LongTerm(),
 				doc));
-		Company.appendChild(createTextElement("SustGoalStatus_NearTerm",
+		company.appendChild(createTextElement("SustGoalStatus_NearTerm",
 				record.getRegion(),
 				doc));
-		Company.appendChild(createTextElement("SustGoalClassification_NearTerm",
+		company.appendChild(createTextElement("SustGoalClassification_NearTerm",
 				record.getSustGoalClassification_NearTerm(),
 				doc));
-		Company.appendChild(createTextElement("SustGoalClassification_LongTerm",
+		company.appendChild(createTextElement("SustGoalClassification_LongTerm",
 				record.getSustGoalClassification_LongTerm(),
 				doc));
-		Company.appendChild(createTextElement("SustGoalYear_NearTerm",
+		company.appendChild(createTextElement("SustGoalYear_NearTerm",
 				String.valueOf(record.getSustGoalYear_NearTerm()),
 				doc));
-		Company.appendChild(createTextElement("SustGoalYear_LongTerm",
+		company.appendChild(createTextElement("SustGoalYear_LongTerm",
 				String.valueOf(record.getSustGoalYear_NearTerm()),
 				doc));
-		Company.appendChild(createTextElement("NetZeroCommitted",
+		company.appendChild(createTextElement("NetZeroCommitted",
 				String.valueOf(record.isNetZeroCommitted()),
 				doc));
-		Company.appendChild(createTextElement("NetZeroCommittedYear",
+		company.appendChild(createTextElement("NetZeroCommittedYear",
 				String.valueOf(record.getNetZeroCommittedYear()),
 				doc));
 		
-		Company.appendChild(createKeyPersonsElement(record, doc));
-
-		return Company;
+		
+		 
+		return company;
 	}
 
 
@@ -150,17 +163,18 @@ public class CompanyXMLFormatter extends XMLFormatter<Company> {
 		return elem;
 	}
 
-	/*protected Element createActorsElement(Company record, Document doc) {
-		Element actorRoot = actorFormatter.createRootElement(doc);
-		actorRoot.setAttribute("provenance",
-				record.getMergedAttributeProvenance(Company.ACTORS));
+	/*
+	protected Element createCompaniesElement(Company record, Document doc) {
+		Element personRoot = personFormatter.createRootElement(doc);
+		personRoot.setAttribute("provenance",
+				record.getMergedAttributeProvenance(Company.KEYPERSONS));
 
-		for (Actor a : record.getActors()) {
-			actorRoot.appendChild(actorFormatter
+		for (Person a : record.getKeyPersons()) {
+			personRoot.appendChild(personFormatter
 					.createElementFromRecord(a, doc));
 		}
 
-		return actorRoot;
-	}*/
-
+		return personRoot;
+	}
+*/
 }

@@ -1,35 +1,37 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.solution;
 
 import java.io.File;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
-import java.time.temporal.ChronoField;
-import java.util.Locale;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.CompanyNameFuserShortestString;
+
+//import java.time.LocalDateTime;
+//import java.time.format.DateTimeFormatter;
+//import java.time.format.DateTimeFormatterBuilder;
+//import java.time.temporal.ChronoField;
+//import java.util.Locale;
+
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.CompanyNameFuserShortestString;
 
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.*;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ActorsEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DateEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DirectorEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ActorsFuserUnion;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserFavourSource;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserVoting;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DirectorFuserLongestString;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.TitleFuserShortestString;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.ActorsEvaluationRule;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DateEvaluationRule;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.DirectorEvaluationRule;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.evaluation.TitleEvaluationRule;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.ActorsFuserUnion;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserFavourSource;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DateFuserVoting;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.DirectorFuserLongestString;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.fusers.TitleFuserShortestString;
 //import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.FusibleCompanyFactory;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.TitleFuserLongestString;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.TitleFuserLongestString;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Company;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.CompanyXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.CompanyXMLReader;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.MovieXMLReader;
-import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeFuser;
-import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeFusionLogger;
-import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
+//import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.MovieXMLReader;
+//import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeFuser;
+//import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeFusionLogger;
+//import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator;
@@ -37,7 +39,7 @@ import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy;
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet;
-import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
+//import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroupFactory;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
@@ -99,17 +101,17 @@ public class DataFusion_Main_Company
 		CorrespondenceSet<Company, Attribute> correspondences = new CorrespondenceSet<>();
 		
 
-		//correspondences.loadCorrespondences(new File("data/correspondences/sbti_forbes_correspondences_LC.csv"),dataSBTI, dataForbes);
+		correspondences.loadCorrespondences(new File("data/correspondences/sbti_forbes_correspondences_LC.csv"),dataSBTI, dataForbes);
 
-		//correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_sbti_correspondences_LC.csv"),dataDbPedia, dataSBTI);
+		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_sbti_correspondences_LC.csv"),dataDbPedia, dataSBTI);
 
-		//correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_forbes_correspondences_ML_LR.csv"),dataDbPedia, dataForbes);
+		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_forbes_correspondences_ML_LR.csv"),dataDbPedia, dataForbes);
 
-		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_sbti_correspondences_cleaned.csv"),dataSBTI, dataForbes);
+		//correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_sbti_correspondences_cleaned.csv"),dataSBTI, dataForbes);
 
-		correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_sbti_correspondences_cleaned.csv"),dataDbPedia, dataSBTI);
+		//correspondences.loadCorrespondences(new File("data/correspondences/dbpedia_2_sbti_correspondences_cleaned.csv"),dataDbPedia, dataSBTI);
 
-		correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_dbpedia_correspondences_cleaned.csv"),dataDbPedia, dataForbes);
+		//correspondences.loadCorrespondences(new File("data/correspondences/forbes_2_dbpedia_correspondences_cleaned.csv"),dataDbPedia, dataForbes);
 
 
 		
@@ -131,19 +133,29 @@ public class DataFusion_Main_Company
 		
 		// add attribute fusers
 		strategy.addAttributeFuser(Company.COMPANYNAME, new CompanyNameFuserShortestString(),new CompanyNameEvaluationRule());
-		//strategy.addAttributeFuser(Company.ASSETS,new AssetFuserMean(),new AssetEvaluationRule());
-		//strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
-		//strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFuserFavourSource(),new FoundedYearEvaluationRule());
-		//strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
-
-		//strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new CountryEvaluationRule());
-
-		/*//strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new IndustryEvaluationRule());
-		//strategy.addAttributeFuser(Company.KEYPERSONS,new KeyPersonsFuserUnion(),new ActorsEvaluationRule());
+		strategy.addAttributeFuser(Company.ASSETS,new AssetFuserMean(),new AssetEvaluationRule());
 		strategy.addAttributeFuser(Company.REVENUE,new RevenueFuserMean(),new RevenueEvaluationRule());
+		strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFuserFavourSource(),new FoundedYearEvaluationRule());
 		strategy.addAttributeFuser(Company.PROFIT,new ProfitFuserMean(),new ProfitEvaluationRule());
-		//strategy.addAttributeFuser(Company.YEARFOUNDED,new YearFoundedFavourSource(),new FoundedYearEvaluationRule());
-		*/
+		strategy.addAttributeFuser(Company.COUNTRY,new CountryFuserFavourSource(), new CountryEvaluationRule());
+		strategy.addAttributeFuser(Company.INDUSTRY, new IndustryFuserUnion(),new IndustryEvaluationRule());
+
+		//Attributes only in 1 Dataset (to add in fused.xml)
+		strategy.addAttributeFuser(Company.ISIN,new ISINFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.LEI,new LEIFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.FORBES2022RATING,new ForbesRatingFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.REGION,new RegionFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SIZEEMPLOYEES,new SizeEmployeesFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SIZECATEGORY,new SizeCategoryEmployeesFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.LEGALTYPE,new LegalTypeFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALDESCRIPTION,new SUSTGOALDESCRIPTIONFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALSTATUS_NEAR_TERM,new SustGoalStatusNearTermFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALSTATUS_LONG_TERM,new SustGoalStatusLongTermFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALCLASSIFICATION_NEAR_TERM,new SustGoalClassificationNearTermFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALCLASSIFICATION_LONG_TERM,new SustGoalClassificationLongTermFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALYEAR_NEAR_TERM,new SustGoalYearNearTermFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.SUSTGOALYEAR_LONG_TERM,new SustGoalYearLongTermFuserLongestString(), new TrueEvaluator());
+		strategy.addAttributeFuser(Company.NETZEROCOMMITEDYEAR,new NetZeroYearFuserLongestString(), new TrueEvaluator());
 
 		// create the fusion engine
 		DataFusionEngine<Company, Attribute> engine = new DataFusionEngine<Company, Attribute>(strategy);
@@ -156,7 +168,7 @@ public class DataFusion_Main_Company
 		FusibleDataSet<Company, Attribute> fusedDataSet = engine.run(correspondences, null);
 		fusedDataSet.printDataSetDensityReport();
 		// write the result
-		//new CompanyXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
+		new CompanyXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
 
 		// evaluate
 		logger.info("*\tEvaluating results\t*");
