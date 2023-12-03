@@ -47,10 +47,10 @@ public class CompanyXMLFormatter extends XMLFormatter<Company> {
 		
 		company.appendChild(createTextElement("CompanyName", record.getCompanyName(), doc));
 
-		company.appendChild(createTextElement("ISIN", record.getISIN(), doc));
+		company.appendChild(createTextElement("ISIN", record.getIsin(), doc));
 		
 		company.appendChild(createTextElement("LEI",
-				record.getLEI(),
+				record.getLei(),
 				doc));
 		company.appendChild(createTextElement("forbes2022Rating", String.valueOf(record
 				.getForbes2022Rating()), doc));

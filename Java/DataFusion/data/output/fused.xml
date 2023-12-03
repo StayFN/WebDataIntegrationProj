@@ -457,7 +457,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_5913+SBTI_2356</ID>
@@ -815,7 +815,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_10168+SBTI_2144</ID>
@@ -2638,7 +2638,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_6015+SBTI_2435</ID>
@@ -5785,7 +5785,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2035</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>Forbes_1636+SBTI_1325</ID>
@@ -8462,7 +8462,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_8076+SBTI_2943</ID>
@@ -8933,7 +8933,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>Forbes_586+SBTI_5043</ID>
@@ -12400,7 +12400,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_6713+SBTI_3325</ID>
@@ -13168,7 +13168,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_606+SBTI_5589</ID>
@@ -14904,7 +14904,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_644+Forbes_4</ID>
@@ -15079,7 +15079,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_7069+SBTI_2256</ID>
@@ -16317,7 +16317,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2035</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_5010+Forbes_1116</ID>
@@ -18308,7 +18308,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_1734+SBTI_328</ID>
@@ -18505,7 +18505,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_1544+DBPedia_4639+SBTI_3646</ID>
@@ -19042,7 +19042,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_2245+DBPedia_5248+DBPedia_5295+DBPedia_7217+SBTI_3796</ID>
@@ -19426,7 +19426,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2045</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_9800+Forbes_286</ID>
@@ -23420,7 +23420,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_10212+SBTI_4883</ID>
@@ -23944,7 +23944,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_10154+DBPedia_10170+DBPedia_10177+DBPedia_10184+DBPedia_1497+DBPedia_2580+DBPedia_2592+DBPedia_2608+DBPedia_4308+DBPedia_4483+DBPedia_4642+DBPedia_7602+DBPedia_7681+DBPedia_9410+Forbes_1523+Forbes_1912+Forbes_850+SBTI_3630+SBTI_3648+SBTI_3672</ID>
@@ -24606,7 +24606,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_2042+DBPedia_2069+DBPedia_2199+DBPedia_4995+DBPedia_5153+DBPedia_6187+DBPedia_7124+DBPedia_7533+DBPedia_9006+DBPedia_931+SBTI_5130</ID>
@@ -25062,7 +25062,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_3963+DBPedia_9657+SBTI_4120</ID>
@@ -25142,7 +25142,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_7194+Forbes_631</ID>
@@ -25685,7 +25685,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_7488+Forbes_890+SBTI_5713</ID>
@@ -25794,7 +25794,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_3264+SBTI_4010</ID>
@@ -29518,7 +29518,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2035</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_4045+DBPedia_5911+DBPedia_7020+DBPedia_8875+DBPedia_9644+Forbes_68+SBTI_3921</ID>
@@ -30199,7 +30199,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_679+SBTI_1891</ID>
@@ -31667,7 +31667,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_5085+SBTI_1958</ID>
@@ -31694,7 +31694,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2045</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_861+Forbes_314+SBTI_5188</ID>
@@ -32314,7 +32314,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_8050+Forbes_984</ID>
@@ -38416,7 +38416,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_6620+SBTI_2161</ID>
@@ -38917,7 +38917,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_9327+Forbes_920</ID>
@@ -40398,7 +40398,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_118+DBPedia_8462+DBPedia_9920+SBTI_962</ID>
@@ -41243,7 +41243,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2035</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_144+SBTI_4187</ID>
@@ -43098,7 +43098,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_3409+SBTI_1381</ID>
@@ -43321,7 +43321,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_5826+SBTI_851</ID>
@@ -43947,7 +43947,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_8342+SBTI_2566</ID>
@@ -44472,7 +44472,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_958+Forbes_41</ID>
@@ -44910,7 +44910,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_5974+Forbes_1431</ID>
@@ -46718,7 +46718,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_1587+DBPedia_1678+DBPedia_3830+DBPedia_5778+DBPedia_5779+DBPedia_5814+DBPedia_7828+DBPedia_8692+DBPedia_8785+DBPedia_8804+DBPedia_9583+Forbes_1230+Forbes_1232+SBTI_194+SBTI_244</ID>
@@ -46788,7 +46788,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_9442+Forbes_240+SBTI_3189</ID>
@@ -46928,7 +46928,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2050</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_10098+SBTI_4778</ID>
@@ -48162,7 +48162,7 @@
     <SustGoalYear_NearTerm>null</SustGoalYear_NearTerm>
     <SustGoalYear_LongTerm>null</SustGoalYear_LongTerm>
     <NetZeroCommitted>null</NetZeroCommitted>
-    <NetZeroCommittedYear>null</NetZeroCommittedYear>
+    <NetZeroCommittedYear>2040</NetZeroCommittedYear>
   </Company>
   <Company>
     <ID>DBPedia_10294+DBPedia_1597+Forbes_220+Forbes_685</ID>

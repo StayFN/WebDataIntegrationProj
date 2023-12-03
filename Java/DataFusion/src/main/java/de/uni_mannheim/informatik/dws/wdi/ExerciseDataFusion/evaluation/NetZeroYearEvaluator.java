@@ -25,16 +25,11 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class AssetEvaluationRule extends EvaluationRule<Company, Attribute> {
+public class NetZeroYearEvaluator extends EvaluationRule<Company, Attribute> {
 
 	@Override
 	public boolean isEqual(Company record1, Company record2, Attribute schemaElement) {
-		if(record1.getAssets()== null && record2.getAssets()==null)
-			return true;
-		else if(record1.getAssets()== null ^ record2.getAssets()==null)
-			return false;
-		else 
-			return record1.getAssets().equals(record2.getAssets());
+		return true;
 	}
 
 	/* (non-Javadoc)
@@ -43,7 +38,7 @@ public class AssetEvaluationRule extends EvaluationRule<Company, Attribute> {
 	@Override
 	public boolean isEqual(Company record1, Company record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondence) {
-		return isEqual(record1, record2, (Attribute)null);
+		return true;
 	}
 	
 }

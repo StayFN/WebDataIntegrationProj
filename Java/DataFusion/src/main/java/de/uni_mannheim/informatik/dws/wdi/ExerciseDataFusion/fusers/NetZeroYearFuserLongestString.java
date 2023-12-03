@@ -27,10 +27,10 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class NetZeroYear extends
+public class NetZeroYearFuserLongestString extends
 		AttributeValueFuser<String, Company, Attribute> {
 
-	public NetZeroYear() {
+	public NetZeroYearFuserLongestString() {
 		super(new LongestString<Company, Attribute>());
 	}
 
@@ -41,15 +41,21 @@ public class NetZeroYear extends
 
 	@Override
 	public String getValue(Company record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getNetZeroCommittedYear().toString();
+		if (record.getNetZeroCommittedYear() != null){
+			return record.getNetZeroCommittedYear().toString();
+		}
+		return "";
 	}
 
 	@Override
 	public void fuse(RecordGroup<Company, Attribute> group, Company fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Company, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setNetZeroCommittedYear(Integer.parseInt(fused.getValue()));
-		fusedRecord.setAttributeProvenance(Company.NETZEROCOMMITEDYEAR,
-				fused.getOriginalIds());
+		if (fused.getValue() != null)
+		{
+			fusedRecord.setNetZeroCommittedYear(Integer.parseInt(fused.getValue()));
+			fusedRecord.setAttributeProvenance(Company.NETZEROCOMMITEDYEAR,
+					fused.getOriginalIds());
+		}
 	}
 
 }

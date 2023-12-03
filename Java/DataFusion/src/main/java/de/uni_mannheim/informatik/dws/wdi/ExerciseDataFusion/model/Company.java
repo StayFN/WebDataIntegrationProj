@@ -59,8 +59,8 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 	//protected String id;
 	//protected String provenance;
 	private String companyName;
-	private String ISIN;
-	private String LEI;
+	private String isin;
+	private String lei;
 	private Integer forbes2022Rating;
 	private List<String> Industries;
 	private Integer foundedYear;
@@ -111,20 +111,20 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 		this.companyName = companyName;
 	}
 
-	public String getISIN() {
-		return ISIN;
+	public String getIsin() {
+		return isin;
 	}
 
-	public void setISIN(String iSIN) {
-		ISIN = iSIN;
+	public void setIsin(String iSIN) {
+		isin = iSIN;
 	}
 
-	public String getLEI() {
-		return LEI;
+	public String getLei() {
+		return lei;
 	}
 
-	public void setLEI(String lEI) {
-		LEI = lEI;
+	public void setLei(String lEI) {
+		lei = lEI;
 	}
 
 	public Integer getForbes2022Rating() {
@@ -342,6 +342,25 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 	public static final Attribute REVENUE = new Attribute("Revenue");
 	public static final Attribute ASSETS = new Attribute("Assets");
 	public static final Attribute PROFIT = new Attribute("Profit");
+	public static final Attribute NETZEROCOMMITEDYEAR = new Attribute("Net Zero Committed Year");
+
+	public static final Attribute ISIN = new Attribute("ISIN");
+	public static final Attribute LEI = new Attribute("LEI");
+	public static final Attribute FORBES2022RATING = new Attribute("Forbes 2022 Rating");
+	public static final Attribute REGION = new Attribute("Region");
+	public static final Attribute SIZEEMPLOYEES = new Attribute("Size Employees");
+	public static final Attribute SIZECATEGORY = new Attribute("Size Category");
+	public static final Attribute LEGALTYPE = new Attribute("Legal Type");
+	public static final Attribute SUSTGOALDESCRIPTION = new Attribute("Sustainability Goal Description");
+	public static final Attribute SUSTGOALSTATUS_NEAR_TERM = new Attribute("Sustainability Goal Status Near Term");
+	public static final Attribute SUSTGOALSTATUS_LONG_TERM = new Attribute("Sustainability Goal Status Long Term");
+	public static final Attribute SUSTGOALCLASSIFICATION_NEAR_TERM = new Attribute("Sustainability Goal Classification Near Term");
+	public static final Attribute SUSTGOALCLASSIFICATION_LONG_TERM = new Attribute("Sustainability Goal Classification Long Term");
+	public static final Attribute SUSTGOALYEAR_NEAR_TERM = new Attribute("Sustainability Goal Year Near Term");
+	public static final Attribute SUSTGOALYEAR_LONG_TERM = new Attribute("Sustainability Goal Year Long Term");
+	public static final Attribute NETZEROCOMMITTED = new Attribute("Net Zero Committed");
+
+
 	@Override
 	public boolean hasValue(Attribute attribute) {
 		if(attribute==COMPANYNAME)
@@ -360,6 +379,38 @@ public class Company extends AbstractRecord<Attribute> implements Serializable {
 			return getProfit() != null;
 		else if(attribute==ASSETS)
 			return getAssets() != null;
+		else if(attribute==NETZEROCOMMITEDYEAR)
+			return getNetZeroCommittedYear() != null;
+		else if(attribute == ISIN)
+			return getIsin() != null && !getIsin().isEmpty();
+		else if(attribute == LEI)
+			return getLei() != null && !getLei().isEmpty();
+		else if(attribute == FORBES2022RATING)
+			return getForbes2022Rating() != null;
+		else if(attribute == REGION)
+			return getRegion() != null && !getRegion().isEmpty();
+		else if(attribute == SIZEEMPLOYEES)
+			return getSizeEmployees() != null;
+		else if(attribute == SIZECATEGORY)
+			return getSizeCategory() != null && !getSizeCategory().isEmpty();
+		else if(attribute == LEGALTYPE)
+			return getLegalType() != null && !getLegalType().isEmpty();
+		else if(attribute == SUSTGOALDESCRIPTION)
+			return getSustGoalDescription() != null && !getSustGoalDescription().isEmpty();
+		else if(attribute == SUSTGOALSTATUS_NEAR_TERM)
+			return getSustGoalStatus_NearTerm() != null && !getSustGoalStatus_NearTerm().isEmpty();
+		else if(attribute == SUSTGOALSTATUS_LONG_TERM)
+			return getSustGoalStatus_LongTerm() != null && !getSustGoalStatus_LongTerm().isEmpty();
+		else if(attribute == SUSTGOALCLASSIFICATION_NEAR_TERM)
+			return getSustGoalClassification_NearTerm() != null && !getSustGoalClassification_NearTerm().isEmpty();
+		else if(attribute == SUSTGOALCLASSIFICATION_LONG_TERM)
+			return getSustGoalClassification_LongTerm() != null && !getSustGoalClassification_LongTerm().isEmpty();
+		else if(attribute == SUSTGOALYEAR_NEAR_TERM)
+			return getSustGoalYear_NearTerm() != null;
+		else if(attribute == SUSTGOALYEAR_LONG_TERM)
+			return getSustGoalYear_LongTerm() != null;
+		else if(attribute == NETZEROCOMMITTED)
+			return isNetZeroCommitted() != null;
 		else
 			return false;
 	}
