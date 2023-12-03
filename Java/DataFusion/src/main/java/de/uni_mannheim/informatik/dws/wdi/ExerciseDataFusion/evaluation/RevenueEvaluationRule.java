@@ -34,7 +34,8 @@ public class RevenueEvaluationRule extends EvaluationRule<Company, Attribute> {
 		else if(record1.getRevenue()== null ^ record2.getRevenue()==null)
 			return false;
 		else 
-			return record1.getRevenue().equals(record2.getRevenue());
+			//return record1.getRevenue().equals(record2.getRevenue());
+			return Math.abs(record1.getRevenue()-record2.getRevenue())/(record1.getRevenue()+0.001) < 0.1;
 	}
 
 	/* (non-Javadoc)

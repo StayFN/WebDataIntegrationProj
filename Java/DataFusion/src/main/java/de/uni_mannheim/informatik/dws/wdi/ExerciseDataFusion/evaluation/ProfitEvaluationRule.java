@@ -34,7 +34,8 @@ public class ProfitEvaluationRule extends EvaluationRule<Company, Attribute> {
 		else if(record1.getProfit()== null ^ record2.getProfit()==null)
 			return false;
 		else 
-			return record1.getProfit().equals(record2.getProfit());
+			//return record1.getProfit().equals(record2.getProfit());
+			return Math.abs(record1.getProfit()-record2.getProfit())/(record1.getProfit()+0.001) < 0.1;
 	}
 
 	/* (non-Javadoc)

@@ -373,7 +373,6 @@
 "Assets","1.0","Assets-{Forbes_1726}","Forbes_1726","{7.26}","7.26",,
 "Industry","0.0","Industry-{Forbes_1214+SBTI_1719}","Forbes_1214+SBTI_1719","{[, Diversified Financials, ]|[]}","[, Diversified Financials]",,
 "Revenue","1.0","Revenue-{Forbes_1486}","Forbes_1486","{12620000000}","12620000000",,
-"Profit","1.0","Profit-{Forbes_6}","Forbes_6","{33360000000}","33360000000",,
 "Sustainability Goal Year Long Term","1.0","Sustainability Goal Year Long Term-{SBTI_1405}","SBTI_1405","{2050}","2050",,
 "Profit","0.0","Profit-{DBPedia_1356+Forbes_698}","DBPedia_1356+Forbes_698","{3024000000|3020000000}","3020000000",,
 "Sustainability Goal Year Near Term","1.0","Sustainability Goal Year Near Term-{SBTI_4952}","SBTI_4952","{2030}","2030",,
@@ -436,8 +435,8 @@
 "Industry","0.0","Industry-{Forbes_933+SBTI_5802}","Forbes_933+SBTI_5802","{[, Capital Goods, ]|[]}","[, Capital Goods]",,
 "Size Category","1.0","Size Category-{SBTI_3717+SBTI_3749}","SBTI_3717+SBTI_3749","{Small or Medium Enterprise|Financial Institution}","Small or Medium Enterprise",,
 "Country","0.6666666666666666","Country-{DBPedia_1739+Forbes_64+SBTI_735}","DBPedia_1739+Forbes_64+SBTI_735","{Australia|Germany|Germany}","Germany",,
-"Sustainability Goal Status Near Term","1.0","Sustainability Goal Status Near Term-{SBTI_1359}","SBTI_1359","{Targets Set}","Targets Set",,
 "Size Category","1.0","Size Category-{SBTI_1359}","SBTI_1359","{Company}","Company",,
+"Sustainability Goal Status Near Term","1.0","Sustainability Goal Status Near Term-{SBTI_1359}","SBTI_1359","{Targets Set}","Targets Set",,
 "Country","1.0","Country-{Forbes_797+SBTI_4408}","Forbes_797+SBTI_4408","{Austria|Austria}","Austria",,
 "Region","1.0","Region-{SBTI_4612+SBTI_4615+SBTI_4619+SBTI_4624+SBTI_4635+SBTI_4677}","SBTI_4612+SBTI_4615+SBTI_4619+SBTI_4624+SBTI_4635+SBTI_4677","{Europe|Europe|Europe|Asia|North America|Europe}","North America",,
 "Company name","0.375","Company name-{DBPedia_4077+DBPedia_512+DBPedia_5917+DBPedia_5939+DBPedia_6954+Forbes_1364+Forbes_462+SBTI_452}","DBPedia_4077+DBPedia_512+DBPedia_5917+DBPedia_5939+DBPedia_6954+Forbes_1364+Forbes_462+SBTI_452","{Asda|ASMAR|Assurant|AstraZeneca|Astaldi|Assurant|AstraZeneca|AstraZeneca}","Asda","false","AstraZeneca"
@@ -795,6 +794,7 @@
 "Sustainability Goal Classification Near Term","1.0","Sustainability Goal Classification Near Term-{SBTI_6138}","SBTI_6138","{1.5°C}","1.5°C",,
 "Forbes 2022 Rating","1.0","Forbes 2022 Rating-{Forbes_1991}","Forbes_1991","{1991}","1991",,
 "Region","1.0","Region-{SBTI_1271}","SBTI_1271","{Europe}","Europe",,
+"Size Category","1.0","Size Category-{SBTI_267}","SBTI_267","{Company}","Company",,
 "ISIN","1.0","ISIN-{SBTI_4024}","SBTI_4024","{US6819191064}","US6819191064",,
 "Sustainability Goal Classification Near Term","1.0","Sustainability Goal Classification Near Term-{SBTI_5323+SBTI_5329+SBTI_5332+SBTI_5352}","SBTI_5323+SBTI_5329+SBTI_5332+SBTI_5352","{1.5°C|Well-below 2°C|1.5°C|1.5°C}","Well-below 2°C","true",
 "Profit","0.0","Profit-{DBPedia_5917+DBPedia_5939+DBPedia_6954+Forbes_1364+Forbes_462}","DBPedia_5917+DBPedia_5939+DBPedia_6954+Forbes_1364+Forbes_462","{1370000000|115000000|91534182|450000000|90000000}","450000000","false","112000000"
