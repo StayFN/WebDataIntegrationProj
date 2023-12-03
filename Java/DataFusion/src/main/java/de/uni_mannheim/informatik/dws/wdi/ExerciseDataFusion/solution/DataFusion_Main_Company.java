@@ -157,16 +157,6 @@ public class DataFusion_Main_Company
 		strategy.addAttributeFuser(Company.SUSTGOALYEAR_LONG_TERM,new SustGoalYearLongTermFuserLongestString(), new TrueEvaluator());
 		strategy.addAttributeFuser(Company.NETZEROCOMMITEDYEAR,new NetZeroYearFuserLongestString(), new TrueEvaluator());
 
-
-
-
-
-
-
-
-		strategy.addAttributeFuser(Company.NETZEROCOMMITEDYEAR,new NetZeroYearFuserLongestString(), new TrueEvaluator());
-
-
 		// create the fusion engine
 		DataFusionEngine<Company, Attribute> engine = new DataFusionEngine<Company, Attribute>(strategy);
 
